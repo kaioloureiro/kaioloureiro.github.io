@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+:root {
+    --fonte-principal: 'Lato', Helvetica, Arial, sans-serif;
+
+    --cor0: #242424;
+    --cor1: #e4e4e4;
+
+    --csscolor1: #9297D7;
+    --csscolor2: #4f57ce;
+    --csscolor3: #3B429C;
+    --csscolor4: #1E214F;
+    --csscolor5: #36374F;
+
+    --htmlcolor1: #D7A192;
+    --htmlcolor2: #CF6A4E;
+    --htmlcolor3: #9C503B;
+    --htmlcolor4: #4F291E;
+    --htmlcolor5: #4F3B36;
+
+    --javacolor1: #D79292;
+    --javacolor2: #CE4F4F;
+    --javacolor3: #9C3B3B;
+    --javacolor4: #4F1E1E;
+    --javacolor5: #4F3636;
+
+    --jscolor1: #D7CCA7;
+    --jscolor2: #CFB763;
+    --jscolor3: #9C8A4B;
+    --jscolor4: #4F4626;
+    --jscolor5: #4F4B3E;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    color: var(--cor1);
+    font: normal normal 1em var(--fonte-principal);
+}
+
+body.css {
+    background-color: var(--csscolor2);
+}
+
+body.html {
+    background-color: var(--htmlcolor2);
+}
+
+body.java {
+    background-color: var(--javacolor2);
+}
+
+body.js {
+    background-color: var(--jscolor2);
+}
+
+header {
+    background-color: var(--cor0);
+    text-align: center;
+    padding: 15px;
+}
+
+nav {
+    background-color: var(--cor0);
+    padding: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 18px 20px;
+}
+
+a:hover {
+    transition-duration: 0.5s;
+}
+
+a.home {
+    color: var(--cor6);
+}
+
+a.home:hover {
+    background-color: var(--cor1);
+    color: var(--cor0);
+}
+
+a.css {
+  color: var(--csscolor2);
+}
+
+a.css:hover {
+    background-color: var(--csscolor2);
+    color: var(--cor0);
+}
+
+a.html {
+    color: var(--htmlcolor2);
+}
+
+a.html:hover {
+    background-color: var(--htmlcolor2);
+    color: var(--cor0);
+}
+
+a.java {
+    color: var(--javacolor2);
+}
+
+a.java:hover {
+    background-color: var(--javacolor2);
+    color: var(--cor0);
+}
+
+a.js {
+    color: var(--jscolor2);
+}
+
+a.js:hover {
+    background-color: var(--jscolor2);
+    color: var(--cor0);
+}
+
+main {
+    background-color: var(--cor1);
+    color: var(--cor0);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
+    min-width: 320px;
+    max-width: 1000px;
+    text-align: justify;
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+main h1 {
+    padding: 20px;
+    text-align: center;
+}
+
+main p {
+    padding: 5px 20px;
+    text-indent: 1.5em;
+    line-height: 1.5em;
+}
