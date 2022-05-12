@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+:root {
+    --fonte-principal: 'Lato', Helvetica, Arial, sans-serif;
+
+    --cor0: #242424;
+    --cor1: #4450CF;
+    --cor2: #CF6A4E;
+    --cor3: #CE4F4F;
+    --cor4: #CFB763;
+
+    --color0: #807AA0;
+    --color1: #3F3A63;
+    --color2: #352E57;
+    --color3: #2B2847;
+    --color4: #B674CC;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font: normal 600 1.1em var(--fonte-principal);
+    letter-spacing: 1px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid white;
+}
+
+div {
+    margin: 5px;
+    padding: 5px 15px;
+    border-radius: 100px;
+}
+
+div:hover {
+    color: black;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+div.html {
+    border: 2px solid var(--cor2);
+}
+
+div.html:hover {
+    background-color: var(--cor2);
+}
+
+div.css {
+    border: 2px solid var(--cor1);
+}
+
+div.css:hover {
+    background-color: var(--cor1);
+}
+
+div.js {
+    border: 2px solid var(--cor4);
+}
+
+div.js:hover {
+    background-color: var(--cor4);
+}
+
+div.java {
+    border: 2px solid var(--cor3);
+}
+
+div.java:hover {
+    background-color: var(--cor3);
+}
