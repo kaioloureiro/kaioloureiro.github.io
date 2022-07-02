@@ -1,21 +1,34 @@
 @charset "UTF-8";
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+.html:hover {
+    fill: var(--laranja);
+}
+
+.css:hover {
+    fill: var(--azul);
+}
+
+.js:hover {
+    fill: var(--amarelo);
+}
+
+.java:hover {
+    fill: var(--vermelho);
+}
+
+/* Configurações Gerais */
 
 :root {
     --fonte-principal: 'Lato', Helvetica, Arial, sans-serif;
 
-    --cor0: #242424;
-    --cor1: #4450CF;
-    --cor2: #CF6A4E;
-    --cor3: #CE4F4F;
-    --cor4: #CFB763;
-
-    --color0: #807AA0;
-    --color1: #3F3A63;
-    --color2: #352E57;
-    --color3: #2B2847;
-    --color4: #B674CC;
+    --preto: #0E1013;
+    --cinza: #1B1D20;
+    --azul: #686bfa;
+    --vermelho: #fa6868;
+    --laranja: #fa9d68;
+    --amarelo: #fad868;
+    --roxo: #AA88FF;
 }
 
 * {
@@ -23,66 +36,62 @@
     padding: 0px;
 }
 
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
 body {
-    background-color: var(--cor0);
-    font: normal 600 1.1em var(--fonte-principal);
-    letter-spacing: 1px;
-    color: white;
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    background-color: var(--cinza);
+    color: #fff;
+}
+
+header {
     display: flex;
-    align-items: center;
     justify-content: center;
+    background-color: var(--preto);
+    font-size: 1.2em;
+    padding: 20px;
 }
 
 main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 20px;
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+main h2 {
+    grid-column: 1 / -1;
+}
+
+main a {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 50vw;
-    height: 50vh;
-    border: 1px solid white;
+    flex-wrap: wrap;
+    place-content: center;
+    gap: 20px;
+    width: 400px;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0);
 }
 
-div {
-    margin: 5px;
-    padding: 5px 15px;
-    border-radius: 100px;
+main a:hover {
+    border-color: #fff;
+    border-radius: 8px;
+    transition-duration: .2s;
 }
 
-div:hover {
-    color: black;
-    transition-duration: 0.3s;
-    cursor: pointer;
+section {
+    display: flex;
 }
 
-div.html {
-    border: 2px solid var(--cor2);
-}
-
-div.html:hover {
-    background-color: var(--cor2);
-}
-
-div.css {
-    border: 2px solid var(--cor1);
-}
-
-div.css:hover {
-    background-color: var(--cor1);
-}
-
-div.js {
-    border: 2px solid var(--cor4);
-}
-
-div.js:hover {
-    background-color: var(--cor4);
-}
-
-div.java {
-    border: 2px solid var(--cor3);
-}
-
-div.java:hover {
-    background-color: var(--cor3);
+svg {
+    fill: #fff;
+    height: 190px;
+    transition-duration: .2s;
 }
