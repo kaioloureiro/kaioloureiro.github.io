@@ -221,6 +221,6 @@ body {
     color: var(--greyish-blue-0);
 }
 
-ol {
+ul {
     list-style-type: none;
 }
