@@ -4,7 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-/* Classes e IDs */
+/* Classes & IDs */
 
 .container {
     max-width: 1160px;
@@ -19,11 +19,11 @@
     text-fill-color: transparent;
 }
 
-.gradient-td {
-    background-image: var(--gradient-td);
+.bold-text {
+    font-weight: var(--bold);
 }
 
-/* Menu */
+/* Header Menu */
 
 .header {
     display: grid;
@@ -73,7 +73,7 @@
     color: var(--greyish-blue-2);
 }
 
-/* Intro Section */
+/* Section Configs */
 
 .section-sep {
     color: var(--greyish-blue-9);
@@ -84,7 +84,29 @@
     text-transform: uppercase;
 }
 
-.intro {
+.section-detail-left {
+    /* width: calc(1440px/3.2); */
+    position: absolute;
+    left: 0;
+    /* margin-top: calc(-10rem/16); */
+}
+
+.section-detail-right {
+    width: calc(1440px/3.2);
+    height: calc(3rem/16);
+    background-image: var(--gradient-lr);
+    position: absolute;
+    right: 0;
+    top: 90px;
+}
+
+.section-container {
+    margin: 40px 0;
+}
+
+/* Intro Section */
+
+.intro-container {
     display: grid;
     grid-template-columns: 9fr 3fr;
     background-color: var(--greyish-blue-13);
@@ -126,7 +148,7 @@
     text-transform: uppercase;
 }
 
-.intro-subtitle .intro-bold {
+.intro-subtitle .bold-text {
     color: var(--blue-4);
 }
 
@@ -137,12 +159,8 @@
     line-height: calc(24rem/16);
 }
 
-.intro-text .intro-bold {
+.intro-text .bold-text {
     color: var(--greyish-blue-0);
-}
-
-.intro-bold {
-    font-weight: var(--bold);
 }
 
 .intro-buttons {
@@ -157,16 +175,31 @@
     border: 1px solid var(--blue-5);
 }
 
-.intro-buttons .download-cv-btn {
+.intro-buttons .normal-btn {
+    color: var(--greyish-blue-1);
     padding: calc(10rem/16) calc(20rem/16) calc(10rem/16) calc(16rem/16);
     gap: calc(6rem/16);
+}
+
+.intro-buttons .normal-btn:hover {
+    color: var(--blue-4);
+}
+
+.intro-buttons .special-btn {
+    background-image: var(--gradient-td);
+    color: var(--blue-0);
+}
+
+.intro-buttons .special-btn:hover {
+    background-image: linear-gradient(to right, rgb(214, 199, 35) 0%, rgb(211, 201, 8) 100%);
+    color: black;
 }
 
 .intro-picture {
     align-self: center;
 }
 
-/* Configurações Gerais */
+/* Global Configs */
 
 :root {
     --font-poppins: 'Poppins', Helvetica, Arial, sans-serif;
@@ -226,6 +259,11 @@
     font-size: 1rem;
 }
 
+body {
+    background-color: var(--greyish-blue-12);
+    color: var(--greyish-blue-0);
+}
+
 a {
     color: var(--greyish-blue-0);
     text-decoration: none;
@@ -235,9 +273,8 @@ a:hover {
     color: var(--blue-4);
 }
 
-body {
-    background-color: var(--greyish-blue-12);
-    color: var(--greyish-blue-0);
+img {
+    /* width: 100%; */
 }
 
 ul {
