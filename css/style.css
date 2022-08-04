@@ -35,41 +35,39 @@
     font-weight: var(--medium);
 }
 
-.logo {
+.header-logo {
     padding: calc(23rem/16) 0;
 }
 
-.nav {
+.header-menu {
     display: flex;
-}
-
-.nav-menu {
     gap: calc(40rem/16);
 }
 
-.nav-menu a {
+.header-menu a {
     font-size: calc(16rem/16);
     line-height: calc(24rem/16);
 }
 
-.nav-right {
+.header-right-menu {
     display: flex;
     gap: calc(40rem/16);
     justify-self: end;
 }
 
-.nav-lang,
-.nav-social {
+.header-lang-menu,
+.header-social-media {
+    display: flex;
     gap: calc(20rem/16);
 }
 
-.nav-lang .nav-lang-item {
+.header-lang-menu .header-lang-menu-item {
     color: var(--greyish-blue-8);
     font-size: calc(14rem/16);
     line-height: calc(21rem/16);
 }
 
-.nav-lang .active-lang {
+.header-lang-menu .active-lang {
     color: var(--greyish-blue-2);
 }
 
