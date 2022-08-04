@@ -15,6 +15,8 @@
     background: var(--gradient-lr);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
 
 .gradient-td {
@@ -27,7 +29,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    font-family: var(--font-0);
+    font-family: var(--font-poppins);
 }
 
 .header a {
@@ -75,7 +77,7 @@
 
 .section-sep {
     color: var(--greyish-blue-9);
-    font-family: var(--font-1);
+    font-family: var(--font-lato);
     font-size: calc(16rem/16);
     font-weight: var(--medium);
     line-height: calc(24rem/16);
@@ -87,10 +89,16 @@
     grid-template-columns: 9fr 3fr;
     background-color: var(--greyish-blue-13);
     padding: calc(40rem/16) calc(50rem/16) calc(40rem/16) calc(60rem/16);
-    font-family: var(--font-1);
+    font-family: var(--font-lato);
 }
 
-.welcome-text {
+.intro-info {
+    display: flex;
+    flex-direction: column;
+    gap: calc(40rem/16);
+}
+
+.intro-greetings {
     color: var(--greyish-blue-8);
     font-size: calc(16rem/16);
     font-weight: var(--medium);
@@ -99,7 +107,7 @@
 
 .intro-title {
     color: var(--greyish-blue-1);
-    font-family: var(--font-0);
+    font-family: var(--font-poppins);
     font-size: calc(64rem/16);
     font-weight: var(--regular);
     line-height: calc(96rem/16);
@@ -111,11 +119,10 @@
 
 .intro-subtitle {
     color: var(--greyish-blue-2);
-    font-family: var(--font-0);
     font-size: calc(14rem/16);
     font-weight: var(--semi-bold);
     line-height: calc(21rem/16);
-    letter-spacing: 4.5%;
+    letter-spacing: 0.045rem;
     text-transform: uppercase;
 }
 
@@ -125,7 +132,6 @@
 
 .intro-text {
     color: var(--greyish-blue-2);
-    font-family: var(--font-0);
     font-size: calc(16rem/16);
     font-weight: var(--regular);
     line-height: calc(24rem/16);
@@ -139,17 +145,32 @@
     font-weight: var(--bold);
 }
 
+.intro-buttons {
+    display: flex;
+    gap: calc(62rem/16);
+}
+
 .intro-buttons a {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     padding: calc(10rem/16) calc(20rem/16);
     border: 1px solid var(--blue-5);
+}
+
+.intro-buttons .download-cv-btn {
+    padding: calc(10rem/16) calc(20rem/16) calc(10rem/16) calc(16rem/16);
+    gap: calc(6rem/16);
+}
+
+.intro-picture {
+    align-self: center;
 }
 
 /* Configurações Gerais */
 
 :root {
-    --font-0: 'Poppins', sans-serif;
-    --font-1: 'Lato', sans-serif;
+    --font-poppins: 'Poppins', Helvetica, Arial, sans-serif;
+    --font-lato: 'Lato', Helvetica, Arial, sans-serif;
 
     --thin: 100;
     --extra-light: 200;
@@ -190,8 +211,8 @@
     --blue-11: #040424;
     --blue-12: #010113;
 
-    --gradient-lr: linear-gradient(to right, var(--blue-5), var(--blue-6));
-    --gradient-td: linear-gradient(to bottom, var(--blue-5), var(--blue-6));
+    --gradient-lr: linear-gradient(to right, var(--blue-5) 0%, var(--blue-6) 100%);
+    --gradient-td: linear-gradient(to bottom, var(--blue-5) 0%, var(--blue-6) 100%);
 }
 
 ::selection {
