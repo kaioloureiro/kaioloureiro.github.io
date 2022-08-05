@@ -57,10 +57,15 @@
     justify-self: end;
 }
 
+.header-right-menu nav {
+    align-self: center;
+}
+
 .header-lang-menu,
 .header-social-media {
     display: flex;
     gap: calc(20rem/16);
+
 }
 
 .header-lang-menu .header-lang-menu-item {
@@ -75,29 +80,45 @@
 
 /* Section Configs */
 
-.section-sep {
+.section-sep-left {
+    display: grid;
+    justify-content: left;
+    background: url(../img/details/section-sep.svg) no-repeat top left;
+    text-align: left;
+}
+
+.section-sep-right {
+    display: grid;
+    justify-content: right;
+    background: url(../img/details/section-sep.svg) no-repeat top right;
+    text-align: right;
+}
+
+.section-sep-left p,
+.section-sep-right p {
     color: var(--greyish-blue-9);
     font-family: var(--font-lato);
     font-size: calc(16rem/16);
     font-weight: var(--medium);
     line-height: calc(24rem/16);
     text-transform: uppercase;
+    margin-top: calc(13rem/16);
+}
+
+.section-sep-left p:hover,
+.section-sep-right p:hover {
+    cursor: default;
 }
 
 .section-detail-left {
     /* width: calc(1440px/3.2); */
-    position: absolute;
+    position: relative;
     left: 0;
-    /* margin-top: calc(-10rem/16); */
 }
 
 .section-detail-right {
-    width: calc(1440px/3.2);
-    height: calc(3rem/16);
-    background-image: var(--gradient-lr);
-    position: absolute;
+    position: relative;
     right: 0;
-    top: 90px;
 }
 
 .section-container {
@@ -109,6 +130,7 @@
 .intro-container {
     display: grid;
     grid-template-columns: 9fr 3fr;
+    background: url(../img/details/intro-detail.svg) no-repeat center left;
     background-color: var(--greyish-blue-13);
     padding: calc(40rem/16) calc(50rem/16) calc(40rem/16) calc(60rem/16);
     font-family: var(--font-lato);
@@ -196,7 +218,9 @@
 }
 
 .intro-picture {
-    align-self: center;
+    background: url(../img/intro-picture.svg) no-repeat center right;
+    /* align-self: center;
+    justify-self: flex-end; */
 }
 
 /* Global Configs */
@@ -274,7 +298,8 @@ a:hover {
 }
 
 img {
-    /* width: 100%; */
+    max-width: 100%;
+    display: block;
 }
 
 ul {
