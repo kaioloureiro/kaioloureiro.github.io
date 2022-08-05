@@ -6,10 +6,10 @@
 
 /* Classes & IDs */
 
-.container {
+/* .container {
     max-width: 1160px;
     margin: auto;
-}
+} */
 
 .special-text {
     background: var(--gradient-lr);
@@ -30,6 +30,8 @@
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     font-family: var(--font-poppins);
+    max-width: 1160px;
+    margin: auto;
 }
 
 .header a {
@@ -102,7 +104,8 @@
     font-weight: var(--medium);
     line-height: calc(24rem/16);
     text-transform: uppercase;
-    margin-top: calc(13rem/16);
+    margin-top: calc(10rem/16);
+    position: relative;
 }
 
 .section-sep-left p:hover,
@@ -110,19 +113,17 @@
     cursor: default;
 }
 
-.section-detail-left {
-    /* width: calc(1440px/3.2); */
-    position: relative;
-    left: 0;
+.section-sep-left p {
+    left: calc(140rem/16);
 }
 
-.section-detail-right {
-    position: relative;
-    right: 0;
+.section-sep-right p {
+    right: calc(140rem/16);
 }
 
 .section-container {
-    margin: 40px 0;
+    max-width: 1160px;
+    margin: 40px auto;
 }
 
 /* Intro Section */
