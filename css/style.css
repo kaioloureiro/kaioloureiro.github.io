@@ -6,10 +6,15 @@
 
 /* Classes & IDs */
 
-/* .container {
-    max-width: 1160px;
+.container {
+    max-width: calc(1920rem/16);
     margin: auto;
-} */
+}
+
+.content-container {
+    max-width: calc(1160rem/16);
+    margin: auto;
+}
 
 .special-text {
     background: var(--gradient-lr);
@@ -76,6 +81,10 @@
     line-height: calc(21rem/16);
 }
 
+.header-lang-menu .header-lang-menu-item:hover {
+    color: var(--blue-4);
+}
+
 .header-lang-menu .active-lang {
     color: var(--greyish-blue-2);
 }
@@ -122,7 +131,7 @@
 }
 
 .section-container {
-    max-width: 1160px;
+    max-width: calc(1160rem/16);
     margin: calc(40rem/16) auto;
 }
 
@@ -214,14 +223,141 @@
 }
 
 .intro-buttons .special-btn:hover {
-    background-image: linear-gradient(to right, rgb(214, 199, 35) 0%, rgb(211, 201, 8) 100%);
-    color: black;
+    background-image: linear-gradient(to right, var(--greyish-blue-1) 0%, var(--greyish-blue-2) 100%);
+    color: var(--blue-7);
 }
 
 .intro-picture {
     background: url(../img/intro-picture.svg) no-repeat center right;
     /* align-self: center;
     justify-self: flex-end; */
+}
+
+/* Portfolio Section */
+
+.project-title,
+.concept-title {
+    background-color: var(--greyish-blue-13);
+    font-family: var(--font-poppins);
+    font-size: calc(20rem/16);
+    font-weight: var(--light);
+    line-height: calc(30rem/16);
+    text-transform: uppercase;
+    margin: calc(40rem/16) 0;
+    padding: calc(15rem/16) 0;
+    cursor: default;
+}
+
+.project-title p {
+    text-align: left;
+}
+
+.concept-title p {
+    text-align: right;
+}
+
+.project-slider {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: calc(40rem/16);
+}
+
+.project-slider-item {
+    display: grid;
+    gap: calc(10rem/16);
+    background-color: var(--greyish-blue-11);
+    color: var(--greyish-blue-1);
+    font-size: 1rem;
+    line-height: calc(24rem/16);
+    max-width: calc(260rem/16);
+    padding: calc(30rem/16);
+}
+
+.project-slider-item:hover {
+    background: url(../img/details/section-sep.svg) no-repeat bottom center;
+    background-color: var(--greyish-blue-11);
+    cursor: pointer;
+}
+
+.project-slider-item-icon {
+    background: url(../img/icons/project-icon.svg) no-repeat center;
+    background-size: cover;
+    width: calc(40rem/16);
+    height: calc(40rem/16);
+}
+
+.project-slider-item h1 {
+    font-family: var(--font-poppins);
+    font-weight: var(--semi-bold);
+    text-transform: uppercase;
+}
+
+.project-slider-item p {
+    font-family: var(--font-lato);
+    font-weight: var(--regular);
+}
+
+.project-slider .project-selected-item,
+.project-slider .project-selected-item:hover {
+    background-image: var(--gradient-td);
+    color: var(--blue-1);
+}
+
+.project-display-container {
+    display: grid;
+    grid-template-columns: repeat(2, 6fr);
+    gap: calc(40rem/16);
+    background-color: var(--greyish-blue-13);
+    color: var(--greyish-blue-1);
+    margin-top: calc(40rem/16);
+    padding: calc(50rem/16) calc(100rem/16);
+}
+
+.project-display-info {
+    display: grid;
+    gap: calc(20rem/16);
+}
+
+.project-display-info .project-display-info-icon {
+    background: url(../img/icons/project-icon.svg) no-repeat center;
+    background-size: cover;
+    width: calc(60rem/16);
+    height: calc(60rem/16);
+}
+
+.project-display-info h1 {
+    font-family: var(--font-poppins);
+    font-size: calc(32rem/16);
+    font-weight: var(--semi-bold);
+    line-height: calc(48rem/16);
+}
+
+.project-display-info p {
+    font-family: var(--font-lato);
+    font-size: 1rem;
+    font-weight: var(--regular);
+    line-height: calc(24rem/16);
+}
+
+.project-display-more-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: calc(100rem/16);
+}
+
+.project-display-more-info h2 {
+    font-family: var(--font-poppins);
+    font-weight: var(--semi-bold);
+    font-size: calc(24rem/16);
+    line-height: calc(36rem/16);
+}
+
+.project-display-picture {
+    display: grid;
+    place-content: center;
+    background-image: var(--gradient-td);
+    width: calc(460rem/16);
+    height: calc(360rem/16);
 }
 
 /* Global Configs */
@@ -269,8 +405,8 @@
     --blue-11: #040424;
     --blue-12: #010113;
 
-    --gradient-lr: linear-gradient(to right, var(--blue-5) 0%, var(--blue-6) 100%);
-    --gradient-td: linear-gradient(to bottom, var(--blue-5) 0%, var(--blue-6) 100%);
+    --gradient-lr: linear-gradient(90deg, var(--blue-5) 0%, var(--blue-6) 100%);
+    --gradient-td: linear-gradient(180deg, var(--blue-5) 0%, var(--blue-6) 100%);
 }
 
 ::selection {
