@@ -34,9 +34,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    background-color: var(--greyish-blue-12);
     font-family: var(--font-poppins);
     max-width: 1160px;
     margin: auto;
+    position: fixed;
+    top: 0;
+    left: 140px;
 }
 
 .header a {
@@ -136,6 +140,10 @@
 }
 
 /* Intro Section */
+
+#intro {
+    margin-top: 91px;
+}
 
 .intro-container {
     display: grid;
