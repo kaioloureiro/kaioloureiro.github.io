@@ -2,17 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Classes & IDs */
+/*
+
+---------- Classes & IDs ----------
+
+*/
 
 .container {
     max-width: calc(1920rem/16);
-    margin: auto;
-}
-
-.content-container {
-    max-width: calc(1160rem/16);
     margin: auto;
 }
 
@@ -28,7 +27,59 @@
     font-weight: var(--bold);
 }
 
-/* Header Menu */
+/*
+
+---------- Section Configs ----------
+
+*/
+
+.section-container {
+    display: grid;
+    gap: calc(40rem/16);
+    margin: auto;
+    margin-bottom: calc(40rem/16);
+}
+
+.section-content {
+    max-width: calc(1160rem/16);
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.section-sep {
+    background: url(../img/details/section-sep.svg) no-repeat;
+    background-size: 29%;
+}
+
+.section-sep p {
+    color: var(--greyish-blue-9);
+    font-family: var(--font-lato);
+    font-size: 1rem;
+    font-weight: var(--medium);
+    line-height: calc(24rem/16);
+    text-transform: uppercase;
+    margin-top: calc(10rem/16);
+}
+
+.section-sep p:hover {
+    cursor: default;
+}
+
+.left-sep {
+    background-position: top left;
+    text-align: left;
+}
+
+.right-sep {
+    background-position: top right;
+    text-align: right;
+}
+
+/*
+
+---------- Header Menu ----------
+
+*/
 
 .header {
     display: grid;
@@ -36,11 +87,6 @@
     align-items: center;
     background-color: var(--greyish-blue-12);
     font-family: var(--font-poppins);
-    max-width: 1160px;
-    margin: auto;
-    position: fixed;
-    top: 0;
-    left: 140px;
 }
 
 .header a {
@@ -49,23 +95,28 @@
 }
 
 .header-logo {
+    justify-self: start;
     padding: calc(23rem/16) 0;
 }
 
 .header-menu {
     display: flex;
-    gap: calc(40rem/16);
 }
 
 .header-menu a {
-    font-size: calc(16rem/16);
+    font-size: 1rem;
     line-height: calc(24rem/16);
+    padding: calc(30rem/16) calc(20rem/16);
+}
+
+.header-menu a:hover {
+    background: url(../img/details/section-sep.svg) no-repeat bottom right;
 }
 
 .header-right-menu {
     display: flex;
     gap: calc(40rem/16);
-    justify-self: end;
+    justify-self: flex-end;
 }
 
 .header-right-menu nav {
@@ -76,7 +127,6 @@
 .header-social-media {
     display: flex;
     gap: calc(20rem/16);
-
 }
 
 .header-lang-menu .header-lang-menu-item {
@@ -93,57 +143,11 @@
     color: var(--greyish-blue-2);
 }
 
-/* Section Configs */
+/*
 
-.section-sep-left {
-    display: grid;
-    justify-content: left;
-    background: url(../img/details/section-sep.svg) no-repeat top left;
-    text-align: left;
-}
+---------- Intro Section ----------
 
-.section-sep-right {
-    display: grid;
-    justify-content: right;
-    background: url(../img/details/section-sep.svg) no-repeat top right;
-    text-align: right;
-}
-
-.section-sep-left p,
-.section-sep-right p {
-    color: var(--greyish-blue-9);
-    font-family: var(--font-lato);
-    font-size: calc(16rem/16);
-    font-weight: var(--medium);
-    line-height: calc(24rem/16);
-    text-transform: uppercase;
-    margin-top: calc(10rem/16);
-    position: relative;
-}
-
-.section-sep-left p:hover,
-.section-sep-right p:hover {
-    cursor: default;
-}
-
-.section-sep-left p {
-    left: calc(140rem/16);
-}
-
-.section-sep-right p {
-    right: calc(140rem/16);
-}
-
-.section-container {
-    max-width: calc(1160rem/16);
-    margin: calc(40rem/16) auto;
-}
-
-/* Intro Section */
-
-#intro {
-    margin-top: 91px;
-}
+*/
 
 .intro-container {
     display: grid;
@@ -162,7 +166,7 @@
 
 .intro-greetings {
     color: var(--greyish-blue-8);
-    font-size: calc(16rem/16);
+    font-size: 1rem;
     font-weight: var(--medium);
     line-height: calc(24rem/16);
 }
@@ -194,7 +198,7 @@
 
 .intro-text {
     color: var(--greyish-blue-2);
-    font-size: calc(16rem/16);
+    font-size: 1rem;
     font-weight: var(--regular);
     line-height: calc(24rem/16);
 }
@@ -217,7 +221,7 @@
 
 .intro-buttons .normal-btn {
     color: var(--greyish-blue-1);
-    padding: calc(10rem/16) calc(20rem/16) calc(10rem/16) calc(16rem/16);
+    padding: calc(10rem/16) calc(20rem/16) calc(10rem/16) 1rem;
     gap: calc(6rem/16);
 }
 
@@ -241,19 +245,26 @@
     justify-self: flex-end; */
 }
 
-/* Portfolio Section */
+/*
+
+---------- Portfolio Section ----------
+
+*/
 
 .project-title,
 .concept-title {
     background-color: var(--greyish-blue-13);
+    padding: calc(15rem/16) 0;
+    cursor: default;
+}
+
+.project-title p,
+.concept-title p {
     font-family: var(--font-poppins);
     font-size: calc(20rem/16);
     font-weight: var(--light);
     line-height: calc(30rem/16);
     text-transform: uppercase;
-    margin: calc(40rem/16) 0;
-    padding: calc(15rem/16) 0;
-    cursor: default;
 }
 
 .project-title p {
@@ -264,9 +275,21 @@
     text-align: right;
 }
 
+.concept-container {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    gap: calc(40rem/16);
+}
+
 .project-slider {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: calc(40rem/16);
+}
+
+.concept-slider {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: calc(40rem/16);
 }
 
@@ -275,14 +298,33 @@
     gap: calc(10rem/16);
     background-color: var(--greyish-blue-11);
     color: var(--greyish-blue-1);
-    font-size: 1rem;
-    line-height: calc(24rem/16);
     max-width: calc(260rem/16);
     padding: calc(30rem/16);
 }
 
+.project-slider-item h1,
+.project-slider-item p {
+    font-size: 1rem;
+    line-height: calc(24rem/16);
+}
+
+.concept-slider-item {
+    display: grid;
+    place-content: center;
+    background-color: var(--greyish-blue-11);
+    max-width: calc(160rem/16);
+    height: calc(120rem/16);
+    padding: calc(20rem/16);
+}
+
 .project-slider-item:hover {
     background: url(../img/details/section-sep.svg) no-repeat bottom center;
+    background-color: var(--greyish-blue-11);
+    cursor: pointer;
+}
+
+.concept-slider-item:hover {
+    background: url(../img/details/intro-detail.svg) no-repeat center left;
     background-color: var(--greyish-blue-11);
     cursor: pointer;
 }
@@ -294,19 +336,23 @@
     height: calc(40rem/16);
 }
 
-.project-slider-item h1 {
+.project-slider-item h1,
+.concept-slider-item h1 {
     font-family: var(--font-poppins);
     font-weight: var(--semi-bold);
     text-transform: uppercase;
 }
 
-.project-slider-item p {
+.project-slider-item p,
+.concept-slider-item p {
     font-family: var(--font-lato);
     font-weight: var(--regular);
 }
 
 .project-slider .project-selected-item,
-.project-slider .project-selected-item:hover {
+.project-slider .project-selected-item:hover,
+.concept-slider .concept-selected-item,
+.concept-slider .concept-selected-item:hover {
     background-image: var(--gradient-td);
     color: var(--blue-1);
 }
@@ -319,6 +365,16 @@
     color: var(--greyish-blue-1);
     margin-top: calc(40rem/16);
     padding: calc(50rem/16) calc(100rem/16);
+}
+
+.concept-display-container {
+    display: grid;
+    gap: calc(40rem/16);
+    justify-content: center;
+    align-content: center;
+    background-color: var(--greyish-blue-13);
+    color: var(--greyish-blue-1);
+    padding: calc(40rem/16);
 }
 
 .project-display-info {
@@ -353,7 +409,8 @@
     gap: calc(100rem/16);
 }
 
-.project-display-more-info h2 {
+.project-display-more-info h2,
+.concept-display-tools h2 {
     font-family: var(--font-poppins);
     font-weight: var(--semi-bold);
     font-size: calc(24rem/16);
@@ -368,7 +425,19 @@
     height: calc(360rem/16);
 }
 
-/* Global Configs */
+.concept-display-picture {
+    display: grid;
+    place-content: center;
+    background-image: var(--gradient-td);
+    width: calc(560rem/16);
+    height: calc(404rem/16);
+}
+
+/*
+
+---------- Global Configs ----------
+
+*/
 
 :root {
     --font-poppins: 'Poppins', Helvetica, Arial, sans-serif;
