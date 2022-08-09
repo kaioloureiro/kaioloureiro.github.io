@@ -6,7 +6,23 @@
 
 /*
 
----------- Classes & IDs ----------
+---------- Global ID Configs ----------
+
+*/
+
+#intro,
+#portfolio,
+#about {
+    background-color: var(--greyish-blue-12);
+}
+
+#contact {
+    background-color: var(--greyish-blue-13);
+}
+
+/*
+
+---------- Global Class Configs ----------
 
 */
 
@@ -40,15 +56,20 @@
     margin-bottom: calc(40rem/16);
 }
 
-.section-content {
-    max-width: calc(1160rem/16);
-    box-sizing: border-box;
-    margin: auto;
+.section-sep {
+    background: var(--gradient-lr);
+    width: calc(400rem/16);
+    height: calc(3rem/16);
 }
 
-.section-sep {
-    background: url(../img/details/section-sep.svg) no-repeat;
-    background-size: 29%;
+.left-sep {
+    justify-self: start;
+    text-align: left;
+}
+
+.right-sep {
+    justify-self: end;
+    text-align: right;
 }
 
 .section-sep p {
@@ -65,14 +86,16 @@
     cursor: default;
 }
 
-.left-sep {
-    background-position: top left;
-    text-align: left;
-}
+/*
 
-.right-sep {
-    background-position: top right;
-    text-align: right;
+---------- Article Configs ----------
+
+*/
+
+.article-content {
+    max-width: calc(1160rem/16);
+    box-sizing: border-box;
+    margin: auto;
 }
 
 /*
@@ -152,10 +175,21 @@
 .intro-container {
     display: grid;
     grid-template-columns: 9fr 3fr;
-    background: url(../img/details/intro-detail.svg) no-repeat center left;
+    background: url(../img/intro-picture.svg) no-repeat center right 50px;
     background-color: var(--greyish-blue-13);
     padding: calc(40rem/16) calc(50rem/16) calc(40rem/16) calc(60rem/16);
     font-family: var(--font-lato);
+    position: relative;
+}
+
+.intro-container::before {
+    content: "";
+    align-self: center;
+    background: var(--gradient-td);
+    width: calc(8rem/16);
+    height: calc(100% - calc(80rem/16));
+    position: absolute;
+    left: calc(-4rem/16);
 }
 
 .intro-info {
@@ -201,6 +235,7 @@
     font-size: 1rem;
     font-weight: var(--regular);
     line-height: calc(24rem/16);
+
 }
 
 .intro-text .bold-text {
@@ -237,12 +272,6 @@
 .intro-buttons .special-btn:hover {
     background-image: linear-gradient(to right, var(--greyish-blue-1) 0%, var(--greyish-blue-2) 100%);
     color: var(--blue-7);
-}
-
-.intro-picture {
-    background: url(../img/intro-picture.svg) no-repeat center right;
-    /* align-self: center;
-    justify-self: flex-end; */
 }
 
 /*
@@ -300,6 +329,20 @@
     color: var(--greyish-blue-1);
     max-width: calc(260rem/16);
     padding: calc(30rem/16);
+    position: relative;
+}
+
+.project-slider-item:hover {
+    cursor: pointer;
+}
+
+.project-slider-item:hover::after {
+    content: "";
+    background: var(--gradient-lr);
+    width: 100%;
+    height: calc(4rem/16);
+    position: absolute;
+    bottom: 0;
 }
 
 .project-slider-item h1,
@@ -315,18 +358,20 @@
     max-width: calc(160rem/16);
     height: calc(120rem/16);
     padding: calc(20rem/16);
-}
-
-.project-slider-item:hover {
-    background: url(../img/details/section-sep.svg) no-repeat bottom center;
-    background-color: var(--greyish-blue-11);
-    cursor: pointer;
+    position: relative;
 }
 
 .concept-slider-item:hover {
-    background: url(../img/details/intro-detail.svg) no-repeat center left;
-    background-color: var(--greyish-blue-11);
     cursor: pointer;
+}
+
+.concept-slider-item:hover::after {
+    content: "";
+    background: var(--gradient-td);
+    width: calc(4rem/16);
+    height: 100%;
+    position: absolute;
+    left: 0;
 }
 
 .project-slider-item-icon {
@@ -349,12 +394,28 @@
     font-weight: var(--regular);
 }
 
-.project-slider .project-selected-item,
-.project-slider .project-selected-item:hover,
-.concept-slider .concept-selected-item,
-.concept-slider .concept-selected-item:hover {
+.project-selected-item,
+.concept-selected-item {
     background-image: var(--gradient-td);
     color: var(--blue-1);
+}
+
+.project-selected-item:hover::after {
+    content: "";
+    background: var(--blue-1);
+    width: 100%;
+    height: calc(4rem/16);
+    position: absolute;
+    bottom: 0;
+}
+
+.concept-selected-item:hover::after {
+    content: "";
+    background: var(--blue-1);
+    width: calc(4rem/16);
+    height: 100%;
+    position: absolute;
+    left: 0;
 }
 
 .project-display-container {
