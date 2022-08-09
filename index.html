@@ -11,17 +11,21 @@
 
 <body>
   <div class="container">
-    <header class="header article-content">
-      <div class="header-logo"><a href="#"><img src="img/logo.svg" alt="Kaio Loureiro"></a></div>
-      <nav>
-        <ul class="header-menu">
-          <li><a href="#intro" class="header-menu-item">Introdução</a></li>
-          <li><a href="#portfolio" class="header-menu-item">Portfólio</a></li>
-          <li><a href="#about" class="header-menu-item">Sobre</a></li>
-          <li><a href="#contact" class="header-menu-item">Contato</a></li>
-        </ul>
-      </nav>
-      <div class="header-right-menu">
+    <header class="header content-container">
+      <div class="header-left-container">
+        <a href="#"><img src="img/logo.svg" alt="Website Logo"></a>
+      </div>
+      <div class="header-middle-container">
+        <nav>
+          <ul class="header-menu">
+            <li><a href="#intro" class="header-menu-item">Introdução</a></li>
+            <li><a href="#portfolio" class="header-menu-item">Portfólio</a></li>
+            <li><a href="#about" class="header-menu-item">Sobre</a></li>
+            <li><a href="#contact" class="header-menu-item">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-right-container">
         <nav>
           <ul class="header-lang-menu">
             <li><a href="#" class="header-lang-menu-item active-lang">BR</a></li>
@@ -38,11 +42,12 @@
       </nav>
     </header>
     <main>
-      <section id="intro" class="section-container">
-        <div class="section-sep left-sep">
-          <p class="article-content">Introdução</p>
-        </div>
-        <article class="intro-container article-content">
+      <article id="intro" class="article-container">
+        <section class="article-sep-container">
+          <div class="article-sep-detail left-sep-detail"></div>
+          <p class="article-sep-text left-sep-text content-container">Introdução</p>
+        </section>
+        <section class="intro-container content-container">
           <div class="intro-info">
             <div class="intro-title-container">
               <p class="intro-greetings">Olá, eu me chamo</p>
@@ -55,84 +60,93 @@
               <a href="#" class="special-btn">Contrate-me!</a>
             </div>
           </div>
-        </article>
-      </section>
-      <section id="portfolio" class="section-container">
-        <div class="section-sep right-sep">
-          <p class="article-content">Portfólio</p>
-        </div>
-        <div class="project-title">
-          <p class="article-content">Projetos</p>
-        </div>
-        <article class="project-container article-content">
+        </section>
+      </article>
+      <article id="portfolio" class="article-container">
+        <section class="article-sep-container">
+          <div class="article-sep-detail right-sep-detail"></div>
+          <p class="article-sep-text right-sep-text content-container">Portfólio</p>
+        </section>
+        <section class="project-title-container">
+          <p class="project-title-text content-container">Projetos</p>
+        </section>
+        <section class="project-container content-container">
           <nav>
             <ul class="project-slider">
-              <li class="project-slider-item project-selected-item">
+              <li class="project-slider-item project-slider-item-selected">
                 <div class="project-slider-item-icon"></div>
-                <h1>Lorem Ipsum</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet.</p>
+                <h1 class="project-slider-item-title">Huddle Landing Page</h1>
+                <p class="project-slider-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet.</p>
               </li>
               <li class="project-slider-item">
                 <div class="project-slider-item-icon"></div>
-                <h1>Lorem Ipsum</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet.</p>
+                <h1 class="project-slider-item-title">Lorem Ipsum</h1>
+                <p class="project-slider-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet.</p>
               </li>
               <li class="project-slider-item">
                 <div class="project-slider-item-icon"></div>
-                <h1>Lorem Ipsum</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet.</p>
+                <h1 class="project-slider-item-title">Lorem Ipsum</h1>
+                <p class="project-slider-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet.</p>
               </li>
               <li class="project-slider-item">
                 <div class="project-slider-item-icon"></div>
-                <h1>Lorem Ipsum</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet.</p>
+                <h1 class="project-slider-item-title">Lorem Ipsum</h1>
+                <p class="project-slider-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet.</p>
               </li>
             </ul>
           </nav>
           <div class="project-display-container">
             <div class="project-display-info">
               <div class="project-display-info-icon"></div>
-              <h1>Huddle Landing Page</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet, nisl dui maximus erat, vel posuere massa enim vitae metus. Curabitur sit amet risus sapien. Proin ullamcorper purus et eros ornare, dapibus tincidunt ante mollis.</p>
-
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet.</p>
-              <span class="project-display-more-info">
-                <div class="project-tools">
-                  <h2>Ferramentas</h2>
+              <h1 class="project-display-info-title">Huddle Landing Page</h1>
+              <p class="project-display-info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet, nisl dui maximus erat, vel posuere massa enim vitae metus. Curabitur sit amet risus sapien. Proin ullamcorper purus et eros ornare, dapibus tincidunt ante mollis.</p>
+              <p class="project-display-info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet.</p>
+              <div class="project-display-info-extra">
+                <div class="project-display-info-extra-tools">
+                  <h2 class="project-display-info-extra-title">Ferramentas</h2>
+                  <img src="img/icons/css-icon.svg" alt="CSS Icon" class="project-display-info-extra-icon">
+                  <img src="img/icons/css-icon.svg" alt="CSS Icon" class="project-display-info-extra-icon">
+                  <img src="img/icons/css-icon.svg" alt="CSS Icon" class="project-display-info-extra-icon">
                 </div>
-                <div class="project-links">
-                  <h2>Links</h2>
+                <div class="project-display-info-extra-links">
+                  <h2 class="project-display-info-extra-title">Links</h2>
+                  <a href="https://github.com/kaioloureiro/huddle" target="_blank" rel="external">
+                    <img src="img/icons/github-icon.svg" alt="GitHub Icon" class="project-display-info-extra-icon">
+                  </a>
+                  <a href="https://kaioloureiro.github.io/huddle/" target="_blank" rel="external">
+                    <img src="img/icons/website-icon.svg" alt="Website Icon" class="project-display-info-extra-icon">
+                  </a>
                 </div>
-              </span>
+              </div>
             </div>
             <div class="project-display-picture">
               <img src="img/project-display-picture.svg" alt="Project Display Picture">
             </div>
           </div>
-        </article>
-        <div class="concept-title">
-          <p class="article-content">Conceitos</p>
-        </div>
-        <article class="concept-container article-content">
+        </section>
+        <section class="concept-title-container">
+          <p class="concept-title-text content-container">Conceitos</p>
+        </section>
+        <section class="concept-container content-container">
           <nav>
-            <ul class="concept-slider">
-              <li class="concept-slider-item concept-selected-item">
-                <div class="concept-slider-item-logo"><img src="img/icons/concept-logo.svg" alt="Concept Logo"></div>
+            <ul class="concept-grid">
+              <li class="concept-grid-item concept-grid-item-selected">
+                <div class="concept-grid-item-logo"><img src="img/icons/concept-logo.svg" alt="Concept Logo"></div>
               </li>
-              <li class="concept-slider-item">
-                <div class="concept-slider-item-logo"><img src="img/icons/placeholder-concept-logo.svg" alt="Concept Logo"></div>
+              <li class="concept-grid-item">
+                <div class="concept-grid-item-logo"><img src="img/icons/placeholder-concept-logo.svg" alt="Concept Logo"></div>
               </li>
-              <li class="concept-slider-item">
-                <div class="concept-slider-item-logo"><img src="img/icons/placeholder-concept-logo.svg" alt="Concept Logo"></div>
+              <li class="concept-grid-item">
+                <div class="concept-grid-item-logo"><img src="img/icons/placeholder-concept-logo.svg" alt="Concept Logo"></div>
               </li>
-              <li class="concept-slider-item">
-                <div class="concept-slider-item-logo"><img src="img/icons/placeholder-concept-logo.svg" alt="Concept Logo"></div>
+              <li class="concept-grid-item">
+                <div class="concept-grid-item-logo"><img src="img/icons/placeholder-concept-logo.svg" alt="Concept Logo"></div>
               </li>
-              <li class="concept-slider-item">
-                <div class="concept-slider-item-logo"><img src="img/icons/placeholder-concept-logo.svg" alt="Concept Logo"></div>
+              <li class="concept-grid-item">
+                <div class="concept-grid-item-logo"><img src="img/icons/placeholder-concept-logo.svg" alt="Concept Logo"></div>
               </li>
-              <li class="concept-slider-item">
-                <div class="concept-slider-item-logo"><img src="img/icons/placeholder-concept-logo.svg" alt="Concept Logo"></div>
+              <li class="concept-grid-item">
+                <div class="concept-grid-item-logo"><img src="img/icons/placeholder-concept-logo.svg" alt="Concept Logo"></div>
               </li>
             </ul>
           </nav>
@@ -141,11 +155,13 @@
               <img src="img/project-display-picture.svg" alt="Project Display Picture">
             </div>
             <div class="concept-display-tools">
-              <h2>Ferramentas</h2>
+              <h2 class="concept-display-tools-title">Ferramentas</h2>
+              <img src="img/icons/css-icon.svg" alt="CSS Icon" class="concept-display-tools-icon">
+              <img src="img/icons/css-icon.svg" alt="CSS Icon" class="concept-display-tools-icon">
             </div>
           </div>
-        </article>
-      </section>
+        </section>
+      </article>
     </main>
   </div>
 </body>
