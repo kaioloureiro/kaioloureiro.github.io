@@ -55,23 +55,23 @@
 
 /*
 
----------- Article Configs ----------
+---------- Section Configs ----------
 
 */
 
-.article-container {
+.section-container {
     display: grid;
     gap: calc(40rem/16);
     margin: auto;
     margin-bottom: calc(40rem/16);
 }
 
-.article-sep-container {
+.section-sep-container {
     display: grid;
     gap: calc(10rem/16);
 }
 
-.article-sep-detail {
+.section-sep-detail {
     background: var(--gradient-l5r6);
     width: calc(400rem/16);
     height: calc(3rem/16);
@@ -85,7 +85,7 @@
     justify-self: end;
 }
 
-.article-sep-text {
+.section-sep-text {
     color: var(--greyish-blue-9);
     font-family: var(--font-lato);
     font-size: 1rem;
@@ -183,6 +183,7 @@
     grid-template-columns: 9fr 3fr;
     background: url(../img/intro-picture.svg) no-repeat center right 50px;
     background-color: var(--greyish-blue-13);
+    margin-top: calc(40rem/16);
     padding: calc(40rem/16) calc(60rem/16);
     font-family: var(--font-lato);
     position: relative;

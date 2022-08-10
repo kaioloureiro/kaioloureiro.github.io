@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Desenvolvedor Front End, Freelancer e UX/UI Designer.
+  Localizado no Rio de Janeiro, Brasil.">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
   <title>Kaio Loureiro</title>
@@ -16,7 +18,7 @@
         <a href="#"><img src="img/logo.svg" alt="Website Logo"></a>
       </div>
       <div class="header-middle-container">
-        <nav>
+        <nav aria-label="Menu">
           <ul class="header-menu">
             <li><a href="#intro" class="header-menu-item">Introdução</a></li>
             <li><a href="#portfolio" class="header-menu-item">Portfólio</a></li>
@@ -26,37 +28,33 @@
         </nav>
       </div>
       <div class="header-right-container">
-        <nav>
-          <ul class="header-lang-menu">
-            <li><a href="/pt.html" class="header-lang-menu-item active-lang">BR</a></li>
-            <li><a href="/en.html" class="header-lang-menu-item">EN</a></li>
-          </ul>
-        </nav>
-        <nav>
-          <ul class="header-social-media">
-            <li><a href="https://github.com/kaioloureiro/" target="_blank" rel="external" class="header-social-media-item">
-                <img src="./img/icons/github-icon.svg" alt="GitHub"></img>
-              </a></li>
-            <li><a href="https://www.linkedin.com/in/kaioloureiro/" class="header-social-media-item" target="_blank" rel="external" class="header-social-media-item">
-                <img src="./img/icons/linkedin-icon.svg" alt="LinkedIn"></img>
-              </a></li>
-          </ul>
-        </nav>
+        <ul class="header-lang-menu">
+          <li><a href="/pt.html" class="header-lang-menu-item active-lang">BR</a></li>
+          <li><a href="/en.html" class="header-lang-menu-item">EN</a></li>
+        </ul>
+        <ul class="header-social-media">
+          <li><a href="https://github.com/kaioloureiro/" target="_blank" rel="external" class="header-social-media-item">
+              <img src="./img/icons/github-icon.svg" alt="GitHub"></img>
+            </a></li>
+          <li><a href="https://www.linkedin.com/in/kaioloureiro/" class="header-social-media-item" target="_blank" rel="external" class="header-social-media-item">
+              <img src="./img/icons/linkedin-icon.svg" alt="LinkedIn"></img>
+            </a></li>
+        </ul>
       </div>
       </nav>
     </header>
     <main>
-      <article id="intro" class="article-container">
-        <section class="article-sep-container">
-          <div class="article-sep-detail left-sep-detail"></div>
-          <p class="article-sep-text left-sep-text content-container">Introdução</p>
-        </section>
-        <section class="intro-container content-container">
+      <section id="intro" class="section-container" aria-label="Introdução">
+        <!-- <div class="section-sep-container">
+          <div class="section-sep-detail left-sep-detail"></div>
+          <h2 class="section-sep-text left-sep-text content-container">Introdução</h2>
+        </div> -->
+        <div class="intro-container content-container">
           <div class="intro-info">
             <div class="intro-title-container">
               <p class="intro-greetings">Olá, eu me chamo</p>
               <h1 class="intro-title">Kaio <span class="special-text">Loureiro</span>.</h1>
-              <h2 class="intro-subtitle">Desenvolvedor <span class="bold-text highlighted-text">Front End</span> . Freelancer . <span class="bold-text highlighted-text">UX</span>/<span class="bold-text highlighted-text">UI</span> Designer</h2>
+              <p class="intro-subtitle">Desenvolvedor <span class="bold-text highlighted-text">Front End</span> . Freelancer . <span class="bold-text highlighted-text">UX</span>/<span class="bold-text highlighted-text">UI</span> Designer</p>
             </div>
             <p class="intro-text">Eu sou um Desenvolvedor <span class="bold-text">Front End</span> e <span class="bold-text">UX</span>/<span class="bold-text">UI</span> Designer localizado no <span class="bold-text">Rio de Janeiro</span>, <span class="bold-text">Brasil</span>. Atualmente me encontro cursando o <span class="bold-text">7º</span> período de <span class="bold-text">Sistemas de Informação</span>, através da Universidade <span class="bold-text">Estácio de Sá</span>.</p>
             <div class="intro-buttons">
@@ -64,124 +62,120 @@
               <a href="#" class="special-btn">Contrate-me!</a>
             </div>
           </div>
-        </section>
-      </article>
-      <article id="portfolio" class="article-container">
-        <section class="article-sep-container">
-          <div class="article-sep-detail right-sep-detail"></div>
-          <p class="article-sep-text right-sep-text content-container">Portfólio</p>
-        </section>
-        <section class="project-title-container">
-          <p class="project-title-text content-container">Projetos</p>
-        </section>
-        <section class="project-container content-container">
-          <nav>
-            <ul class="project-slider">
-              <li class="project-slider-item project-slider-item-selected">
-                <div class="project-slider-item-icon"></div>
-                <h1 class="project-slider-item-title">Huddle Landing Page</h1>
-                <p class="project-slider-item-text">Criado como parte de um desafio para o <span class="bold-text">Frontend Mentor</span>. Foram utilizados <span class="bold-text">HTML5</span>, <span class="bold-text">CSS3</span> e uma <span class="bold-text">referência visual</span>.</p>
-              </li>
-              <li class="project-slider-item">
-                <div class="project-slider-item-icon"></div>
-                <h1 class="project-slider-item-title">Bikcraft Landing Page</h1>
-                <p class="project-slider-item-text">Criado <span class="highlighted-text bold-text">totalmente do zero</span> a partir de uma referência visual, utilizando somente <span class="highlighted-text bold-text">HTML5</span> e <span class="highlighted-text bold-text">CSS3</span>.</p>
-              </li>
-              <li class="project-slider-item">
-                <div class="project-slider-item-icon"></div>
-                <h1 class="project-slider-item-title">Lorem Ipsum</h1>
-                <p class="project-slider-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet.</p>
-              </li>
-              <li class="project-slider-item">
-                <div class="project-slider-item-icon"></div>
-                <h1 class="project-slider-item-title">Lorem Ipsum</h1>
-                <p class="project-slider-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet.</p>
-              </li>
-            </ul>
-          </nav>
-          <div class="project-display-container">
-            <div class="project-display-info">
-              <div class="project-display-info-icon"></div>
-              <h1 class="project-display-info-title">Huddle Landing Page</h1>
-              <p class="project-display-info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet, nisl dui maximus erat, vel posuere massa enim vitae metus. <span class="highlighted-text">Curabitur sit amet risus sapien</span>. Proin ullamcorper purus et eros ornare, dapibus tincidunt ante mollis.</p>
-              <p class="project-display-info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet.</p>
-              <div class="project-display-info-extra">
-                <div class="project-display-info-extra-tools">
-                  <h2 class="project-display-info-extra-title">Ferramentas</h2>
-                  <img src="img/icons/css-icon.svg" alt="CSS Icon" class="project-display-info-extra-icon">
-                  <img src="img/icons/css-icon.svg" alt="CSS Icon" class="project-display-info-extra-icon">
-                  <img src="img/icons/css-icon.svg" alt="CSS Icon" class="project-display-info-extra-icon">
-                </div>
-                <div class="project-display-info-extra-links">
-                  <h2 class="project-display-info-extra-title">Links</h2>
-                  <a href="https://github.com/kaioloureiro/huddle" target="_blank" rel="external">
-                    <img src="img/icons/github-icon.svg" alt="GitHub Icon" class="project-display-info-extra-icon">
-                  </a>
-                  <a href="https://kaioloureiro.github.io/huddle/" target="_blank" rel="external">
-                    <img src="img/icons/website-icon.svg" alt="Website Icon" class="project-display-info-extra-icon">
-                  </a>
-                </div>
+        </div>
+      </section>
+    </main>
+    <section id="portfolio" class="section-container" arial-label="Portfólio">
+      <div class="section-sep-container">
+        <div class="section-sep-detail right-sep-detail"></div>
+        <h2 class="section-sep-text right-sep-text content-container">Portfólio</h2>
+      </div>
+      <div class="project-title-container" arial-label="Projetos">
+        <h3 class="project-title-text content-container">Projetos</h3>
+      </div>
+      <div class="project-container content-container">
+        <ul class="project-slider">
+          <li class="project-slider-item project-slider-item-selected">
+            <div class="project-slider-item-icon"></div>
+            <h4 class="project-slider-item-title">Huddle Landing Page</h4>
+            <p class="project-slider-item-text">Criado como parte de um desafio para o <span class="bold-text">Frontend Mentor</span>. Foram utilizados <span class="bold-text">HTML5</span>, <span class="bold-text">CSS3</span> e uma <span class="bold-text">referência visual</span>.</p>
+          </li>
+          <li class="project-slider-item">
+            <div class="project-slider-item-icon"></div>
+            <h4 class="project-slider-item-title">Bikcraft Landing Page</h4>
+            <p class="project-slider-item-text">Criado <span class="highlighted-text bold-text">totalmente do zero</span> a partir de uma referência visual, utilizando somente <span class="highlighted-text bold-text">HTML5</span> e <span class="highlighted-text bold-text">CSS3</span>.</p>
+          </li>
+          <li class="project-slider-item">
+            <div class="project-slider-item-icon"></div>
+            <h4 class="project-slider-item-title">Lorem Ipsum</h4>
+            <p class="project-slider-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet.</p>
+          </li>
+          <li class="project-slider-item">
+            <div class="project-slider-item-icon"></div>
+            <h4 class="project-slider-item-title">Lorem Ipsum</h4>
+            <p class="project-slider-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet.</p>
+          </li>
+        </ul>
+        <div class="project-display-container">
+          <div class="project-display-info">
+            <div class="project-display-info-icon"></div>
+            <h4 class="project-display-info-title">Huddle Landing Page</h4>
+            <p class="project-display-info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet, nisl dui maximus erat, vel posuere massa enim vitae metus. <span class="highlighted-text">Curabitur sit amet risus sapien</span>. Proin ullamcorper purus et eros ornare, dapibus tincidunt ante mollis.</p>
+            <p class="project-display-info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet.</p>
+            <div class="project-display-info-extra">
+              <div class="project-display-info-extra-tools">
+                <span class="project-display-info-extra-title">Ferramentas</span>
+                <img src="img/icons/css-icon.svg" alt="CSS Icon" class="project-display-info-extra-icon">
+                <img src="img/icons/css-icon.svg" alt="CSS Icon" class="project-display-info-extra-icon">
+                <img src="img/icons/css-icon.svg" alt="CSS Icon" class="project-display-info-extra-icon">
+              </div>
+              <div class="project-display-info-extra-links">
+                <span class="project-display-info-extra-title">Links</span>
+                <a href="https://github.com/kaioloureiro/huddle" target="_blank" rel="external">
+                  <img src="img/icons/github-icon.svg" alt="GitHub Icon" class="project-display-info-extra-icon">
+                </a>
+                <a href="https://kaioloureiro.github.io/huddle/" target="_blank" rel="external">
+                  <img src="img/icons/website-icon.svg" alt="Website Icon" class="project-display-info-extra-icon">
+                </a>
               </div>
             </div>
-            <div class="project-display-picture">
-              <img src="img/project-display-picture.svg" alt="Project Display Picture">
-            </div>
           </div>
-        </section>
-        <section class="concept-title-container">
-          <p class="concept-title-text content-container">Conceitos</p>
-        </section>
-        <section class="concept-container content-container">
-          <nav>
-            <ul class="concept-grid">
-              <li class="concept-grid-item concept-grid-item-selected">
-                <div class="concept-grid-item-logo"><img src="img/concepts/huddle-logo.svg" alt="Huddle Logo"></div>
-              </li>
-              <li class="concept-grid-item">
-                <div class="concept-grid-item-logo"><img src="img/concepts/bikcraft-logo.svg" alt="bikcraft Logo"></div>
-              </li>
-              <li class="concept-grid-item">
-                <div class="concept-grid-item-logo"><img src="img/concepts/placeholder-logo.svg" alt="Placeholder Concept Logo"></div>
-              </li>
-              <li class="concept-grid-item">
-                <div class="concept-grid-item-logo"><img src="img/concepts/placeholder-logo.svg" alt="Placeholder Concept Logo"></div>
-              </li>
-              <li class="concept-grid-item">
-                <div class="concept-grid-item-logo"><img src="img/concepts/placeholder-logo.svg" alt="Placeholder Concept Logo"></div>
-              </li>
-              <li class="concept-grid-item">
-                <div class="concept-grid-item-logo"><img src="img/concepts/placeholder-logo.svg" alt="Placeholder Concept Logo"></div>
-              </li>
-            </ul>
-          </nav>
-          <div class="concept-display-container">
-            <div class="concept-display-picture">
-              <img src="img/project-display-picture.svg" alt="Project Display Picture">
-            </div>
-            <div class="concept-display-tools">
-              <h2 class="concept-display-tools-title">Ferramentas</h2>
-              <img src="img/icons/css-icon.svg" alt="CSS Icon" class="concept-display-tools-icon">
-              <img src="img/icons/css-icon.svg" alt="CSS Icon" class="concept-display-tools-icon">
-            </div>
+          <div class="project-display-picture">
+            <img src="img/project-display-picture.svg" alt="Project Display Picture">
           </div>
-        </section>
-      </article>
-      <article id="skills" class="article-container">
-        <section class="article-sep-container">
-          <div class="article-sep-detail left-sep-detail"></div>
-          <p class="article-sep-text left-sep-text content-container">Skills</p>
-        </section>
-        <section class="skills-container">
-          <div class="skills content-container">
-            <img src="./img/skills/css3-skill-level.svg" alt="CSS3 Skill Level">
-            <img src="./img/skills/html5-skill-level.svg" alt="HTML5 Skill Level">
-            <img src="./img/skills/javascript-skill-level.svg" alt="JavaScript Skill Level">
-            <img src="./img/skills/java-skill-level.svg" alt="Java Skill Level">
-            <img src="./img/skills/python-skill-level.svg" alt="Python Skill Level">
+        </div>
+      </div>
+      <div class="concept-title-container" aria-label="Conceitos">
+        <h3 class="concept-title-text content-container">Conceitos</h3>
+      </div>
+      <div class="concept-container content-container">
+        <ul class="concept-grid">
+          <li class="concept-grid-item concept-grid-item-selected">
+            <div class="concept-grid-item-logo"><img src="img/concepts/huddle-logo.svg" alt="Huddle Logo"></div>
+          </li>
+          <li class="concept-grid-item">
+            <div class="concept-grid-item-logo"><img src="img/concepts/bikcraft-logo.svg" alt="bikcraft Logo"></div>
+          </li>
+          <li class="concept-grid-item">
+            <div class="concept-grid-item-logo"><img src="img/concepts/placeholder-logo.svg" alt="Placeholder Concept Logo"></div>
+          </li>
+          <li class="concept-grid-item">
+            <div class="concept-grid-item-logo"><img src="img/concepts/placeholder-logo.svg" alt="Placeholder Concept Logo"></div>
+          </li>
+          <li class="concept-grid-item">
+            <div class="concept-grid-item-logo"><img src="img/concepts/placeholder-logo.svg" alt="Placeholder Concept Logo"></div>
+          </li>
+          <li class="concept-grid-item">
+            <div class="concept-grid-item-logo"><img src="img/concepts/placeholder-logo.svg" alt="Placeholder Concept Logo"></div>
+          </li>
+        </ul>
+        <div class="concept-display-container">
+          <div class="concept-display-picture">
+            <img src="img/project-display-picture.svg" alt="Project Display Picture">
           </div>
-        </section>
-      </article>
-    </main>
+          <div class="concept-display-tools">
+            <span class="concept-display-tools-title">Ferramentas</span>
+            <img src="img/icons/css-icon.svg" alt="CSS Icon" class="concept-display-tools-icon">
+            <img src="img/icons/css-icon.svg" alt="CSS Icon" class="concept-display-tools-icon">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="section-container" aria-label="Skills">
+      <div class="section-sep-container">
+        <div class="section-sep-detail left-sep-detail"></div>
+        <h2 class="section-sep-text left-sep-text content-container">Habilidades</h2>
+      </div>
+      <div class="skills-container">
+        <div class="skills content-container">
+          <img src="./img/skills/css3-skill-level.svg" alt="CSS3 Skill Level">
+          <img src="./img/skills/html5-skill-level.svg" alt="HTML5 Skill Level">
+          <img src="./img/skills/javascript-skill-level.svg" alt="JavaScript Skill Level">
+          <img src="./img/skills/java-skill-level.svg" alt="Java Skill Level">
+          <img src="./img/skills/python-skill-level.svg" alt="Python Skill Level">
+        </div>
+      </div>
+    </section>
   </div>
 </body>
 
