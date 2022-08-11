@@ -13,8 +13,6 @@
     margin: auto;
 }
 
-/*  */
-
 .content-container {
     max-width: calc(1160rem/16);
     box-sizing: border-box;
