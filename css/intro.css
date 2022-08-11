@@ -1,7 +1,7 @@
 .intro-container {
     display: grid;
-    grid-template-columns: 9fr 3fr;
-    background: url(../img/intro-picture.svg) no-repeat center right 50px;
+    grid-template-columns: 3fr 1fr;
+    background: url(../img/intro-picture.svg) no-repeat center right calc(50rem/16);
     background-color: var(--greyish-blue-13);
     padding: calc(40rem/16) calc(60rem/16);
     font-family: var(--font-lato);

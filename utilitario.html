@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Desenvolvedor Front End, Freelancer e UX/UI Designer.
   Localizado no Rio de Janeiro, Brasil.">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/utilitario.css">
   <link rel="icon" href="./favicon.svg" type="svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,26 +17,26 @@
 <body>
   <div class="container">
 
-    <header class="header content-container">
-      <div class="header-left-container">
+    <header class="content-container grid grid-columns-r3-1fr align-items-center bg-dark-normal title-font">
+      <div class="justify-self-start pt23 pb23">
         <a href="#"><img src="img/logo.svg" alt="Logo do Website"></a>
       </div>
       <div class="header-middle-container">
         <nav aria-label="Menu">
-          <ul class="header-menu">
-            <li><a href="#intro" class="header-menu-item">Introdução</a></li>
-            <li><a href="#portfolio" class="header-menu-item">Portfólio</a></li>
-            <li><a href="#about" class="header-menu-item">Sobre</a></li>
-            <li><a href="#contact" class="header-menu-item">Contato</a></li>
+          <ul class="flex">
+            <li><a href="#intro" class="title-font text-s16 medium txtcolor-light pt30 pb30 pl20 pr20">Introdução</a></li>
+            <li><a href="#portfolio" class="title-font text-s16 medium txtcolor-light pt30 pb30 pl20 pr20">Portfólio</a></li>
+            <li><a href="#about" class="title-font text-s16 medium txtcolor-light pt30 pb30 pl20 pr20">Sobre</a></li>
+            <li><a href="#contact" class="title-font text-s16 medium txtcolor-light pt30 pb30 pl20 pr20">Contato</a></li>
           </ul>
         </nav>
       </div>
-      <div class="header-right-container">
-        <ul class="header-lang-menu">
-          <li><a href="/." class="header-lang-menu-item active-lang">BR</a></li>
-          <li><a href="/." class="header-lang-menu-item">EN</a></li>
+      <div class="flex justify-self-end gap40 ">
+        <ul class="flex align-items-center gap20">
+          <li><a href="/." class="text-s14 txtcolor-light">BR</a></li>
+          <li><a href="/." class="text-s14 txtcolor-dark">EN</a></li>
         </ul>
-        <div class="header-social-media">
+        <div class="flex align-items-center gap20">
           <a href="https://github.com/kaioloureiro/" target="_blank" rel="external">
             <svg width="30" height="30" viewBox="0 0 30 30" fill="var(--greyish-blue-2)" xmlns="http://www.w3.org/2000/svg">
               <path d="M19.9657 24.156C19.9657 24.28 20.1048 24.3793 20.2802 24.3793C20.4798 24.3979 20.619 24.2986 20.619 24.156C20.619 24.0319 20.4798 23.9326 20.3044 23.9326C20.123 23.914 19.9657 24.0133 19.9657 24.156ZM21.8468 23.8768C21.8891 24.0009 21.7681 24.1435 21.5867 24.1808C21.4294 24.2428 21.248 24.1808 21.2117 24.0567C21.1754 23.9326 21.2903 23.79 21.4718 23.7341C21.629 23.6907 21.8044 23.7527 21.8468 23.8768ZM19.1734 23.7713C19.3488 23.8148 19.4698 23.9326 19.4516 24.0753C19.4335 24.1994 19.2762 24.28 19.0948 24.2366C18.9194 24.1932 18.7984 24.0753 18.8165 23.9512C18.8347 23.8334 18.998 23.7527 19.1734 23.7713ZM15.1935 0C23.5827 0 30 6.53216 30 15.1362C30 22.0158 25.7782 27.9028 19.748 29.9747C18.9738 30.1174 18.7016 29.6273 18.7016 29.2241C18.7016 28.8395 18.7198 26.718 18.7198 25.4152C18.7198 25.4152 22.9536 26.3457 23.8427 23.5666C23.8427 23.5666 24.5323 21.7614 25.5242 21.2962C25.5242 21.2962 26.9093 20.3223 25.4274 20.3409C25.4274 20.3409 23.9214 20.4649 23.0927 21.9414C21.7681 24.3359 19.5484 23.6473 18.6835 23.2379C18.5444 22.2453 18.1512 21.5567 17.7157 21.1473C21.0968 20.7627 24.5081 20.2602 24.5081 14.2926C24.5081 12.5867 24.0484 11.7306 23.0806 10.6388C23.2379 10.2356 23.752 8.57307 22.9234 6.4267C21.6593 6.02348 18.75 8.10161 18.75 8.10161C17.5403 7.75422 16.2399 7.57433 14.9516 7.57433C13.6633 7.57433 12.3629 7.75422 11.1532 8.10161C11.1532 8.10161 8.24395 6.01728 6.97984 6.4267C6.15121 8.57927 6.66532 10.2356 6.82258 10.6388C5.85484 11.7368 5.2621 12.5929 5.2621 14.2926C5.2621 20.2788 8.8246 20.7565 12.2056 21.1473C11.6492 21.6374 11.1774 22.5679 11.1774 24.0257C11.1774 26.1162 11.1956 28.703 11.1956 29.2117C11.1956 29.6149 10.9173 30.105 10.1492 29.9623C4.10081 27.9028 0 22.0158 0 15.1362C0 6.53216 6.80444 0 15.1935 0ZM24.121 21.3955C24.1996 21.4575 24.1815 21.6002 24.0786 21.718C23.9819 21.8173 23.8427 21.8607 23.7641 21.7801C23.6855 21.718 23.7036 21.5753 23.8065 21.4575C23.9032 21.3582 24.0423 21.3148 24.121 21.3955ZM24.7742 20.893C24.8165 20.9736 24.756 21.0729 24.6351 21.1349C24.5383 21.1969 24.4173 21.1783 24.375 21.0915C24.3327 21.0108 24.3931 20.9116 24.5141 20.8496C24.6351 20.8123 24.7319 20.8309 24.7742 20.893ZM22.8145 23.1014C22.9113 23.182 22.875 23.3681 22.7359 23.486C22.5968 23.6287 22.4214 23.6473 22.3427 23.548C22.2641 23.4674 22.3004 23.2813 22.4214 23.1634C22.5544 23.0207 22.7359 23.0021 22.8145 23.1014ZM23.504 22.1895C23.6008 22.2515 23.6008 22.4128 23.504 22.5555C23.4073 22.6982 23.244 22.7602 23.1653 22.6982C23.0685 22.6175 23.0685 22.4562 23.1653 22.3136C23.25 22.1709 23.4073 22.1088 23.504 22.1895Z" />
@@ -58,17 +58,19 @@
           <div class="section-sep-detail left-sep-detail"></div>
           <h2 class="section-sep-text left-sep-text content-container">Introdução</h2>
         </div>
-        <div class="intro-container content-container">
-          <div class="intro-info">
-            <div class="intro-title-container">
-              <p class="intro-greetings">Olá, eu me chamo</p>
-              <h1 class="intro-title">Kaio <span class="special-text">Loureiro</span>.</h1>
-              <p class="intro-subtitle">Desenvolvedor <span class="bold-text highlighted-text">Front End</span> . Freelancer . <span class="bold-text highlighted-text">UX</span>/<span class="bold-text highlighted-text">UI</span> Designer</p>
+        <div class="intro-container content-container grid grid-columns-3fr-1fr title-font bg-dark-black pt40 pb40 pl60 pr60 relative">
+          <div class="flex flex-column gap40">
+            <div>
+              <p class="normal-font text-s16 medium txtcolor-dark">Olá, eu me chamo</p>
+              <h1 class="title-font text-s64 txtcolor-lighter regular">Kaio <span class="title-font text-s64 special-text regular">Loureiro</span>.</h1>
+              <p class="normal-font text-s14 txtcolor-light semi-bold uppercase text-space-4-5">Desenvolvedor <span class="highlighted-text bold">Front End</span> . Freelancer . <span class="highlighted-text bold">UX</span>/<span class="highlighted-text bold">UI</span> Designer</p>
             </div>
-            <p class="intro-text">Eu sou um Desenvolvedor <span class="bold-text">Front End</span> e <span class="bold-text">UX</span>/<span class="bold-text">UI</span> Designer localizado no <span class="bold-text">Rio de Janeiro</span>, <span class="bold-text">Brasil</span>. Atualmente me encontro cursando o <span class="bold-text">7º</span> período de <span class="bold-text">Sistemas de Informação</span>, através da Universidade <span class="bold-text">Estácio de Sá</span>.</p>
-            <div class="intro-buttons">
-              <a href="#" class="normal-btn"><img src="./img/icons/mini/download-resume-icon.svg" alt="Ícone Baixar Currículo">Baixar Currículo</a>
-              <a href="#contact" class="special-btn">Contrate-me!</a>
+            <p class="normal-font txtcolor-light text-s16 regular">Eu sou um Desenvolvedor <span class="txtcolor-white bold">Front End</span> e <span class="txtcolor-white bold">UX</span>/<span class="txtcolor-white bold">UI</span> Designer localizado no <span class="txtcolor-white bold">Rio de Janeiro</span>, <span class="txtcolor-white bold">Brasil</span>. Atualmente me encontro cursando o <span class="txtcolor-white bold">7º</span> período de <span class="txtcolor-white bold">Sistemas de Informação</span>, através da Universidade <span class="txtcolor-white bold">Estácio de Sá</span>.</p>
+            <div class="flex gap62">
+              <a href="#" class="flex align-items-center gap6 normal-font text-s16 txtcolor-lighter btn-border pt10 pb10 pl16 pr20">
+                <img src="./img/icons/mini/download-resume-icon.svg" alt="Ícone Baixar Currículo">Baixar Currículo
+              </a>
+              <a href="#contact" class="flex align-items-center normal-font text-s16 special-btn btn-border pt10 pb10 pl20 pr20">Contrate-me!</a>
             </div>
           </div>
         </div>
@@ -81,50 +83,50 @@
         <h2 class="section-sep-text right-sep-text content-container">Portfólio</h2>
       </div>
 
-      <div class="project-title-container" arial-label="Projetos">
-        <h3 class="project-title-text content-container">Projetos</h3>
+      <div class="bg-dark-black cursor-default" arial-label="Projetos">
+        <h3 class="content-container title-font text-s20 light uppercase text-left pt15 pb15">Projetos</h3>
       </div>
-      <div class="project-container content-container">
-        <ul class="project-slider">
-          <li class="project-slider-item project-slider-item-selected">
+      <div class="content-container grid gap40">
+        <ul class="grid grid-columns-r4-1fr gap40">
+          <li class="grid align-content-start gap10 bg-dark-light txtcolor-lighter pt30 pb30 pl30 pr30 relative selected-project">
             <div class="project-slider-item-icon"></div>
-            <h4 class="project-slider-item-title">Huddle Landing Page</h4>
-            <p class="project-slider-item-text">Criado como parte de um desafio para o <span class="bold-text">Frontend Mentor</span>. Foram utilizados <span class="bold-text">HTML5</span>, <span class="bold-text">CSS3</span> e uma <span class="bold-text">referência visual</span>.</p>
+            <h4 class="title-font text-s16 semi-bold uppercase">Huddle Landing Page</h4>
+            <p class="normal-font text-s16 regular">Criado como parte de um desafio para o <span class="bold-text">Frontend Mentor</span>. Foram utilizados <span class="bold-text">HTML5</span>, <span class="bold-text">CSS3</span> e uma <span class="bold-text">referência visual</span>.</p>
           </li>
-          <li class="project-slider-item">
+          <li class="grid align-content-start gap10 bg-dark-light txtcolor-lighter pt30 pb30 pl30 pr30 relative">
             <div class="project-slider-item-icon"></div>
-            <h4 class="project-slider-item-title">Bikcraft Landing Page</h4>
-            <p class="project-slider-item-text">Criado <span class="highlighted-text bold-text">totalmente do zero</span> a partir de uma referência visual, utilizando somente <span class="highlighted-text bold-text">HTML5</span> e <span class="highlighted-text bold-text">CSS3</span>.</p>
+            <h4 class="title-font text-s16 semi-bold uppercase">Bikcraft Landing Page</h4>
+            <p class="normal-font text-s16 regular">Criado <span class="highlighted-text bold">totalmente do zero</span> a partir de uma referência visual, utilizando somente <span class="highlighted-text bold">HTML5</span> e <span class="highlighted-text bold">CSS3</span>.</p>
           </li>
-          <li class="project-slider-item">
+          <li class="grid align-content-start gap10 bg-dark-light txtcolor-lighter pt30 pb30 pl30 pr30 relative">
             <div class="project-slider-item-icon"></div>
-            <h4 class="project-slider-item-title">Lorem Ipsum</h4>
-            <p class="project-slider-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet.</p>
+            <h4 class="title-font text-s16 semi-bold uppercase">Lorem Ipsum</h4>
+            <p class="normal-font text-s16 regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet.</p>
           </li>
-          <li class="project-slider-item">
+          <li class="grid align-content-start gap10 bg-dark-light txtcolor-lighter pt30 pb30 pl30 pr30 relative">
             <div class="project-slider-item-icon"></div>
-            <h4 class="project-slider-item-title">Lorem Ipsum</h4>
-            <p class="project-slider-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet.</p>
+            <h4 class="title-font text-s16 semi-bold uppercase">Lorem Ipsum</h4>
+            <p class="normal-font text-s16 regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet.</p>
           </li>
         </ul>
-        <div class="project-display-container">
-          <div class="project-display-info">
+        <div class="grid grid-columns-r2-1fr gap40 bg-dark-black txtcolor-lighter pt50 pb50 pl100 pr100">
+          <div class="grid gap20">
             <div class="project-display-info-icon"></div>
-            <h4 class="project-display-info-title">Huddle Landing Page</h4>
-            <p class="project-display-info-text">
+            <h4 class="title-font text-s32 semi-bold">Huddle Landing Page</h4>
+            <p class="normal-font text-s16 regular">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet, nisl dui maximus erat, vel posuere massa enim vitae metus. <span class="highlighted-text">Curabitur sit amet risus sapien</span>. Proin ullamcorper purus et eros ornare, dapibus tincidunt ante mollis.
               <br><br>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet.
             </p>
-            <div class="project-display-info-extra">
-              <div class="project-display-info-extra-tools">
-                <span class="project-display-info-extra-title">Ferramentas</span>
-                <img src="img/icons/tools/css-icon.svg" alt="Ícone CSS" class="project-display-info-extra-icon">
-                <img src="img/icons/tools/css-icon.svg" alt="Ícone CSS" class="project-display-info-extra-icon">
-                <img src="img/icons/tools/css-icon.svg" alt="Ícone CSS" class="project-display-info-extra-icon">
+            <div class="grid grid-columns-r2-1fr gap100">
+              <div class="grid grid-columns-r4-1fr gap20">
+                <span class="grid-column-1--1 title-font text-s24 semi-bold">Ferramentas</span>
+                <img src="img/icons/tools/css-icon.svg" alt="Ícone CSS">
+                <img src="img/icons/tools/css-icon.svg" alt="Ícone CSS">
+                <img src="img/icons/tools/css-icon.svg" alt="Ícone CSS">
               </div>
-              <div class="project-display-info-extra-links">
-                <span class="project-display-info-extra-title">Links</span>
+              <div class="grid grid-columns-r4-1fr gap20">
+                <span class="grid-column-1--1 title-font text-s24 semi-bold">Links</span>
                 <a href="https://github.com/kaioloureiro/huddle" target="_blank" rel="external">
                   <svg width="30" height="30" viewBox="0 0 30 30" fill="var(--greyish-blue-1)" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19.9657 24.156C19.9657 24.28 20.1048 24.3793 20.2802 24.3793C20.4798 24.3979 20.619 24.2986 20.619 24.156C20.619 24.0319 20.4798 23.9326 20.3044 23.9326C20.123 23.914 19.9657 24.0133 19.9657 24.156ZM21.8468 23.8768C21.8891 24.0009 21.7681 24.1435 21.5867 24.1808C21.4294 24.2428 21.248 24.1808 21.2117 24.0567C21.1754 23.9326 21.2903 23.79 21.4718 23.7341C21.629 23.6907 21.8044 23.7527 21.8468 23.8768ZM19.1734 23.7713C19.3488 23.8148 19.4698 23.9326 19.4516 24.0753C19.4335 24.1994 19.2762 24.28 19.0948 24.2366C18.9194 24.1932 18.7984 24.0753 18.8165 23.9512C18.8347 23.8334 18.998 23.7527 19.1734 23.7713ZM15.1935 0C23.5827 0 30 6.53216 30 15.1362C30 22.0158 25.7782 27.9028 19.748 29.9747C18.9738 30.1174 18.7016 29.6273 18.7016 29.2241C18.7016 28.8395 18.7198 26.718 18.7198 25.4152C18.7198 25.4152 22.9536 26.3457 23.8427 23.5666C23.8427 23.5666 24.5323 21.7614 25.5242 21.2962C25.5242 21.2962 26.9093 20.3223 25.4274 20.3409C25.4274 20.3409 23.9214 20.4649 23.0927 21.9414C21.7681 24.3359 19.5484 23.6473 18.6835 23.2379C18.5444 22.2453 18.1512 21.5567 17.7157 21.1473C21.0968 20.7627 24.5081 20.2602 24.5081 14.2926C24.5081 12.5867 24.0484 11.7306 23.0806 10.6388C23.2379 10.2356 23.752 8.57307 22.9234 6.4267C21.6593 6.02348 18.75 8.10161 18.75 8.10161C17.5403 7.75422 16.2399 7.57433 14.9516 7.57433C13.6633 7.57433 12.3629 7.75422 11.1532 8.10161C11.1532 8.10161 8.24395 6.01728 6.97984 6.4267C6.15121 8.57927 6.66532 10.2356 6.82258 10.6388C5.85484 11.7368 5.2621 12.5929 5.2621 14.2926C5.2621 20.2788 8.8246 20.7565 12.2056 21.1473C11.6492 21.6374 11.1774 22.5679 11.1774 24.0257C11.1774 26.1162 11.1956 28.703 11.1956 29.2117C11.1956 29.6149 10.9173 30.105 10.1492 29.9623C4.10081 27.9028 0 22.0158 0 15.1362C0 6.53216 6.80444 0 15.1935 0ZM24.121 21.3955C24.1996 21.4575 24.1815 21.6002 24.0786 21.718C23.9819 21.8173 23.8427 21.8607 23.7641 21.7801C23.6855 21.718 23.7036 21.5753 23.8065 21.4575C23.9032 21.3582 24.0423 21.3148 24.121 21.3955ZM24.7742 20.893C24.8165 20.9736 24.756 21.0729 24.6351 21.1349C24.5383 21.1969 24.4173 21.1783 24.375 21.0915C24.3327 21.0108 24.3931 20.9116 24.5141 20.8496C24.6351 20.8123 24.7319 20.8309 24.7742 20.893ZM22.8145 23.1014C22.9113 23.182 22.875 23.3681 22.7359 23.486C22.5968 23.6287 22.4214 23.6473 22.3427 23.548C22.2641 23.4674 22.3004 23.2813 22.4214 23.1634C22.5544 23.0207 22.7359 23.0021 22.8145 23.1014ZM23.504 22.1895C23.6008 22.2515 23.6008 22.4128 23.504 22.5555C23.4073 22.6982 23.244 22.7602 23.1653 22.6982C23.0685 22.6175 23.0685 22.4562 23.1653 22.3136C23.25 22.1709 23.4073 22.1088 23.504 22.1895Z" />
@@ -139,47 +141,46 @@
                       <path d="M15 30.0002C12.925 30.0002 10.975 29.6062 9.15 28.8182C7.325 28.0312 5.7375 26.9627 4.3875 25.6127C3.0375 24.2627 1.969 22.6752 1.182 20.8502C0.394 19.0252 0 17.0752 0 15.0002C0 12.9252 0.394 10.9752 1.182 9.15024C1.969 7.32524 3.0375 5.73774 4.3875 4.38774C5.7375 3.03774 7.325 1.96874 9.15 1.18074C10.975 0.393744 12.925 0.000244141 15 0.000244141C17.075 0.000244141 19.025 0.393744 20.85 1.18074C22.675 1.96874 24.2625 3.03774 25.6125 4.38774C26.9625 5.73774 28.031 7.32524 28.818 9.15024C29.606 10.9752 30 12.9252 30 15.0002C30 17.0752 29.606 19.0252 28.818 20.8502C28.031 22.6752 26.9625 24.2627 25.6125 25.6127C24.2625 26.9627 22.675 28.0312 20.85 28.8182C19.025 29.6062 17.075 30.0002 15 30.0002ZM13.5 26.9252V24.0002C12.675 24.0002 11.969 23.7067 11.382 23.1197C10.794 22.5317 10.5 21.8252 10.5 21.0002V19.5002L3.3 12.3002C3.225 12.7502 3.156 13.2002 3.093 13.6502C3.031 14.1002 3 14.5502 3 15.0002C3 18.0252 3.994 20.6752 5.982 22.9502C7.969 25.2252 10.475 26.5502 13.5 26.9252ZM23.85 23.1002C24.35 22.5502 24.8 21.9562 25.2 21.3182C25.6 20.6812 25.9315 20.0187 26.1945 19.3307C26.4565 18.6437 26.6565 17.9377 26.7945 17.2127C26.9315 16.4877 27 15.7502 27 15.0002C27 12.5502 26.319 10.3127 24.957 8.28774C23.594 6.26274 21.775 4.80024 19.5 3.90024V4.50024C19.5 5.32524 19.2065 6.03124 18.6195 6.61824C18.0315 7.20624 17.325 7.50024 16.5 7.50024H13.5V10.5002C13.5 10.9252 13.3565 11.2812 13.0695 11.5682C12.7815 11.8562 12.425 12.0002 12 12.0002H9V15.0002H18C18.425 15.0002 18.7815 15.1437 19.0695 15.4307C19.3565 15.7187 19.5 16.0752 19.5 16.5002V21.0002H21C21.65 21.0002 22.2375 21.1937 22.7625 21.5807C23.2875 21.9687 23.65 22.4752 23.85 23.1002Z" />
                     </g>
                   </svg>
-
                 </a>
               </div>
             </div>
           </div>
-          <div class="project-display-picture">
-            <img src="img/project-display-picture.svg" alt="Project Display Picture">
+          <div class="project-display grid place-content-center pt40 pb40 pl40 pr40">
+            <img src="img/project-display-picture.svg" alt="Imagem do Projeto">
           </div>
         </div>
       </div>
 
-      <div class="concept-title-container" aria-label="Conceitos">
-        <h3 class="concept-title-text content-container">Conceitos</h3>
+      <div class="bg-dark-black cursor-default" aria-label="Conceitos">
+        <h3 class="content-container title-font text-s20 light uppercase text-right pt15 pb15">Conceitos</h3>
       </div>
-      <div class="concept-container content-container">
-        <ul class="concept-grid">
-          <li class="concept-grid-item concept-grid-item-selected">
+      <div class="content-container grid grid-columns-1fr-2fr gap40">
+        <ul class="grid grid-columns-r2-1fr gap40">
+          <li class="concept-box grid place-content-center bg-dark-light pt20 pb20 pl20 pr20 relative selected-concept">
             <div class="concept-grid-item-logo"><img src="img/concepts/huddle-logo.svg" alt="Logo da Huddle"></div>
           </li>
-          <li class="concept-grid-item">
+          <li class="concept-box grid place-content-center bg-dark-light pt20 pb20 pl20 pr20 relative">
             <div class="concept-grid-item-logo"><img src="img/concepts/bikcraft-logo.svg" alt="Logo da Bikcraft"></div>
           </li>
-          <li class="concept-grid-item">
+          <li class="concept-box grid place-content-center bg-dark-light pt20 pb20 pl20 pr20 relative">
             <div class="concept-grid-item-logo"><img src="img/concepts/placeholder-logo.svg" alt="Placeholder Concept Logo"></div>
           </li>
-          <li class="concept-grid-item">
+          <li class="concept-box grid place-content-center bg-dark-light pt20 pb20 pl20 pr20 relative">
             <div class="concept-grid-item-logo"><img src="img/concepts/placeholder-logo.svg" alt="Placeholder Concept Logo"></div>
           </li>
-          <li class="concept-grid-item">
+          <li class="concept-box grid place-content-center bg-dark-light pt20 pb20 pl20 pr20 relative">
             <div class="concept-grid-item-logo"><img src="img/concepts/placeholder-logo.svg" alt="Placeholder Concept Logo"></div>
           </li>
-          <li class="concept-grid-item">
+          <li class="concept-box grid place-content-center bg-dark-light pt20 pb20 pl20 pr20 relative">
             <div class="concept-grid-item-logo"><img src="img/concepts/placeholder-logo.svg" alt="Placeholder Concept Logo"></div>
           </li>
         </ul>
-        <div class="concept-display-container">
-          <div class="concept-display-picture">
-            <img src="img/project-display-picture.svg" alt="Project Display Picture">
+        <div class="grid place-content-center gap40 bg-dark-black txtcolor-lighter pt40 pb40 pl40 pr40">
+          <div class="concept-display grid place-content-center">
+            <img src="img/project-display-picture.svg" alt="Imagem do Conceito">
           </div>
-          <div class="concept-display-tools">
-            <span class="concept-display-tools-title">Ferramentas</span>
+          <div class="flex flex-wrap gap20">
+            <span class="title-font text-s24 semi-bold">Ferramentas</span>
             <img src="img/icons/tools/css-icon.svg" alt="Ícone CSS" class="concept-display-tools-icon">
             <img src="img/icons/tools/css-icon.svg" alt="Ícone CSS" class="concept-display-tools-icon">
           </div>

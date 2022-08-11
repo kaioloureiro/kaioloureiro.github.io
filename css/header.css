@@ -33,13 +33,10 @@
     justify-self: flex-end;
 }
 
-.header-right-container nav {
-    align-self: center;
-}
-
 .header-lang-menu,
 .header-social-media {
     display: flex;
+    align-self: center;
     gap: calc(20rem/16);
 }
 

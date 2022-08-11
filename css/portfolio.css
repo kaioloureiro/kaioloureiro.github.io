@@ -91,7 +91,7 @@
 
 .project-display-container {
     display: grid;
-    grid-template-columns: repeat(2, 6fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: calc(40rem/16);
     background-color: var(--greyish-blue-13);
     color: var(--greyish-blue-1);
@@ -160,7 +160,7 @@
 
 .concept-container {
     display: grid;
-    grid-template-columns: 4fr 8fr;
+    grid-template-columns: 1fr 2fr;
     gap: calc(40rem/16);
 }
 
