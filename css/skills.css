@@ -1,0 +1,10 @@
+.skills-container {
+    background-color: var(--greyish-blue-13);
+    padding: calc(120rem/16) 0;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 calc(60rem/16);
+}

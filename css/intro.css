@@ -1,0 +1,96 @@
+.intro-container {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    background: url(../img/intro-picture.svg) no-repeat center right 50px;
+    background-color: var(--greyish-blue-13);
+    padding: calc(40rem/16) calc(60rem/16);
+    font-family: var(--font-lato);
+    position: relative;
+}
+
+.intro-container::before {
+    content: "";
+    align-self: center;
+    background: var(--gradient-t5d6);
+    width: calc(8rem/16);
+    height: calc(100% - calc(80rem/16));
+    position: absolute;
+    left: calc(-4rem/16);
+}
+
+.intro-info {
+    display: flex;
+    flex-direction: column;
+    gap: calc(40rem/16);
+}
+
+.intro-greetings {
+    color: var(--greyish-blue-8);
+    font-size: 1rem;
+    font-weight: var(--medium);
+    line-height: calc(24rem/16);
+}
+
+.intro-title {
+    color: var(--greyish-blue-1);
+    font-family: var(--font-poppins);
+    font-size: calc(64rem/16);
+    font-weight: var(--regular);
+    line-height: calc(96rem/16);
+}
+
+.intro-title .special-text {
+    font-size: calc(64rem/16);
+}
+
+.intro-subtitle {
+    color: var(--greyish-blue-2);
+    font-size: calc(14rem/16);
+    font-weight: var(--semi-bold);
+    line-height: calc(21rem/16);
+    letter-spacing: 0.045rem;
+    text-transform: uppercase;
+}
+
+.intro-text {
+    color: var(--greyish-blue-2);
+    font-size: 1rem;
+    font-weight: var(--regular);
+    line-height: calc(24rem/16);
+}
+
+.intro-text .bold-text {
+    color: var(--greyish-blue-0);
+}
+
+.intro-buttons {
+    display: flex;
+    gap: calc(62rem/16);
+}
+
+.intro-buttons a {
+    display: flex;
+    align-items: center;
+    padding: calc(10rem/16) calc(20rem/16);
+    border: 1px solid var(--blue-5);
+}
+
+.intro-buttons .normal-btn {
+    color: var(--greyish-blue-1);
+    padding: calc(10rem/16) calc(20rem/16) calc(10rem/16) 1rem;
+    gap: calc(6rem/16);
+}
+
+.intro-buttons .normal-btn:hover {
+    color: var(--blue-4);
+}
+
+.intro-buttons .special-btn {
+    background-image: var(--gradient-t6d7);
+    color: var(--blue-0);
+}
+
+.intro-buttons .special-btn:hover {
+    background-image: linear-gradient(to bottom, var(--greyish-blue-1) 0%, var(--greyish-blue-2) 100%);
+    color: var(--blue-7);
+}
