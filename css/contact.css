@@ -31,15 +31,15 @@
 }
 
 .whatsapp::before {
-    background: url(../img/icons/whatsapp-icon.svg);
+    background: url(../img/icons/mini/whatsapp-icon.svg);
 }
 
 .email::before {
-    background: url(../img/icons/email-icon.svg);
+    background: url(../img/icons/mini/email-icon.svg);
 }
 
 .location::before {
-    background: url(../img/icons/location-icon.svg);
+    background: url(../img/icons/mini/location-icon.svg);
 }
 
 .contact-left-container-text,
@@ -62,7 +62,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: calc(10rem/16);
-    justify-content: start;
+    justify-items: start;
 }
 
 .footer-social-media-title {

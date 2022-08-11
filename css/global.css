@@ -98,6 +98,10 @@
     font-size: 1rem;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--greyish-blue-12);
     color: var(--greyish-blue-0);
@@ -116,6 +120,10 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+svg:hover {
+    fill: var(--blue-4);
 }
 
 ul {
