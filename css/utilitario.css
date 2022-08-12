@@ -25,18 +25,54 @@
     left: calc(-4rem/16);
 }
 
+.concept-box {
+    width: calc(160rem/16);
+    height: calc(160rem/16);
+}
+
+.project-box:hover,
+.concept-box:hover {
+    cursor: pointer;
+}
+
+.project-box:hover::after {
+    content: "";
+    background: var(--gradient-l5r6);
+    width: 100%;
+    height: calc(4rem/16);
+    position: absolute;
+    bottom: 0;
+}
+
+.concept-box:hover::after {
+    content: "";
+    background: var(--gradient-t5d6);
+    width: calc(4rem/16);
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
 .selected-project {
     background-image: var(--gradient-t6d7);
     color: var(--blue-1);
 }
 
-.project-display {
-    background-image: var(--gradient-t6d7);
+.selected-project:hover::after {
+    background: var(--blue-1);
 }
 
-.concept-box {
-    width: calc(160rem/16);
-    height: calc(160rem/16);
+.selected-concept {
+    background-image: var(--gradient-t5d6);
+    color: var(--blue-1);
+}
+
+.selected-concept:hover::after {
+    background: var(--blue-1);
+}
+
+.project-display {
+    background-image: var(--gradient-t6d7);
 }
 
 .concept-display {
@@ -45,13 +81,71 @@
     height: calc(440rem/16);
 }
 
-.selected-concept {
-    background-image: var(--gradient-t5d6);
-    color: var(--blue-1);
+.about-text-detail::before {
+    content: "";
+    background: var(--gradient-t5d6);
+    width: calc(6rem/16);
+    height: 100%;
+    position: absolute;
+    left: calc(-34rem/16);
+}
+
+.about-me-container::before {
+    content: "";
+    background-color: var(--greyish-blue-13);
+    height: 100%;
+    position: absolute;
+    left: -15.5%;
+    right: 50%;
+    z-index: -1;
+}
+
+.goals-container::before {
+    content: "";
+    background-color: var(--greyish-blue-13);
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    right: -15.5%;
+    z-index: -1;
 }
 
 #contact {
     background-color: var(--greyish-blue-13);
+}
+
+.contact-gap {
+    gap: calc(40rem/16) calc(140rem/16);
+}
+
+.contact-underline {
+    border-bottom: 2px dashed var(--blue-5);
+}
+
+.contact::before {
+    content: "";
+    width: calc(30rem/16);
+    height: calc(30rem/16);
+    position: absolute;
+    left: calc(-40rem/16);
+}
+
+.whatsapp::before {
+    background: url(../img/icons/mini/whatsapp-icon.svg);
+}
+
+.email::before {
+    background: url(../img/icons/mini/email-icon.svg);
+}
+
+.location::before {
+    background: url(../img/icons/mini/location-icon.svg);
+}
+
+.footer-sep-detail {
+    width: 100%;
+    height: calc(3rem/16);
+    background: var(--gradient-l5r6);
 }
 
 .grid {
@@ -102,8 +196,20 @@
     align-content: start;
 }
 
+.align-items-start {
+    align-items: start;
+}
+
 .align-items-center {
     align-items: center;
+}
+
+.justify-content-sb {
+    justify-content: space-between;
+}
+
+.justify-items-start {
+    justify-items: start;
 }
 
 .justify-self-start {
@@ -158,6 +264,10 @@
     padding-top: calc(15rem/16);
 }
 
+.pt20 {
+    padding-top: calc(20rem/16);
+}
+
 .pt23 {
     padding-top: calc(23rem/16);
 }
@@ -174,12 +284,24 @@
     padding-top: calc(50rem/16);
 }
 
+.pt60 {
+    padding-top: calc(60rem/16);
+}
+
+.pt120 {
+    padding-top: calc(120rem/16);
+}
+
 .pb10 {
     padding-bottom: calc(10rem/16);
 }
 
 .pb15 {
     padding-bottom: calc(15rem/16);
+}
+
+.pb20 {
+    padding-bottom: calc(20rem/16);
 }
 
 .pb23 {
@@ -196,6 +318,14 @@
 
 .pb50 {
     padding-bottom: calc(50rem/16);
+}
+
+.pb60 {
+    padding-bottom: calc(60rem/16);
+}
+
+.pb120 {
+    padding-bottom: calc(120rem/16);
 }
 
 .pl16 {
@@ -311,6 +441,10 @@
     font-size: calc(20rem/16);
 }
 
+.text-s18 {
+    font-size: calc(18rem/16);
+}
+
 .text-s16 {
     font-size: 1rem;
 }
@@ -351,16 +485,16 @@
     text-align: left;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .text-right {
     text-align: right;
 }
 
 .text-space-4-5 {
     letter-spacing: 0.045rem;
-}
-
-.relative {
-    position: relative;
 }
 
 .btn-border {
@@ -374,6 +508,18 @@
 
 .cursor-default {
     cursor: default;
+}
+
+.relative {
+    position: relative;
+}
+
+.left40 {
+    left: calc(40rem/16);
+}
+
+.z-index-1 {
+    z-index: 1;
 }
 
 /* General Configs */
