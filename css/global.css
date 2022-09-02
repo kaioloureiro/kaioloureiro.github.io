@@ -1,11 +1,11 @@
 #intro,
 #portfolio,
 #about {
-    background-color: var(--greyish-blue-12);
+    background-color: var(--c12);
 }
 
 #contact {
-    background-color: var(--greyish-blue-13);
+    background-color: var(--c13);
 }
 
 .container {
@@ -28,68 +28,123 @@
 }
 
 .highlighted-text {
-    color: var(--blue-4);
+    color: var(--p4);
 }
 
 .special-text {
-    background: var(--gradient-l5r6);
+    background: var(--g1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
 }
 
+.test {
+    font: var(--font-1-l);
+}
+
 :root {
     --font-poppins: 'Poppins', Helvetica, Arial, sans-serif;
     --font-lato: 'Lato', Helvetica, Arial, sans-serif;
 
-    --thin: 100;
-    --extra-light: 200;
-    --light: 300;
-    --regular: 400;
-    --medium: 500;
-    --semi-bold: 600;
-    --bold: 700;
-    --extra-bold: 800;
-    --black: 900;
+    --font-1-xxl: 400 64px/80px "Poppins";
+    --font-1-xl: 400 32px/48px "Poppins";
+    --font-1-l: 400 24px/36px "Poppins";
+    --font-1-mt: 400 20px/32px "Poppins";
+    --font-1-m: 400 16px/24px "Poppins";
+    --font-1-ms: 400 14px/24px "Poppins";
+    --font-1-s: 400 12px/20px "Poppins";
+    --font-1-xs: 400 8px/12px "Poppins";
+    --font-1-xxs: 400 4px/8px "Poppins";
 
-    --greyish-blue-0: #F5F5FF;
-    --greyish-blue-1: #EBEBFF;
-    --greyish-blue-2: #D8D8EB;
-    --greyish-blue-3: #C5C5D6;
-    --greyish-blue-4: #B2B2C2;
-    --greyish-blue-5: #A0A0AD;
-    --greyish-blue-6: #8D8D99;
-    --greyish-blue-7: #7A7A85;
-    --greyish-blue-8: #676770;
-    --greyish-blue-9: #54545C;
-    --greyish-blue-10: #424247;
-    --greyish-blue-11: #2F2F33;
-    --greyish-blue-12: #1C1C1F;
-    --greyish-blue-13: #09090A;
+    --font-1-xxl-b: 500 64px/80px "Poppins";
+    --font-1-xl-b: 500 32px/48px "Poppins";
+    --font-1-l-b: 500 24px/36px "Poppins";
+    --font-1-mt-b: 500 20px/32px "Poppins";
+    --font-1-m-b: 500 16px/24px "Poppins";
+    --font-1-ms-b: 500 14px/24px "Poppins";
+    --font-1-s-b: 500 12px/20px "Poppins";
+    --font-1-xs-b: 500 8px/12px "Poppins";
+    --font-1-xxs-b: 500 4px/8px "Poppins";
 
-    --blue-0: #EAF1FF;
-    --blue-1: #E1EAFF;
-    --blue-2: #C4D1F0;
-    --blue-3: #A3B4DB;
-    --blue-4: #7E93C5;
-    --blue-5: #6379AC;
-    --blue-6: #4B4996;
-    --blue-7: #32307D;
-    --blue-8: #211F65;
-    --blue-9: #15134F;
-    --blue-10: #0B0A38;
-    --blue-11: #040424;
-    --blue-12: #010113;
+    --font-1-xxl-c: 600 64px/80px "Poppins";
+    --font-1-xl-c: 600 32px/48px "Poppins";
+    --font-1-l-c: 600 24px/36px "Poppins";
+    --font-1-mt-c: 600 20px/32px "Poppins";
+    --font-1-m-c: 600 16px/24px "Poppins";
+    --font-1-ms-c: 600 14px/24px "Poppins";
+    --font-1-s-c: 600 12px/20px "Poppins";
+    --font-1-xs-c: 600 8px/12px "Poppins";
+    --font-1-xxs-c: 600 4px/8px "Poppins";
 
-    --gradient-l5r6: linear-gradient(90deg, var(--blue-5) 0%, var(--blue-6) 100%);
-    --gradient-t5d6: linear-gradient(180deg, var(--blue-5) 0%, var(--blue-6) 100%);
-    --gradient-t6d7: linear-gradient(180deg, var(--blue-6) 0%, var(--blue-7) 100%);
+    --font-2-xxl: 400 64px/80px "Lato";
+    --font-2-xl: 400 32px/48px "Lato";
+    --font-2-l: 400 24px/36px "Lato";
+    --font-2-mt: 400 20px/32px "Lato";
+    --font-2-m: 400 16px/24px "Lato";
+    --font-2-ms: 400 14px/24px "Lato";
+    --font-2-s: 400 12px/20px "Lato";
+    --font-2-xs: 400 8px/12px "Lato";
+    --font-2-xxs: 400 4px/8px "Lato";
+
+    --font-2-xxl-b: 500 64px/80px "Lato";
+    --font-2-xl-b: 500 32px/48px "Lato";
+    --font-2-l-b: 500 24px/36px "Lato";
+    --font-2-mt-b: 500 20px/32px "Lato";
+    --font-2-m-b: 500 16px/24px "Lato";
+    --font-2-ms-b: 500 14px/24px "Lato";
+    --font-2-s-b: 500 12px/20px "Lato";
+    --font-2-xs-b: 500 8px/12px "Lato";
+    --font-2-xxs-b: 500 4px/8px "Lato";
+
+    --font-2-xxl-c: 600 64px/80px "Lato";
+    --font-2-xl-c: 600 32px/48px "Lato";
+    --font-2-l-c: 600 24px/36px "Lato";
+    --font-2-mt-c: 600 20px/32px "Lato";
+    --font-2-m-c: 600 16px/24px "Lato";
+    --font-2-ms-c: 600 14px/24px "Lato";
+    --font-2-s-c: 600 12px/20px "Lato";
+    --font-2-xs-c: 600 8px/12px "Lato";
+    --font-2-xxs-c: 600 4px/8px "Lato";
+
+    --c0: #F5F5FF;
+    --c1: #EBEBFF;
+    --c2: #D8D8EB;
+    --c3: #C5C5D6;
+    --c4: #B2B2C2;
+    --c5: #A0A0AD;
+    --c6: #8D8D99;
+    --c7: #7A7A85;
+    --c8: #676770;
+    --c9: #54545C;
+    --c10: #424247;
+    --c11: #2F2F33;
+    --c12: #1C1C1F;
+    --c13: #09090A;
+
+    --p0: #EAF1FF;
+    --p1: #E1EAFF;
+    --p2: #C4D1F0;
+    --p3: #A3B4DB;
+    --p4: #7E93C5;
+    --p5: #6379AC;
+    --p6: #4B4996;
+    --p7: #32307D;
+    --p8: #211F65;
+    --p9: #15134F;
+    --p10: #0B0A38;
+    --p11: #040424;
+    --p12: #010113;
+
+    --g1: linear-gradient(90deg, var(--p5) 0%, var(--p6) 100%);
+    --g2: linear-gradient(180deg, var(--p5) 0%, var(--p6) 100%);
+    --g3: linear-gradient(270deg, var(--p5) 0%, var(--p6) 100%);
+    --g4: linear-gradient(360deg, var(--p5) 0%, var(--p6) 100%);
 }
 
 ::selection {
-    background-color: var(--blue-0);
-    color: var(--blue-6);
+    background-color: var(--p0);
+    color: var(--p6);
 }
 
 * {
@@ -103,17 +158,17 @@ html {
 }
 
 body {
-    background-color: var(--greyish-blue-12);
-    color: var(--greyish-blue-0);
+    background-color: var(--c12);
+    color: var(--c0);
 }
 
 a {
-    color: var(--greyish-blue-0);
+    color: var(--c0);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--blue-4);
+    color: var(--p4);
 }
 
 img {
@@ -123,7 +178,7 @@ img {
 }
 
 svg:hover {
-    fill: var(--blue-4);
+    fill: var(--p4);
 }
 
 ul {
