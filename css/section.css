@@ -1,51 +1,26 @@
-.container>.section-container:last-child {
-    margin-bottom: 0;
-}
-
-.section-container {
-    display: grid;
-    gap: calc(40rem/16);
+.sep {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 4px;
+    max-width: 1160px;
     margin: auto;
-    margin-bottom: calc(40rem/16);
 }
 
-.section-sep-container {
-    display: grid;
-    gap: calc(10rem/16);
+.sep-detail {
+    background: var(--g1);
+    width: 100vw;
+    height: 4px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
 }
 
-.section-sep-detail {
-    background: var(--gradient-l5r6);
-    width: calc(400rem/16);
-    height: calc(3rem/16);
-}
-
-.left-sep-detail {
-    justify-self: start;
-}
-
-.right-sep-detail {
-    justify-self: end;
-}
-
-.section-sep-text {
-    color: var(--greyish-blue-9);
-    font-family: var(--font-lato);
-    font-size: 1rem;
-    font-weight: var(--medium);
-    line-height: calc(24rem/16);
+.section-title {
+    font: var(--font-2-m-e);
+    background-color: var(--c12);
+    color: var(--c9);
     text-transform: uppercase;
-    width: 100%;
-}
-
-.section-sep-text:hover {
     cursor: default;
-}
-
-.left-sep-text {
-    text-align: left;
-}
-
-.right-sep-text {
-    text-align: right;
+    padding: 0 8px;
 }
