@@ -1,96 +1,70 @@
-.intro-container {
+.intro {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    background: url(../img/intro-picture.svg) no-repeat center right calc(50rem/16);
-    background-color: var(--greyish-blue-13);
-    padding: calc(40rem/16) calc(60rem/16);
-    font-family: var(--font-lato);
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    background-color: var(--c13);
+    margin: 40px 0;
+    padding: 40px 100px;
     position: relative;
 }
 
-.intro-container::before {
+.intro::before {
     content: "";
     align-self: center;
-    background: var(--gradient-t5d6);
-    width: calc(8rem/16);
-    height: calc(100% - calc(80rem/16));
+    background: var(--g2);
+    width: 8px;
+    height: calc(100% - 80px);
     position: absolute;
-    left: calc(-4rem/16);
+    left: -4px;
 }
 
 .intro-info {
-    display: flex;
-    flex-direction: column;
-    gap: calc(40rem/16);
+    display: grid;
+    gap: 40px;
+}
+
+.intro-titles {
+    display: grid;
+    gap: 4px;
 }
 
 .intro-greetings {
-    color: var(--greyish-blue-8);
-    font-size: 1rem;
-    font-weight: var(--medium);
-    line-height: calc(24rem/16);
+    font: var(--font-2-m-b);
+    color: var(--c8);
 }
 
-.intro-title {
-    color: var(--greyish-blue-1);
-    font-family: var(--font-poppins);
-    font-size: calc(64rem/16);
-    font-weight: var(--regular);
-    line-height: calc(96rem/16);
-}
-
-.intro-title .special-text {
-    font-size: calc(64rem/16);
+.intro-title,
+.grad-text {
+    font: var(--font-1-xxl);
+    color: var(--c1);
 }
 
 .intro-subtitle {
-    color: var(--greyish-blue-2);
-    font-size: calc(14rem/16);
-    font-weight: var(--semi-bold);
-    line-height: calc(21rem/16);
+    font: var(--font-2-ms-c);
+    color: var(--c2);
     letter-spacing: 0.045rem;
     text-transform: uppercase;
 }
 
-.intro-text {
-    color: var(--greyish-blue-2);
-    font-size: 1rem;
-    font-weight: var(--regular);
-    line-height: calc(24rem/16);
+.intro-subtitle span {
+    color: var(--p4);
 }
 
-.intro-text .bold-text {
-    color: var(--greyish-blue-0);
+.intro-description {
+    font: var(--font-2-m);
+    color: var(--c2);
+}
+
+.intro-description span {
+    font: var(--font-2-m-c);
+    color: var(--c0);
 }
 
 .intro-buttons {
     display: flex;
-    gap: calc(62rem/16);
+    gap: 40px;
 }
 
-.intro-buttons a {
-    display: flex;
-    align-items: center;
-    padding: calc(10rem/16) calc(20rem/16);
-    border: 1px solid var(--blue-5);
-}
-
-.intro-buttons .normal-btn {
-    color: var(--greyish-blue-1);
-    padding: calc(10rem/16) calc(20rem/16) calc(10rem/16) 1rem;
-    gap: calc(6rem/16);
-}
-
-.intro-buttons .normal-btn:hover {
-    color: var(--blue-4);
-}
-
-.intro-buttons .special-btn {
-    background-image: var(--gradient-t6d7);
-    color: var(--blue-0);
-}
-
-.intro-buttons .special-btn:hover {
-    background-image: linear-gradient(to bottom, var(--greyish-blue-1) 0%, var(--greyish-blue-2) 100%);
-    color: var(--blue-7);
+.intro-watermark {
+    background: url(../img/watermark.svg) center no-repeat;
 }
