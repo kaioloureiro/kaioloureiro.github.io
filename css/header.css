@@ -1,7 +1,17 @@
 .header {
+    background-color: var(--c13);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    max-width: 1160px;
+    margin: auto;
+    padding: 10px 20px;
 }
 
 .header-logo {
@@ -16,18 +26,7 @@
     display: inline-block;
     font: var(--font-1-m-b);
     color: var(--c2);
-    padding: 32px 20px;
-    position: relative;
-}
-
-.header-menu-item:hover::after {
-    content: "";
-    width: 100%;
-    height: 4px;
-    background: var(--p0);
-    position: absolute;
-    bottom: -4px;
-    left: 0;
+    padding: 8px 20px;
 }
 
 .header-right {
@@ -43,7 +42,7 @@
 .header-lang-item {
     font: var(--font-1-ms-b);
     color: var(--c8);
-    padding: 32px 6px;
+    padding: 8px 6px;
 }
 
 .header-lang-item:hover {
@@ -52,21 +51,4 @@
 
 .selected-lang {
     color: var(--c2);
-}
-
-.header-social {
-    display: flex;
-    align-items: center;
-}
-
-.header-social-item:first-child {
-    padding: 28px 6px 28px 12px;
-}
-
-.header-social-item:last-child {
-    padding: 28px 12px 28px 6px;
-}
-
-.header-social-item:hover svg path {
-    fill: var(--p4);
 }

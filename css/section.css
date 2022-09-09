@@ -1,26 +1,24 @@
 .sep {
     display: flex;
-    justify-content: end;
-    align-items: center;
-    height: 4px;
+    flex-direction: column;
+    align-items: end;
+    gap: 4px;
     max-width: 1160px;
     margin: auto;
+    position: sticky;
+    top: 60px;
+    z-index: 1;
 }
 
 .sep-detail {
     background: var(--g1);
-    width: 100vw;
+    width: 260px;
     height: 4px;
-    position: absolute;
-    right: 0;
-    z-index: -1;
 }
 
 .section-title {
-    font: var(--font-2-m-e);
-    background-color: var(--c12);
+    font: var(--font-2-m-b);
     color: var(--c9);
     text-transform: uppercase;
     cursor: default;
-    padding: 0 8px;
 }

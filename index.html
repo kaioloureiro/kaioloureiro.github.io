@@ -15,43 +15,28 @@
 </head>
 
 <body>
-  <header class="header container">
-    <div class="header-logo">
-      <a href="/">
-        <img src="img/logo.svg" alt="Logo do Website">
-      </a>
+  <header class="header">
+    <div class="header-container">
+      <div class="header-logo">
+        <a href="/">
+          <img src="img/logo.svg" alt="Logo do Website">
+        </a>
+      </div>
+      <nav aria-label="Menu">
+        <ul class="header-menu">
+          <li><a href="#intro" class="header-menu-item">Introdução</a></li>
+          <li><a href="#portfolio" class="header-menu-item">Portfólio</a></li>
+          <li><a href="#about" class="header-menu-item">Sobre</a></li>
+          <li><a href="#contact" class="header-menu-item">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <ul class="header-lang">
+          <li><a href="/" class="header-lang-item selected-lang">BR</a></li>
+          <li><a href="/" class="header-lang-item">EN</a></li>
+        </ul>
+      </div>
     </div>
-    <nav aria-label="Menu">
-      <ul class="header-menu">
-        <li><a href="#intro" class="header-menu-item">Introdução</a></li>
-        <li><a href="#portfolio" class="header-menu-item">Portfólio</a></li>
-        <li><a href="#about" class="header-menu-item">Sobre</a></li>
-        <li><a href="#contact" class="header-menu-item">Contato</a></li>
-      </ul>
-    </nav>
-    <div class="header-right">
-      <ul class="header-lang">
-        <li><a href="/" class="header-lang-item selected-lang">BR</a></li>
-        <li><a href="/" class="header-lang-item">EN</a></li>
-      </ul>
-      <ul class="header-social">
-        <li>
-          <a href="https://github.com/kaioloureiro/" target="_blank" rel="external" class="header-social-item">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="var(--c2)" xmlns="http://www.w3.org/2000/svg">
-              <path d="M19.9657 24.156C19.9657 24.28 20.1048 24.3793 20.2802 24.3793C20.4798 24.3979 20.619 24.2986 20.619 24.156C20.619 24.0319 20.4798 23.9326 20.3044 23.9326C20.123 23.914 19.9657 24.0133 19.9657 24.156ZM21.8468 23.8768C21.8891 24.0009 21.7681 24.1435 21.5867 24.1808C21.4294 24.2428 21.248 24.1808 21.2117 24.0567C21.1754 23.9326 21.2903 23.79 21.4718 23.7341C21.629 23.6907 21.8044 23.7527 21.8468 23.8768ZM19.1734 23.7713C19.3488 23.8148 19.4698 23.9326 19.4516 24.0753C19.4335 24.1994 19.2762 24.28 19.0948 24.2366C18.9194 24.1932 18.7984 24.0753 18.8165 23.9512C18.8347 23.8334 18.998 23.7527 19.1734 23.7713ZM15.1935 0C23.5827 0 30 6.53216 30 15.1362C30 22.0158 25.7782 27.9028 19.748 29.9747C18.9738 30.1174 18.7016 29.6273 18.7016 29.2241C18.7016 28.8395 18.7198 26.718 18.7198 25.4152C18.7198 25.4152 22.9536 26.3457 23.8427 23.5666C23.8427 23.5666 24.5323 21.7614 25.5242 21.2962C25.5242 21.2962 26.9093 20.3223 25.4274 20.3409C25.4274 20.3409 23.9214 20.4649 23.0927 21.9414C21.7681 24.3359 19.5484 23.6473 18.6835 23.2379C18.5444 22.2453 18.1512 21.5567 17.7157 21.1473C21.0968 20.7627 24.5081 20.2602 24.5081 14.2926C24.5081 12.5867 24.0484 11.7306 23.0806 10.6388C23.2379 10.2356 23.752 8.57307 22.9234 6.4267C21.6593 6.02348 18.75 8.10161 18.75 8.10161C17.5403 7.75422 16.2399 7.57433 14.9516 7.57433C13.6633 7.57433 12.3629 7.75422 11.1532 8.10161C11.1532 8.10161 8.24395 6.01728 6.97984 6.4267C6.15121 8.57927 6.66532 10.2356 6.82258 10.6388C5.85484 11.7368 5.2621 12.5929 5.2621 14.2926C5.2621 20.2788 8.8246 20.7565 12.2056 21.1473C11.6492 21.6374 11.1774 22.5679 11.1774 24.0257C11.1774 26.1162 11.1956 28.703 11.1956 29.2117C11.1956 29.6149 10.9173 30.105 10.1492 29.9623C4.10081 27.9028 0 22.0158 0 15.1362C0 6.53216 6.80444 0 15.1935 0ZM24.121 21.3955C24.1996 21.4575 24.1815 21.6002 24.0786 21.718C23.9819 21.8173 23.8427 21.8607 23.7641 21.7801C23.6855 21.718 23.7036 21.5753 23.8065 21.4575C23.9032 21.3582 24.0423 21.3148 24.121 21.3955ZM24.7742 20.893C24.8165 20.9736 24.756 21.0729 24.6351 21.1349C24.5383 21.1969 24.4173 21.1783 24.375 21.0915C24.3327 21.0108 24.3931 20.9116 24.5141 20.8496C24.6351 20.8123 24.7319 20.8309 24.7742 20.893ZM22.8145 23.1014C22.9113 23.182 22.875 23.3681 22.7359 23.486C22.5968 23.6287 22.4214 23.6473 22.3427 23.548C22.2641 23.4674 22.3004 23.2813 22.4214 23.1634C22.5544 23.0207 22.7359 23.0021 22.8145 23.1014ZM23.504 22.1895C23.6008 22.2515 23.6008 22.4128 23.504 22.5555C23.4073 22.6982 23.244 22.7602 23.1653 22.6982C23.0685 22.6175 23.0685 22.4562 23.1653 22.3136C23.25 22.1709 23.4073 22.1088 23.504 22.1895Z" />
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/kaioloureiro/" target="_blank" rel="external" class="header-social-item">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="var(--c2)" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M30 15C30 6.5 22.9942 -2.97129e-07 14.9971 0C7 2.97129e-07 -1.33869e-09 6.5 0 15C1.33878e-09 23 6.1192 30 14.9971 30C23.875 30 30 23 30 15ZM6.00446 24.375H9.85804H9.86384V11.8477H6.00446V24.375ZM5.69687 7.88086C5.69687 9.12305 6.69509 10.1367 7.93125 10.1367C9.16741 10.1367 10.1656 9.12891 10.1656 7.88086C10.1656 6.63867 9.16161 5.625 7.93125 5.625C6.69509 5.625 5.69687 6.63867 5.69687 7.88086ZM20.4496 24.375H24.3031V17.5078C24.3031 14.1328 23.5777 11.5371 19.6777 11.5371C17.8031 11.5371 16.5437 12.5742 16.0272 13.5586H15.975V11.8477H12.2781V24.375H16.1317V18.1758C16.1317 16.541 16.4393 14.959 18.4473 14.959C20.4205 14.959 20.4496 16.8281 20.4496 18.2812V24.375Z" />
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-    </nav>
   </header>
 
   <div class="sep">
@@ -66,7 +51,7 @@
           <div class="intro-titles">
             <p class="intro-greetings">Olá, eu me chamo</p>
             <h1 class="intro-title">Kaio <span class="grad-text">Loureiro</span>.</h1>
-            <p class="intro-subtitle">Desenvolvedor <span>Front End</span> . Freelancer . <span>UX</span>/<span>UI</span> Designer</p>
+            <p class="intro-subtitle">Desenvolvedor <span>Front End</span> & <span>UX</span>/<span>UI</span> Designer</p>
           </div>
           <p class="intro-description">Eu sou um Desenvolvedor <span>Front End</span> e <span>UX</span>/<span>UI</span> Designer localizado no <span>Rio de Janeiro</span>, <span>Brasil</span>. Atualmente me encontro cursando o <span>7º</span> período de <span>Sistemas de Informação</span>, através da Universidade <span>Estácio de Sá</span>.</p>
           <div class="intro-buttons">
