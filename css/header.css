@@ -11,6 +11,7 @@
     align-items: center;
     max-width: 1160px;
     margin: auto;
+    padding: 0 20px;
 }
 
 .header-logo {
@@ -23,14 +24,15 @@
 
 .header-menu-item {
     display: inline-block;
-    font: var(--font-1-m-b);
-    color: var(--c2);
-    padding: 18px 30px;
+    font: var(--font-1-ms-b);
+    color: var(--c4);
+    text-transform: uppercase;
+    padding: 18px 20px;
     position: relative;
 }
 
 .header-menu-item:hover {
-    color: var(--p2);
+    color: var(--p4);
 }
 
 .header-menu-item:hover::after {

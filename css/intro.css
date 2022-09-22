@@ -1,36 +1,27 @@
-.intro {
+.intro-container {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 40px;
+    gap: 32px;
     background-color: var(--c13);
+    max-width: 640px;
     margin: 8px 0;
-    padding: 40px 100px;
+    padding: 40px 60px;
     position: relative;
 }
 
-.intro::before {
+.intro-container::before {
     content: "";
     align-self: center;
-    background: var(--g2);
-    width: 8px;
+    background: var(--p6);
+    width: 100vw;
     height: calc(100% - 80px);
     position: absolute;
-    left: -4px;
+    right: -400px;
+    z-index: -1;
 }
 
-.intro-info {
+.intro-main-info {
     display: grid;
-    gap: 40px;
-}
-
-.intro-titles {
-    display: grid;
-    gap: 4px;
-}
-
-.intro-greetings {
-    font: var(--font-2-m-b);
-    color: var(--c8);
+    gap: 12px;
 }
 
 .intro-title,
@@ -39,10 +30,10 @@
     color: var(--c1);
 }
 
-.intro-subtitle {
-    font: var(--font-2-ms-c);
+.intro-subtitle,
+.intro-subtitle span {
+    font: var(--font-2-l-c);
     color: var(--c2);
-    letter-spacing: 0.045rem;
     text-transform: uppercase;
 }
 
@@ -58,6 +49,53 @@
 .intro-description span {
     font: var(--font-2-m-c);
     color: var(--c0);
+}
+
+.intro-extra-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.intro-location,
+.intro-social {
+    display: grid;
+    gap: 20px;
+}
+
+.intro-location-info {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+}
+
+.intro-location-info:hover svg path,
+.intro-location-text:hover {
+    fill: var(--p4);
+    cursor: default;
+}
+
+.intro-location-text {
+    font: var(--font-2-m);
+    color: var(--c2);
+}
+
+.intro-location-text span {
+    font: var(--font-2-m-c);
+    color: var(--c0);
+}
+
+.intro-social-info {
+    display: flex;
+    justify-content: center;
+}
+
+.intro-social-info-link {
+    padding: 0 10px;
+}
+
+.intro-social-info-link:hover svg path {
+    fill: var(--p4);
 }
 
 .intro-buttons {
