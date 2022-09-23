@@ -5,37 +5,33 @@
     z-index: 1;
 }
 
-.header-container {
+.header>.container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    max-width: 1160px;
-    margin: auto;
-    padding: 0 20px;
 }
 
-.header-logo {
+.header .left {
     justify-self: start;
 }
 
-.header-menu {
+.header .right {
+    justify-self: end;
+}
+
+.header .menu {
     display: flex;
 }
 
-.header-menu-item {
+.header .menu-item {
     display: inline-block;
-    font: var(--font-1-ms-b);
-    color: var(--c4);
     text-transform: uppercase;
-    padding: 18px 20px;
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
     position: relative;
 }
 
-.header-menu-item:hover {
-    color: var(--p4);
-}
-
-.header-menu-item:hover::after {
+.header .menu-item:hover::after {
     content: "";
     background: var(--g1);
     width: 100%;
@@ -45,26 +41,22 @@
     left: 0;
 }
 
-.header-right {
-    display: flex;
-    justify-self: end;
+.header .middle .menu-item {
+    font: var(--font-1-ms-b);
+    color: var(--c4);
+    padding: 0 20px;
 }
 
-.header-lang {
-    display: flex;
-    align-items: center;
-}
-
-.header-lang-item {
+.header .right .menu-item {
     font: var(--font-1-ms-b);
     color: var(--c8);
-    padding: 8px 6px;
+    padding: 0 6px;
 }
 
-.header-lang-item:hover {
+.header .menu-item:hover {
     color: var(--p4);
 }
 
-.selected-lang {
+.header .menu .active-lang {
     color: var(--c2);
 }

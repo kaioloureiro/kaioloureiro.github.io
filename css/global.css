@@ -1,9 +1,5 @@
-#contact {
-    background-color: var(--c13);
-}
-
 .container {
-    max-width: calc(1200rem/16);
+    max-width: 1200px;
     padding: 0 20px;
     box-sizing: border-box;
     margin: auto;
@@ -187,7 +183,7 @@ body {
 }
 
 a {
-    color: var(--p0);
+    color: var(--p2);
     text-decoration: none;
 }
 
