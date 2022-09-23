@@ -1,14 +1,28 @@
-.intro-container {
+.intro {
     display: grid;
     gap: 32px;
     background-color: var(--c13);
+    box-shadow: var(--shadow);
     max-width: 640px;
-    margin: 8px 0;
+    margin: 100px 0 60px;
     padding: 40px 60px;
     position: relative;
 }
 
-.intro-container::before {
+.intro::before {
+    content: "Introdução";
+    background: var(--g1);
+    color: var(--c9);
+    font: var(--font-2-m);
+    text-align: center;
+    text-transform: uppercase;
+    width: 260px;
+    height: 4px;
+    position: absolute;
+    right: 0;
+}
+
+.intro::after {
     content: "";
     align-self: center;
     background: var(--p6);
@@ -17,6 +31,15 @@
     position: absolute;
     right: -400px;
     z-index: -1;
+}
+
+.watermark {
+    background: url(../img/watermark.svg) no-repeat;
+    width: 184px;
+    height: 184px;
+    position: absolute;
+    top: 60px;
+    right: -92px;
 }
 
 .intro-main-info {

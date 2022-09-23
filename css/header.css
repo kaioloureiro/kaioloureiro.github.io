@@ -3,11 +3,12 @@
     position: sticky;
     top: 0;
     z-index: 1;
+    box-shadow: var(--shadow);
 }
 
 .header>.container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 4fr 1fr;
     align-items: center;
 }
 
@@ -21,6 +22,8 @@
 
 .header .menu {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .header .menu-item {
@@ -59,4 +62,8 @@
 
 .header .menu .active-lang {
     color: var(--c2);
+}
+
+.header .menu .active-lang:hover {
+    color: var(--p2);
 }
