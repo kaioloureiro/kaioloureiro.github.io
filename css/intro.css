@@ -10,15 +10,26 @@
 }
 
 .intro::before {
-    content: "Introdução";
+    content: "";
     background: var(--g1);
+    /* color: var(--c9);
+    font: var(--font-2-m);
+    text-align: center;
+    text-transform: uppercase; */
+    width: 260px;
+    height: 4px;
+    position: absolute;
+    right: 0;
+}
+
+.section-title {
     color: var(--c9);
     font: var(--font-2-m);
     text-align: center;
     text-transform: uppercase;
     width: 260px;
-    height: 4px;
     position: absolute;
+    top: 8px;
     right: 0;
 }
 
