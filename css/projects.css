@@ -1,0 +1,96 @@
+#projects {
+    background-color: #000;
+}
+
+#projects .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-image: url(../img/background.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-origin: content-box;
+    background-attachment: fixed;
+}
+
+.projects {
+    display: grid;
+    grid-column: 2 / span 2;
+    justify-self: end;
+    background-color: var(--c13);
+    box-shadow: var(--shadow);
+    max-width: 640px;
+    margin: 60px 0 40px;
+    padding: 40px 60px;
+    position: relative;
+}
+
+.projects::before {
+    content: "";
+    background: var(--g1);
+    width: 260px;
+    height: 4px;
+    position: absolute;
+    right: 0;
+}
+
+.section-title {
+    color: var(--c9);
+    font: var(--font-2-m);
+    text-align: center;
+    text-transform: uppercase;
+    width: 260px;
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+
+.project-container {
+    display: grid;
+    gap: 32px;
+}
+
+.project-main-info {
+    display: grid;
+    gap: 12px;
+}
+
+.project-title {
+    font: var(--font-1-xl-c);
+    color: var(--c1);
+}
+
+.project-description {
+    font: var(--font-2-m);
+    color: var(--c2);
+}
+
+.project-extra-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.project-extra-info-item {
+    display: grid;
+    gap: 8px;
+}
+
+.project-extra-info-item-title {
+    font: var(--font-1-l-c);
+    color: var(--c1);
+}
+
+.project-extra-info-item-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.intro-location-info:hover svg path,
+.intro-location-text:hover {
+    fill: var(--p4);
+    cursor: default;
+}
+
+.intro-social-info-link:hover svg path {
+    fill: var(--p4);
+}
