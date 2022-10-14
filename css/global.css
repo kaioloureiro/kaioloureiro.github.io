@@ -168,6 +168,22 @@
     color: var(--p6);
 }
 
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--c13);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--g2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--c10);
+}
+
 * {
     margin: 0;
     padding: 0;
