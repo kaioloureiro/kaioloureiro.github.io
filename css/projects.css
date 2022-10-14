@@ -19,7 +19,7 @@
     background-color: var(--c13);
     box-shadow: var(--shadow);
     max-width: 640px;
-    margin: 60px 0 40px;
+    margin-top: 60px;
     padding: 40px 60px;
     position: relative;
 }
@@ -83,6 +83,61 @@
 .project-extra-info-item-icons {
     display: flex;
     gap: 16px;
+}
+
+.project-slider {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 2 / span 2;
+    justify-self: end;
+    gap: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.project-slider-item {
+    display: grid;
+    justify-items: center;
+}
+
+.project-slider-item:hover {
+    cursor: pointer;
+}
+
+.project-slider-item:hover::before {
+    content: "";
+    background: var(--g1);
+    width: 160px;
+    height: 4px;
+    position: absolute;
+    top: -4px;
+}
+
+.project-slider-item:hover::after {
+    content: "";
+    background: var(--g1);
+    width: 160px;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.project-selected {
+    font: var(--font-2-s);
+    color: var(--c11);
+    margin: 8px 0;
+}
+
+.project-slider-box {
+    background-color: var(--c11);
+    width: 160px;
+    height: 80px;
+}
+
+.slider-placeholder {
+    background: url(../img/projects/slider/slider-placeholdersvg.svg) no-repeat center;
+    background-color: var(--c11);
 }
 
 .intro-location-info:hover svg path,

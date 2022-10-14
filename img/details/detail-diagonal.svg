@@ -1,0 +1,39 @@
+<svg width="88" height="68" viewBox="0 0 88 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="80" cy="64" r="4" transform="rotate(-180 80 64)" fill="#6379AC"/>
+<g opacity="0.8">
+<circle cx="56" cy="64" r="4" transform="rotate(-180 56 64)" fill="#6379AC"/>
+</g>
+<g opacity="0.6">
+<circle cx="32" cy="64" r="4" transform="rotate(-180 32 64)" fill="#6379AC"/>
+</g>
+<g opacity="0.4">
+<circle cx="8" cy="64" r="4" transform="rotate(-180 8 64)" fill="#6379AC"/>
+</g>
+<g opacity="0.8">
+<circle cx="80" cy="44" r="4" transform="rotate(-180 80 44)" fill="#6379AC"/>
+</g>
+<g opacity="0.6">
+<circle cx="56" cy="44" r="4" transform="rotate(-180 56 44)" fill="#6379AC"/>
+</g>
+<g opacity="0.4">
+<circle cx="32" cy="44" r="4" transform="rotate(-180 32 44)" fill="#6379AC"/>
+</g>
+<g opacity="0.2">
+<circle cx="8" cy="44" r="4" transform="rotate(-180 8 44)" fill="#6379AC"/>
+</g>
+<g opacity="0.6">
+<circle cx="80" cy="24" r="4" transform="rotate(-180 80 24)" fill="#6379AC"/>
+</g>
+<g opacity="0.4">
+<circle cx="56" cy="24" r="4" transform="rotate(-180 56 24)" fill="#6379AC"/>
+</g>
+<g opacity="0.2">
+<circle cx="32" cy="24" r="4" transform="rotate(-180 32 24)" fill="#6379AC"/>
+</g>
+<g opacity="0.4">
+<circle cx="80" cy="4" r="4" transform="rotate(-180 80 4)" fill="#6379AC"/>
+</g>
+<g opacity="0.2">
+<circle cx="56" cy="4" r="4" transform="rotate(-180 56 4)" fill="#6379AC"/>
+</g>
+</svg>
