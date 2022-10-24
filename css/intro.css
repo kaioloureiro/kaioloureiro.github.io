@@ -9,26 +9,6 @@
     position: relative;
 }
 
-.intro::before {
-    content: "";
-    background: var(--g1);
-    width: 260px;
-    height: 4px;
-    position: absolute;
-    right: 0;
-}
-
-.section-title {
-    color: var(--c9);
-    font: var(--font-2-m);
-    text-align: center;
-    text-transform: uppercase;
-    width: 260px;
-    position: absolute;
-    top: 8px;
-    right: 0;
-}
-
 .intro::after {
     content: "";
     align-self: center;

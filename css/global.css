@@ -5,6 +5,33 @@
     margin: auto;
 }
 
+.section-det::before {
+    content: "";
+    background: var(--g1);
+    width: 260px;
+    height: 4px;
+    position: absolute;
+    right: 0;
+}
+
+.section-title {
+    font: var(--font-2-m);
+    text-align: center;
+    text-transform: uppercase;
+    width: 260px;
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+
+.section-a {
+    color: var(--c9);
+}
+
+.section-b {
+    color: var(--c6);
+}
+
 .grad-text,
 .grad-text::selection {
     background: var(--g1);
