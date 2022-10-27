@@ -57,3 +57,18 @@
     font: var(--font-2-m);
     color: var(--c2);
 }
+
+.concept-slider-item-link {
+    display: grid;
+    justify-self: end;
+    background-color: var(--c11);
+    padding: 12px 34px;
+}
+
+.concept-slider-item-link:hover {
+    background-image: var(--g2);
+}
+
+.concept-slider-item-link:hover svg path {
+    fill: var(--p0);
+}

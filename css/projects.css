@@ -130,12 +130,14 @@
     background-color: var(--c11);
 }
 
-.intro-location-info:hover svg path,
-.intro-location-text:hover {
-    fill: var(--p4);
-    cursor: default;
+.slider-ctrl {
+    display: flex;
+    grid-column: 2 / span 2;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
 }
 
-.intro-social-info-link:hover svg path {
-    fill: var(--p4);
+.slider-ctrl-item {
+    cursor: pointer;
 }
