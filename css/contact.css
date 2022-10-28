@@ -1,81 +1,80 @@
-.contact-container {
+#contact>.container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: calc(40rem/16) calc(140rem/16);
-    color: var(--greyish-blue-0);
-    font-family: var(--font-lato);
-    font-weight: var(--regular);
-    padding: 0 calc(100rem/16) calc(40rem/16) calc(100rem/16);
 }
 
-.contact-left-container,
-.contact-right-container .contact-list {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: calc(40rem/16);
-
-}
-
-.contact-list-item {
-    border-bottom: 2px dashed var(--blue-5);
+#contact .section-box {
+    display: grid;
+    background-color: var(--c13);
+    box-shadow: var(--shadow);
+    margin: 40px 0;
     position: relative;
 }
 
-.contact-list-item::before {
+#contact .section-box::after {
     content: "";
-    width: calc(30rem/16);
-    height: calc(30rem/16);
+    align-self: center;
+    background-color: var(--p6);
+    height: calc(100% - 120px);
+    width: 100vw;
     position: absolute;
-    left: calc(-40rem/16);
+    right: -80px;
+    z-index: -1;
 }
 
-.whatsapp::before {
-    background: url(../img/icons/mini/whatsapp-icon.svg);
-}
-
-.email::before {
-    background: url(../img/icons/mini/email-icon.svg);
-}
-
-.location::before {
-    background: url(../img/icons/mini/location-icon.svg);
-}
-
-.contact-left-container-text,
-.contact-left-container-text .highlighted-text,
-.contact-list-item,
-.contact-list-item a,
-.footer-copyright-text,
-.footer-copyright-text a {
-    font-size: calc(18rem/16);
-    line-height: calc(27rem/16);
-}
-
-.footer-sep-detail {
-    width: 100%;
-    height: calc(3rem/16);
-    background: var(--gradient-l5r6);
-}
-
-.footer-social-media {
+.contact {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: calc(10rem/16);
-    justify-items: start;
+    gap: 40px;
+    margin: 40px 60px;
 }
 
-.footer-social-media-title {
-    grid-column: 1 / -1;
-    color: var(--greyish-blue-6);
-    font-family: var(--font-poppins);
-    font-size: 1rem;
-    font-weight: var(--regular);
-    line-height: calc(24rem/16);
-    cursor: default;
+.contact .p {
+    font: var(--font-2-mt);
+    color: var(--c2);
 }
 
-.footer-copyright {
-    grid-column: 1 / -1;
-    text-align: center;
+.contact .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.contact .item {
+    display: grid;
+    justify-items: center;
+    gap: 12px;
+    padding: 12px 0;
+}
+
+.contact .item:hover {
+    background-image: var(--g2);
+}
+
+.contact .item:hover .icon {
+    filter: var(--icon-hover-p0);
+}
+
+.contact .icon {
+    width: 32px;
+    height: 32px;
+}
+
+.wpp-ico {
+    background: url(../img/icons/wpp-ico.svg);
+}
+
+.email-ico {
+    background: url(../img/icons/email-ico.svg);
+}
+
+.location-ico {
+    background: url(../img/icons/location-ico.svg);
+}
+
+.contact .text {
+    font: var(--font-2-m-c);
+    color: var(--c1);
+}
+
+.contact .text:hover {
+    color: var(--p0);
 }

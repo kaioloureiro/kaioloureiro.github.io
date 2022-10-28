@@ -19,6 +19,7 @@
     text-align: center;
     text-transform: uppercase;
     width: 260px;
+    cursor: default;
     position: absolute;
     top: 8px;
     right: 0;
@@ -187,6 +188,8 @@
     --g2: linear-gradient(180deg, var(--p5) 0%, var(--p6) 100%);
     --g3: linear-gradient(270deg, var(--p5) 0%, var(--p6) 100%);
     --g4: linear-gradient(360deg, var(--p5) 0%, var(--p6) 100%);
+
+    --icon-hover-p0: brightness(0) saturate(100%) invert(91%) sepia(3%) saturate(1526%) hue-rotate(194deg) brightness(103%) contrast(102%);
 
     --shadow: 0 12px 12px -6px rgba(0, 0, 0, 0.15);
 }
