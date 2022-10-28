@@ -5,7 +5,7 @@
     margin: auto;
 }
 
-.section-det::before {
+.section-detail::before {
     content: "";
     background: var(--g1);
     width: 260px;
@@ -59,8 +59,9 @@
 }
 
 .btn:hover {
-    background-color: var(--p7);
+    background-color: var(--p6);
     color: var(--p0);
+    border-image: var(--p6);
 }
 
 .btn:hover svg path {

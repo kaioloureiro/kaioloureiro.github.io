@@ -91,14 +91,14 @@
 }
 
 .education-body .title,
-.lang {
+.education-body .lang {
     font: var(--font-1-m-b);
     color: var(--c1);
     text-transform: uppercase;
 }
 
 .education-body .entity,
-.level {
+.education-body .level {
     font: var(--font-1-m);
     color: var(--c6);
 }
