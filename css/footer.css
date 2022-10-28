@@ -1,0 +1,70 @@
+#footer {
+    background-color: var(--c13);
+    padding: 24px 0;
+}
+
+#footer>.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .left>.p {
+    font: var(--font-2-m-b);
+    color: var(--c2);
+    text-transform: uppercase;
+}
+
+.footer .left>.p>a {
+    color: var(--p4);
+}
+
+.footer .left>.p>a:hover {
+    color: var(--p5);
+}
+
+.footer .right,
+.footer .right .social {
+    display: flex;
+    gap: 16px;
+}
+
+.footer .right>.p {
+    font: var(--font-1-m);
+    color: var(--c6);
+    text-transform: uppercase;
+    cursor: default;
+}
+
+.footer .right>.p::selection {
+    background-color: transparent;
+    color: unset;
+}
+
+.footer .right .item {
+    width: 24px;
+    height: 24px;
+}
+
+.footer .right .item:hover {
+    filter: var(--icon-hover-p4);
+}
+
+.github {
+    background: url(../img/social/github.svg);
+}
+
+.linkedin {
+    background: url(../img/social/linkedin.svg);
+}
+
+.behance {
+    background: url(../img/social/behance.svg);
+}
+
+.dribbble {
+    background: url(../img/social/dribbble.svg);
+}
+
+.uplabs {
+    background: url(../img/social/uplabs.svg);
+}
