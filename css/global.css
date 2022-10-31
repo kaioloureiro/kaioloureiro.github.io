@@ -9,7 +9,11 @@
 
 .section-detail::before {
     content: "";
-    background: var(--g1);
+    background: linear-gradient(90deg, var(--p4), var(--p5), var(--p6), var(--p7));
+    background-size: 600% 600%;
+    -webkit-animation: var(--g-anim);
+    -moz-animation: var(--g-anim);
+    animation: var(--g-anim);
     width: 260px;
     height: 4px;
     position: absolute;
@@ -48,6 +52,48 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+}
+
+@-webkit-keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 /* BOTÕES */
@@ -261,6 +307,8 @@
     --g2: linear-gradient(180deg, var(--p5) 0%, var(--p6) 100%);
     --g3: linear-gradient(270deg, var(--p5) 0%, var(--p6) 100%);
     --g4: linear-gradient(360deg, var(--p5) 0%, var(--p6) 100%);
+
+    --g-anim: gradient-animation 4s ease infinite;
 
     --icon-hover-p0: brightness(0) saturate(100%) invert(91%) sepia(3%) saturate(1526%) hue-rotate(194deg) brightness(103%) contrast(102%);
 
