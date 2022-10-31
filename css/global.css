@@ -42,8 +42,7 @@
 
 /* GRADIENTE */
 
-.grad-text,
-.grad-text::selection {
+.gradient {
     background: var(--g1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -53,21 +52,37 @@
 
 /* BOTÕES */
 
-.btn,
-.s-btn {
+.btn-ex,
+.btn {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     padding: 10px 0;
     border: 2px solid transparent;
 }
 
+.btn-ex .icon,
+.btn .icon {
+    width: 24px;
+    height: 24px;
+}
+
+.btn-ex {
+    background: var(--g2);
+    color: var(--p0);
+    border-image: var(--g2) 1;
+}
+
 .btn {
     background-color: var(--c13);
     color: var(--c1);
-    padding-left: 56px;
-    padding-right: 56px;
     border-image: var(--g1) 1;
+}
+
+.btn-ex:hover {
+    background: var(--p0);
+    color: var(--p4);
 }
 
 .btn:hover {
@@ -76,67 +91,78 @@
     border-image: var(--p6);
 }
 
-.btn:hover svg path {
-    fill: var(--p0);
+.btn-ex .icon {
+    filter: var(--icon-hover-p0);
 }
 
-.btn span {
-    font: var(--font-2-m);
+.btn-ex:hover .icon {
+    filter: var(--icon-hover-p4);
 }
 
-.s-btn {
-    background: var(--g2);
-    color: var(--p0);
-    padding-left: 64px;
-    padding-right: 64px;
-    border-image: var(--g2) 1;
+.btn:hover .icon {
+    filter: var(--icon-hover-p0);
 }
 
-.s-btn:hover {
-    background: var(--p0);
-    color: var(--p4);
-}
-
-.s-btn:hover svg path {
-    fill: var(--p4);
-}
-
-.s-btn span {
+.btn-ex .text {
     font: var(--font-2-m-c);
+}
+
+.btn .text {
+    font: var(--font-2-m);
 }
 
 /* ÍCONES */
 
+.hire-ico {
+    background: url(../img/icons/hire-icon.svg) center no-repeat;
+}
+
+.download-ico {
+    background: url(../img/icons/download-icon.svg) center no-repeat;
+}
+
+.edu-ico {
+    background: url(../img/icons/edu-icon.svg) center no-repeat;
+}
+
+.courses-ico {
+    background: url(../img/icons/courses-icon.svg) center no-repeat;
+}
+
+.lang-ico {
+    background: url(../img/icons/lang-icon.svg) center no-repeat;
+}
+
 .wpp-ico {
-    background: url(../img/icons/wpp-ico.svg);
+    background: url(../img/icons/wpp-icon.svg) center no-repeat;
 }
 
 .email-ico {
-    background: url(../img/icons/email-ico.svg);
+    background: url(../img/icons/email-icon.svg) center no-repeat;
 }
 
 .location-ico {
-    background: url(../img/icons/location-ico.svg);
+    background: url(../img/icons/location-icon.svg) center no-repeat;
 }
 
 .github-ico {
-    background: url(../img/social/github.svg);
+    background: url(../img/social/github.svg) center no-repeat;
 }
 
 .linkedin-ico {
-    background: url(../img/social/linkedin.svg);
+    background: url(../img/social/linkedin.svg) center no-repeat;
 }
 
 .behance-ico {
-    background: url(../img/social/behance.svg);
+    background: url(../img/social/behance.svg) center no-repeat;
 }
 
 .dribbble-ico {
-    background: url(../img/social/dribbble.svg);
+    background: url(../img/social/dribbble.svg) center no-repeat;
 }
 
 .uplabs-ico {
-    background: url(../img/social/uplabs.svg);
+    background: url(../img/social/uplabs.svg) center no-repeat;
 }
 
 /* ATALHOS */
@@ -248,6 +274,7 @@
 ::selection {
     background-color: var(--p0);
     color: var(--p6);
+    -webkit-text-fill-color: var(--p6);
 }
 
 ::-webkit-scrollbar {
