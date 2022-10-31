@@ -5,6 +5,8 @@
     margin: auto;
 }
 
+/* SEÇÕES */
+
 .section-detail::before {
     content: "";
     background: var(--g1);
@@ -38,6 +40,8 @@
     color: var(--c6);
 }
 
+/* GRADIENTE */
+
 .grad-text,
 .grad-text::selection {
     background: var(--g1);
@@ -46,6 +50,8 @@
     background-clip: text;
     text-fill-color: transparent;
 }
+
+/* BOTÕES */
 
 .btn,
 .s-btn {
@@ -98,6 +104,42 @@
 .s-btn span {
     font: var(--font-2-m-c);
 }
+
+/* ÍCONES */
+
+.wpp-ico {
+    background: url(../img/icons/wpp-ico.svg);
+}
+
+.email-ico {
+    background: url(../img/icons/email-ico.svg);
+}
+
+.location-ico {
+    background: url(../img/icons/location-ico.svg);
+}
+
+.github-ico {
+    background: url(../img/social/github.svg);
+}
+
+.linkedin-ico {
+    background: url(../img/social/linkedin.svg);
+}
+
+.behance-ico {
+    background: url(../img/social/behance.svg);
+}
+
+.dribbble-ico {
+    background: url(../img/social/dribbble.svg);
+}
+
+.uplabs-ico {
+    background: url(../img/social/uplabs.svg);
+}
+
+/* ATALHOS */
 
 :root {
     --font-1-xxl: 400 64px/80px "Poppins";
@@ -200,6 +242,8 @@
 
     --shadow: 0 12px 12px -6px rgba(0, 0, 0, 0.15);
 }
+
+/* GERAL */
 
 ::selection {
     background-color: var(--p0);

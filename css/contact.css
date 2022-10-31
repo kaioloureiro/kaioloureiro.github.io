@@ -60,18 +60,6 @@
     height: 32px;
 }
 
-.wpp-ico {
-    background: url(../img/icons/wpp-ico.svg);
-}
-
-.email-ico {
-    background: url(../img/icons/email-ico.svg);
-}
-
-.location-ico {
-    background: url(../img/icons/location-ico.svg);
-}
-
 .contact .text {
     font: var(--font-2-m-c);
     color: var(--c1);

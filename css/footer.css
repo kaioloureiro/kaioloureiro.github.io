@@ -1,9 +1,9 @@
-#footer {
+.footer {
     background-color: var(--c13);
     padding: 24px 0;
 }
 
-#footer>.container {
+.footer>.container {
     display: flex;
     justify-content: space-between;
 }
@@ -47,24 +47,4 @@
 
 .footer .right .item:hover {
     filter: var(--icon-hover-p4);
-}
-
-.github {
-    background: url(../img/social/github.svg);
-}
-
-.linkedin {
-    background: url(../img/social/linkedin.svg);
-}
-
-.behance {
-    background: url(../img/social/behance.svg);
-}
-
-.dribbble {
-    background: url(../img/social/dribbble.svg);
-}
-
-.uplabs {
-    background: url(../img/social/uplabs.svg);
 }
