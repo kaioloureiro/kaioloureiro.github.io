@@ -40,11 +40,11 @@
     color: unset;
 }
 
-.footer .right .item {
+.footer .right .social-item {
     width: 24px;
     height: 24px;
 }
 
-.footer .right .item:hover {
+.footer .right .social-item:hover {
     filter: var(--icon-hover-p4);
 }

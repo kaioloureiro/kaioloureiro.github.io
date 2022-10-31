@@ -73,18 +73,6 @@
     height: 24px;
 }
 
-.edu-ico {
-    background: url(../img/icons/edu-icon.svg);
-}
-
-.courses-ico {
-    background: url(../img/icons/courses-icon.svg);
-}
-
-.lang-ico {
-    background: url(../img/icons/lang-icon.svg);
-}
-
 .education-body {
     display: grid;
     gap: 8px;
