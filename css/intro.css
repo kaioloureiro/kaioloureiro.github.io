@@ -33,45 +33,45 @@
     gap: 32px;
 }
 
-.main .title,
-.main .gradient {
+.intro .main .title,
+.intro .main .gradient {
     font: var(--font-1-xxl);
     color: var(--c1);
 }
 
-.main .subtitle,
-.main .subtitle span {
+.intro .main .subtitle,
+.intro .main .subtitle span {
     font: var(--font-2-l-c);
     text-transform: uppercase;
 }
 
-.main .subtitle {
+.intro .main .subtitle {
     color: var(--c2);
 }
 
-.main .subtitle span {
+.intro .main .subtitle span {
     color: var(--p4);
 }
 
-.main .description {
+.intro .main .description {
     font: var(--font-2-m);
     color: var(--c2);
     margin-top: 12px;
 }
 
-.main .description span {
+.intro .main .description span {
     font: var(--font-2-m-c);
     color: var(--c0);
 }
 
-.extra {
+.intro .extra {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
 }
 
-.extra .left,
-.extra .right {
+.intro .extra .left,
+.intro .extra .right {
     display: grid;
     gap: 20px;
 }
