@@ -199,38 +199,38 @@
     background: url(../img/social/uplabs.svg) center no-repeat;
 }
 
-/* ATALHOS */
+/* VARIÁVEIS */
 
 :root {
-    --font-1-xxl: 400 64px/80px "Poppins";
-    --font-1-xl: 400 32px/48px "Poppins";
-    --font-1-l: 400 24px/36px "Poppins";
-    --font-1-mt: 400 20px/32px "Poppins";
-    --font-1-m: 400 16px/24px "Poppins";
-    --font-1-ms: 400 14px/24px "Poppins";
-    --font-1-s: 400 12px/20px "Poppins";
-    --font-1-xs: 400 8px/12px "Poppins";
-    --font-1-xxs: 400 4px/8px "Poppins";
+    --font-1-xxl: 400 64px/80px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-xl: 400 32px/48px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-l: 400 24px/36px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-mt: 400 20px/32px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-m: 400 16px/24px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-ms: 400 14px/24px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-s: 400 12px/20px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-xs: 400 8px/12px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-xxs: 400 4px/8px "Poppins", Helvetica, Arial, sans-serif;
 
-    --font-1-xxl-b: 500 64px/80px "Poppins";
-    --font-1-xl-b: 500 32px/48px "Poppins";
-    --font-1-l-b: 500 24px/36px "Poppins";
-    --font-1-mt-b: 500 20px/32px "Poppins";
-    --font-1-m-b: 500 16px/24px "Poppins";
-    --font-1-ms-b: 500 14px/24px "Poppins";
-    --font-1-s-b: 500 12px/20px "Poppins";
-    --font-1-xs-b: 500 8px/12px "Poppins";
-    --font-1-xxs-b: 500 4px/8px "Poppins";
+    --font-1-xxl-b: 500 64px/80px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-xl-b: 500 32px/48px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-l-b: 500 24px/36px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-mt-b: 500 20px/32px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-m-b: 500 16px/24px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-ms-b: 500 14px/24px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-s-b: 500 12px/20px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-xs-b: 500 8px/12px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-xxs-b: 500 4px/8px "Poppins", Helvetica, Arial, sans-serif;
 
-    --font-1-xxl-c: 600 64px/80px "Poppins";
-    --font-1-xl-c: 600 32px/48px "Poppins";
-    --font-1-l-c: 600 24px/36px "Poppins";
-    --font-1-mt-c: 600 20px/32px "Poppins";
-    --font-1-m-c: 600 16px/24px "Poppins";
-    --font-1-ms-c: 600 14px/24px "Poppins";
-    --font-1-s-c: 600 12px/20px "Poppins";
-    --font-1-xs-c: 600 8px/12px "Poppins";
-    --font-1-xxs-c: 600 4px/8px "Poppins";
+    --font-1-xxl-c: 600 64px/80px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-xl-c: 600 32px/48px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-l-c: 600 24px/36px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-mt-c: 600 20px/32px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-m-c: 600 16px/24px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-ms-c: 600 14px/24px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-s-c: 600 12px/20px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-xs-c: 600 8px/12px "Poppins", Helvetica, Arial, sans-serif;
+    --font-1-xxs-c: 600 4px/8px "Poppins", Helvetica, Arial, sans-serif;
 
     --font-2-xxl: 400 64px/80px "Lato";
     --font-2-xl: 400 32px/48px "Lato";
@@ -305,7 +305,7 @@
     --shadow: 0 12px 12px -6px rgba(0, 0, 0, 0.15);
 }
 
-/* GERAL */
+/* CONFIGURAÇÕES GERAIS */
 
 ::selection {
     background-color: var(--p0);
