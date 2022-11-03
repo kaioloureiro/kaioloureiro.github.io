@@ -19,6 +19,10 @@
 
 .projects {
     display: grid;
+}
+
+.projects .main {
+    display: grid;
     gap: 32px;
     background-color: var(--c13);
     box-shadow: var(--shadow);
@@ -26,62 +30,65 @@
     padding: 40px 60px;
 }
 
-.projects .main {
+.projects .info {
     display: grid;
     gap: 12px;
 }
 
-.projects .main .title {
+.projects .info .title {
     font: var(--font-1-xl-c);
     color: var(--c1);
 }
 
-.projects .main .description {
+.projects .info .description {
     font: var(--font-2-m);
     color: var(--c2);
 }
 
-.projects .extra {
+.projects .main .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
 }
 
-.projects .extra .item {
+.projects .main .grid .item {
     display: grid;
     gap: 8px;
 }
 
-.projects .extra .title {
+.projects .main .grid .title {
     font: var(--font-1-l-c);
     color: var(--c1);
 }
 
-.projects .extra .icons {
+.projects .main .grid .icons {
     display: flex;
     gap: 16px;
 }
 
-#projects .slider {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column: 2 / span 2;
-    justify-self: end;
+.projects .slider {
+    display: flex;
+    flex-direction: column;
     gap: 40px;
-    margin-bottom: 40px;
     position: relative;
 }
 
-.project-slider-item {
+.projects .slider .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.projects .slider .grid .item {
     display: grid;
     justify-items: center;
 }
 
-.project-slider-item:hover {
+.projects .slider .grid .item:hover {
     cursor: pointer;
 }
 
-.project-slider-item:hover::before {
+.projects .slider .grid .item:hover::before {
     content: "";
     background: var(--g1);
     width: 160px;
@@ -90,45 +97,24 @@
     top: -4px;
 }
 
-.project-slider-item:hover::after {
-    content: "";
-    background: var(--g1);
-    width: 160px;
-    height: 4px;
-    position: absolute;
-    bottom: 0;
-}
-
-.project-selected {
-    font: var(--font-2-s);
-    color: var(--c11);
-    margin: 8px 0;
-}
-
-.project-slider-box {
+.projects .slider .grid .box {
     background-color: var(--c11);
     width: 160px;
     height: 80px;
 }
 
-.slider-placeholder {
-    background: url(../img/projects/slider/slider-placeholder.svg) no-repeat center;
-    background-color: var(--c11);
+.projects .slider .grid .item:hover .box {
+    background: var(--g1);
 }
 
-.slider-huddle {
-    background: url(../img/projects/slider/slider-huddle.svg) no-repeat center;
-    background-color: var(--c11);
-}
-
-.slider-bikcraft {
-    background: url(../img/projects/slider/slider-bikcraft.svg) no-repeat center;
-    background-color: var(--c11);
+.projects .slider .grid .active {
+    font: var(--font-2-s);
+    color: var(--c11);
+    margin: 8px 0;
 }
 
 .slider-ctrl {
     display: flex;
-    grid-column: 2 / span 2;
     justify-content: center;
     gap: 20px;
 }

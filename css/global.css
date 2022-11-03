@@ -199,6 +199,18 @@
     background: url(../img/social/uplabs.svg) center no-repeat;
 }
 
+.placeholder-ico {
+    background: url(../img/projects/slider/slider-placeholder.svg) center no-repeat;
+}
+
+.huddle-ico {
+    background: url(../img/projects/slider/slider-huddle.svg) center no-repeat;
+}
+
+.bikcraft-ico {
+    background: url(../img/projects/slider/slider-bikcraft.svg) center no-repeat;
+}
+
 /* VARIÁVEIS */
 
 :root {
