@@ -12,21 +12,27 @@
     align-items: center;
 }
 
-.header .left {
-    justify-self: start;
+.header .logo {
+    background: url(../img/logo.svg) center no-repeat;
+    width: 200px;
+    height: 60px;
 }
 
-.header .right {
-    justify-self: end;
-}
-
-.header .menu {
+.header .main,
+.header .lang {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
-.header .menu-item {
+.header .main {
+    justify-content: center;
+}
+
+.header .lang {
+    justify-content: end;
+}
+
+.header .menu .item {
     display: inline-block;
     text-transform: uppercase;
     padding-top: 18px !important;
@@ -34,7 +40,11 @@
     position: relative;
 }
 
-.header .menu-item:hover::after {
+.header .menu .item:hover {
+    color: var(--p4);
+}
+
+.header .menu .item:hover::after {
     content: "";
     background: var(--g1);
     width: 100%;
@@ -44,26 +54,23 @@
     left: 0;
 }
 
-.header .middle .menu-item {
+.header .main .item {
     font: var(--font-1-ms-b);
     color: var(--c4);
     padding: 0 20px;
 }
 
-.header .right .menu-item {
+.header .lang .item {
     font: var(--font-1-ms-b);
     color: var(--c8);
     padding: 0 6px;
 }
 
-.header .menu-item:hover {
-    color: var(--p4);
-}
-
-.header .menu .active-lang {
+.header .lang .active {
     color: var(--c2);
 }
 
-.header .menu .active-lang:hover {
+.header .lang .active:hover {
     color: var(--p2);
+    cursor: pointer;
 }
