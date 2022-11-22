@@ -40,18 +40,23 @@
     position: relative;
 }
 
-.header .menu .item:hover {
-    color: var(--p4);
-}
-
-.header .menu .item:hover::after {
+.header .menu .item::after {
     content: "";
     background: var(--g1);
-    width: 100%;
+    width: 0%;
     height: 4px;
+    transition: 0.2s;
     position: absolute;
     bottom: 0;
     left: 0;
+}
+
+.header .menu .item:hover::after {
+    width: 100%;
+}
+
+.header .menu .item:hover {
+    color: var(--p4);
 }
 
 .header .main .item {
