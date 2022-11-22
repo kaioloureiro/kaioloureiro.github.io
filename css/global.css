@@ -108,15 +108,24 @@
     border-image: var(--g2) 1;
 }
 
+.btn-ex:hover {
+    background: var(--g3);
+    color: var(--p0);
+    border-image: var(--g3) 1;
+}
+
+.btn-ex .icon {
+    filter: var(--icon-hover-p0);
+}
+
+.btn-ex .text {
+    font: var(--font-2-m-c);
+}
+
 .btn {
     background-color: var(--c13);
     color: var(--c1);
     border-image: var(--g1) 1;
-}
-
-.btn-ex:hover {
-    background: var(--p0);
-    color: var(--p4);
 }
 
 .btn:hover {
@@ -125,20 +134,8 @@
     border-image: var(--p6);
 }
 
-.btn-ex .icon {
-    filter: var(--icon-hover-p0);
-}
-
-.btn-ex:hover .icon {
-    filter: var(--icon-hover-p4);
-}
-
 .btn:hover .icon {
     filter: var(--icon-hover-p0);
-}
-
-.btn-ex .text {
-    font: var(--font-2-m-c);
 }
 
 .btn .text {
@@ -303,9 +300,9 @@
     --p11: #040424;
     --p12: #010113;
 
-    --g1: linear-gradient(90deg, var(--p5) 0%, var(--p6) 100%);
-    --g2: linear-gradient(180deg, var(--p5) 0%, var(--p6) 100%);
-    --g3: linear-gradient(270deg, var(--p5) 0%, var(--p6) 100%);
+    --g1: linear-gradient(90deg, var(--p5), var(--p6));
+    --g2: linear-gradient(var(--p5), var(--p6));
+    --g3: linear-gradient(var(--p6), var(--p7));
     --g4: linear-gradient(360deg, var(--p5) 0%, var(--p6) 100%);
 
     --g1-anim: gradient-animation 3s linear infinite;
