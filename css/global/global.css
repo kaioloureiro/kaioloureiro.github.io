@@ -1,0 +1,165 @@
+.container {
+    max-width: 1200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+/* SEÇÕES */
+
+.section-detail::before {
+    content: "";
+    background: linear-gradient(90deg, var(--p4), var(--p5), var(--p6), var(--p7), var(--p7), var(--p6), var(--p5), var(--p4));
+    background-size: 600% 600%;
+    -webkit-animation: var(--g1-anim);
+    -moz-animation: var(--g1-anim);
+    animation: var(--g1-anim);
+    width: 260px;
+    height: 4px;
+    position: absolute;
+    right: 0;
+}
+
+.section-title {
+    font: var(--font-2-m);
+    text-align: center;
+    text-transform: uppercase;
+    width: 260px;
+    cursor: default;
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+
+.section-title::selection {
+    background-color: transparent;
+    color: unset;
+}
+
+.section-a {
+    color: var(--c9);
+}
+
+.section-b {
+    color: var(--c6);
+}
+
+/* GRADIENTE */
+
+.gradient {
+    background: var(--g1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+@-webkit-keyframes gradient-animation {
+    0% {
+        background-position: 0px 0;
+    }
+
+    100% {
+        background-position: 100rem 0;
+    }
+}
+
+@-moz-keyframes gradient-animation {
+    0% {
+        background-position: 0px 0;
+    }
+
+    100% {
+        background-position: 100rem 0;
+    }
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0px 0;
+    }
+
+    100% {
+        background-position: 100rem 0;
+    }
+}
+
+/* BOTÕES */
+
+
+
+/* ÍCONES */
+
+
+
+/* VARIÁVEIS */
+
+:root {
+
+    --g1-anim: gradient-animation 3s linear infinite;
+
+    --icon-hover-p0: brightness(0) saturate(100%) invert(91%) sepia(3%) saturate(1526%) hue-rotate(194deg) brightness(103%) contrast(102%);
+
+    --icon-hover-p4: brightness(0) saturate(100%) invert(61%) sepia(17%) saturate(797%) hue-rotate(184deg) brightness(91%) contrast(93%);
+
+    --shadow: 0 12px 12px -6px rgba(0, 0, 0, 0.15);
+}
+
+/* CONFIGURAÇÕES GERAIS */
+
+::selection {
+    background-color: var(--p0);
+    color: var(--p6);
+    -webkit-text-fill-color: var(--p6);
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--c13);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--g2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--c10);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--c12);
+    color: var(--c0);
+}
+
+a {
+    color: var(--p2);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--p4);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}

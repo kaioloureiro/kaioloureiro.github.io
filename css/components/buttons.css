@@ -1,0 +1,55 @@
+.btn-ex,
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 0;
+    border: 2px solid transparent;
+}
+
+.btn-ex .icon,
+.btn .icon {
+    width: 24px;
+    height: 24px;
+}
+
+.btn-ex {
+    background: var(--g2);
+    color: var(--p0);
+    border-image: var(--g2) 1;
+}
+
+.btn-ex:hover {
+    background: var(--g3);
+    color: var(--p0);
+    border-image: var(--g3) 1;
+}
+
+.btn-ex .icon {
+    filter: var(--icon-hover-p0);
+}
+
+.btn-ex .text {
+    font: var(--font-2-m-c);
+}
+
+.btn {
+    background-color: var(--c13);
+    color: var(--c1);
+    border-image: var(--g1) 1;
+}
+
+.btn:hover {
+    background-color: var(--p6);
+    color: var(--p0);
+    border-image: var(--p6);
+}
+
+.btn:hover .icon {
+    filter: var(--icon-hover-p0);
+}
+
+.btn .text {
+    font: var(--font-2-m);
+}

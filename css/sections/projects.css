@@ -103,8 +103,8 @@
     height: 80px;
 }
 
-.projects .slider .grid .item:hover .box {
-    background: var(--g1);
+.projects .slider .grid .box:hover {
+    /* background: var(--g1); */
 }
 
 .projects .slider .grid .active {
