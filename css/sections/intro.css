@@ -20,7 +20,7 @@
 }
 
 #intro .watermark {
-    background: url(../img/watermark.svg) no-repeat;
+    background: url(../../img/watermark.svg) no-repeat;
     width: 184px;
     height: 184px;
     position: absolute;
