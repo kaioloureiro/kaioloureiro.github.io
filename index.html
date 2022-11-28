@@ -17,76 +17,58 @@
 <body>
   <header class="header">
     <div class="container">
-      <a href="/" class="logo" aria-label="Logo do Website" alt="Kaio Loureiro. Desenvolvedor Front End, Freelancer e UX/UI Designer."></a>
+      <a href="/" class="logo" aria-label="Logo do Website" alt="Logo"></a>
       <nav class="menu" aria-label="Menu Principal">
-        <ul class="main">
-          <li><a href="#intro" class="item">Introdução</a></li>
-          <li><a href="#projects" class="item">Projetos</a></li>
-          <li><a href="#concepts" class="item">Conceitos</a></li>
-          <li><a href="#education" class="item">Formação</a></li>
-          <li><a href="#contact" class="item">Contato</a></li>
-        </ul>
-      </nav>
-      <nav class="menu" aria-label="Menu de Idiomas">
-        <ul class="lang">
-          <li>
-            <p class="item active" alt="Português do Brasil">br</p>
-          </li>
-          <li><a class="item" rel="alternate" href="/en" hreflang="en" lang="en" alt="English">en</a></li>
+        <ul class="menu__items small-text-b">
+          <li><a href="#intro" class="menu__item c2">Introdução</a></li>
+          <li><a href="#projects" class="menu__item c2">Projetos</a></li>
+          <li><a href="#education" class="menu__item c2">Formação</a></li>
+          <li><a href="#contact" class="menu__item menu_btn p0">Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section id="intro" aria-label="Introdução">
-      <div class="container">
-        <div class="section-box section-detail">
-          <span class="section-title section-a">Introdução</span>
-          <div class="intro">
-            <div class="main">
-              <h1 class="title">Kaio <span class="gradient">Loureiro</span>.</h1>
-              <p class="subtitle">Desenvolvedor <span>Front End</span> & <span>UX</span>/<span>UI</span> Designer</p>
-              <p class="description">Cursando o <span>7º</span> período de <span>Sistemas de Informação</span> na <span>Universidade Estácio de Sá</span>.</p>
-            </div>
-            <div class="extra">
-              <div class="left">
-                <a class="location" href="https://www.google.com/maps/place/Rio+de+Janeiro/@-22.00333,-47.2785637,7z/data=!3m1!4b1!4m5!3m4!1s0x981894cae28ac3:0x349c31ac10583d0!8m2!3d-22.3534263!4d-42.7076107" target="_blank" rel="external">
-                  <span class="icon location-ico"></span>
-                  <p class="p">Localizado no <span>Rio de Janeiro</span>, <span>Brasil</span>.</p>
-                </a>
-                <a class="btn-ex" href="#contact">
-                  <span class="icon hire-ico"></span>
-                  <p class="text">Contrate-me!</p>
-                </a>
-              </div>
-              <div class="right">
-                <div class="social">
-                  <a class="social-item github-ico" href="https://github.com/kaioloureiro/" target="_blank" rel="external"></a>
-                  <a class="social-item linkedin-ico" href="https://www.linkedin.com/in/kaioloureiro" target="_blank" rel="external"></a>
-                  <a class="social-item behance-ico" href="https://www.behance.net/kaioloureiro" target="_blank" rel="external"></a>
-                  <a class="social-item dribbble-ico" href="https://dribbble.com/kaioloureiro" target="_blank" rel="external"></a>
-                  <a class="social-item uplabs-ico" href="https://www.uplabs.com/kaioloureiro" target="_blank" rel="external"></a>
-                </div>
-                <a class="btn" href="#download">
-                  <span class="icon download-ico"></span>
-                  <p class="text">Baixar Currículo</p>
-                </a>
-              </div>
+    <section id="intro" class="container" aria-label="Introdução">
+      <div class="wrapper">
+        <div class="wrapper__top">
+          <h1 class="h1">Kaio <span class="h1 h1_gradient">Loureiro</span>.</h1>
+          <p class="large-text">Desenvolvedor Front End & UX/UI Designer.</p>
+        </div>
+        <div class="wrapper__grid">
+          <div class="wrapper__grid__item">
+            <a class="btn btn_ex" href="#contact">
+              <span class="btn__icon btn__icon_ex hire-ico"></span>
+              <p class="small-text-b p0">Contrate-me!</p>
+            </a>
+            <div class="location">
+              <span class="icon location-ico"></span>
+              <p class="p">Localizado no <span>Rio de Janeiro</span>, <span>Brasil</span>.</p>
             </div>
           </div>
-          <span class="watermark"></span>
-          <span class="details box-top"></span>
-          <span class="details box-bottom"></span>
-          <span class="details diagonal"></span>
+          <div class="wrapper__grid__item">
+            <a class="btn" href="#download">
+              <span class="btn__icon download-ico"></span>
+              <p class="small-text c1">Baixar Currículo</p>
+            </a>
+            <div class="social">
+              <a class="social-item github-ico" href="https://github.com/kaioloureiro/" target="_blank" rel="external"></a>
+              <a class="social-item linkedin-ico" href="https://www.linkedin.com/in/kaioloureiro" target="_blank" rel="external"></a>
+              <a class="social-item behance-ico" href="https://www.behance.net/kaioloureiro" target="_blank" rel="external"></a>
+              <a class="social-item dribbble-ico" href="https://dribbble.com/kaioloureiro" target="_blank" rel="external"></a>
+              <a class="social-item uplabs-ico" href="https://www.uplabs.com/kaioloureiro" target="_blank" rel="external"></a>
+            </div>
+          </div>
         </div>
+        <p class="alt_text-b c2">Cursando o 8º período de Sistemas de Informação na Universidade Estácio de Sá.</p>
       </div>
+      <span class="watermark"></span>
     </section>
 
     <section id="projects" aria-label="Projetos">
       <div class="container">
         <div class="section-box section-detail">
-          <span class="section-title section-a">Projetos</span>
           <div class="projects">
             <div class="main">
               <div class="info">
@@ -115,19 +97,19 @@
               <div class="grid">
                 <div class="item">
                   <span class="active">Projeto Selecionado</span>
-                  <div class="box placeholder-ico"></div>
+                  <div class="box placeholder-ico" onclick="activeProject(this)"></div>
                 </div>
                 <div class="item">
                   <span class="active">Projeto Selecionado</span>
-                  <div class="box placeholder-ico"></div>
+                  <div class="box placeholder-ico" onclick="activeProject(this)"></div>
                 </div>
                 <div class="item">
                   <span class="active">Projeto Selecionado</span>
-                  <div class="box huddle-ico"></div>
+                  <div class="box huddle-ico" onclick="activeProject(this)"></div>
                 </div>
                 <div class="item">
                   <span class="active">Projeto Selecionado</span>
-                  <div class="box bikcraft-ico"></div>
+                  <div class="box bikcraft-ico" onclick="activeProject(this)"></div>
                 </div>
               </div>
               <div class="slider-ctrl">
