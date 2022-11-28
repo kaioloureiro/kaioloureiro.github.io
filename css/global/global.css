@@ -1,13 +1,32 @@
 .container {
+    display: grid;
     max-width: 1200px;
-    padding: 0 20px;
     box-sizing: border-box;
-    margin: auto;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+.container:nth-child(odd) {
+    grid-template-columns: 2fr 1fr;
+}
+
+.container:nth-child(even) {
+    grid-template-columns: 1fr 2fr;
+}
+
+.wrapper {
+    display: grid;
+    background-color: var(--c13);
+    box-shadow: var(--shadow);
+    border-radius: 4px;
+    max-width: 640px;
+    padding: 40px 60px;
+    position: relative;
 }
 
 /* SEÇÕES */
 
-.section-detail::before {
+/* .section-detail::before {
     content: "";
     background: linear-gradient(90deg, var(--p4), var(--p5), var(--p6), var(--p7), var(--p7), var(--p6), var(--p5), var(--p4));
     background-size: 600% 600%;
@@ -18,7 +37,7 @@
     height: 4px;
     position: absolute;
     right: 0;
-}
+} */
 
 .section-title {
     font: var(--font-2-m);
@@ -45,14 +64,6 @@
 }
 
 /* GRADIENTE */
-
-.gradient {
-    background: var(--g1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-}
 
 @-webkit-keyframes gradient-animation {
     0% {
@@ -84,14 +95,6 @@
     }
 }
 
-/* BOTÕES */
-
-
-
-/* ÍCONES */
-
-
-
 /* VARIÁVEIS */
 
 :root {
@@ -122,7 +125,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--g2);
+    background: var(--grad-p0);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -141,7 +144,7 @@ html {
 
 body {
     font-family: Helvetica, Arial, sans-serif;
-    background-color: var(--c12);
+    background: var(--b);
     color: var(--c0);
 }
 

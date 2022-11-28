@@ -1,109 +1,67 @@
 :root {
-    --font-1-xxl: 400 64px/80px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-xl-c: 600 32px/48px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-l-b: 500 24px/36px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-l-c: 600 24px/36px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-m: 400 16px/24px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-m-b: 500 16px/24px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-m-c: 600 16px/24px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-ms-b: 500 14px/24px "Poppins", Helvetica, Arial, sans-serif;
-
-    --font-2-l-c: 600 24px/36px "Lato";
-    --font-2-m: 400 16px/24px "Lato";
-    --font-2-m-b: 500 16px/24px "Lato";
-    --font-2-m-c: 600 16px/24px "Lato";
-    --font-2-mt: 400 20px/32px "Lato";
-    --font-2-s: 400 12px/20px "Lato";
-
-    /* --font-1-xxl: 400 64px/80px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-xl: 400 32px/48px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-l: 400 24px/36px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-mt: 400 20px/32px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-m: 400 16px/24px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-ms: 400 14px/24px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-s: 400 12px/20px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-xs: 400 8px/12px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-xxs: 400 4px/8px "Poppins", Helvetica, Arial, sans-serif; */
-
-    /* --font-1-xxl-b: 500 64px/80px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-xl-b: 500 32px/48px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-l-b: 500 24px/36px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-mt-b: 500 20px/32px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-m-b: 500 16px/24px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-ms-b: 500 14px/24px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-s-b: 500 12px/20px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-xs-b: 500 8px/12px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-xxs-b: 500 4px/8px "Poppins", Helvetica, Arial, sans-serif; */
-
-    /* --font-1-xxl-c: 600 64px/80px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-xl-c: 600 32px/48px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-l-c: 600 24px/36px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-mt-c: 600 20px/32px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-m-c: 600 16px/24px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-ms-c: 600 14px/24px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-s-c: 600 12px/20px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-xs-c: 600 8px/12px "Poppins", Helvetica, Arial, sans-serif;
-    --font-1-xxs-c: 600 4px/8px "Poppins", Helvetica, Arial, sans-serif; */
-
-    /* --font-2-xxl: 400 64px/80px "Lato";
-    --font-2-xl: 400 32px/48px "Lato";
-    --font-2-l: 400 24px/36px "Lato";
-    --font-2-mt: 400 20px/32px "Lato";
-    --font-2-m: 400 16px/24px "Lato";
-    --font-2-ms: 400 14px/24px "Lato";
-    --font-2-s: 400 12px/20px "Lato";
-    --font-2-xs: 400 8px/12px "Lato";
-    --font-2-xxs: 400 4px/8px "Lato"; */
-
-    /* --font-2-xxl-b: 500 64px/80px "Lato";
-    --font-2-xl-b: 500 32px/48px "Lato";
-    --font-2-l-b: 500 24px/36px "Lato";
-    --font-2-mt-b: 500 20px/32px "Lato";
-    --font-2-m-b: 500 16px/24px "Lato";
-    --font-2-ms-b: 500 14px/24px "Lato";
-    --font-2-s-b: 500 12px/20px "Lato";
-    --font-2-xs-b: 500 8px/12px "Lato";
-    --font-2-xxs-b: 500 4px/8px "Lato"; */
-
-    /* --font-2-xxl-c: 600 64px/80px "Lato";
-    --font-2-xl-c: 600 32px/48px "Lato";
-    --font-2-l-c: 600 24px/36px "Lato";
-    --font-2-mt-c: 600 20px/32px "Lato";
-    --font-2-m-c: 600 16px/24px "Lato";
-    --font-2-ms-c: 600 14px/24px "Lato";
-    --font-2-s-c: 600 12px/20px "Lato";
-    --font-2-xs-c: 600 8px/12px "Lato";
-    --font-2-xxs-c: 600 4px/8px "Lato"; */
+    --h1: 400 80px/100px "Poppins", sans-serif;
+    --h2: 600 32px/48px "Poppins", sans-serif;
+    --h3: 600 24px/36px "Poppins", sans-serif;
+    --h4: 600 20px/32px "Poppins", sans-serif;
+    --large-text: 400 20px/32px "Poppins", sans-serif;
+    --text: 400 16px/24px "Poppins", sans-serif;
+    --text-b: 700 16px/24px "Poppins", sans-serif;
+    --alt_text: 400 16px/24px "Lato", sans-serif;
+    --alt_text-b: 700 16px/24px "Lato", sans-serif;
+    --small-text: 400 14px/24px "Poppins", sans-serif;
+    --small-text-b: 500 14px/24px "Poppins", sans-serif;
+    --alt_small-text-b: 700 14px/24px "Lato", sans-serif;
+    --extra-small-text: 400 12px/20px "Lato", sans-serif;
 }
 
-.font-1-xxl {
-    font: var(--font-1-xxl);
+.h1 {
+    font: var(--h1);
 }
 
-.font-1-xl-c {
-    font: var(--font-1-xl-c);
+.h2 {
+    font: var(--h2);
 }
 
-.font-1-l-b {
-    font: var(--font-1-l-b);
+.h3 {
+    font: var(--h3);
 }
 
-.font-1-l-c {
-    font: var(--font-1-l-c);
+.h4 {
+    font: var(--h4);
 }
 
-.font-1-m {
-    font: var(--font-1-m);
+.large-text {
+    font: var(--large-text);
 }
 
-.font-1-m-b {
-    font: var(--font-1-m-b);
+.text {
+    font: var(--text);
 }
 
-.font-1-m-c {
-    font: var(--font-1-m-c);
+.text-b {
+    font: var(--text-b);
 }
 
-.font-1-ms-b {
-    font: var(--font-1-ms-b);
+.alt_text {
+    font: var(--alt_text);
+}
+
+.alt_text-b {
+    font: var(--alt_text-b);
+}
+
+.small-text {
+    font: var(--small-text);
+}
+
+.small-text-b {
+    font: var(--small-text-b);
+}
+
+.alt_small-text-b {
+    font: var(--alt_small-text-b);
+}
+
+.extra-small-text {
+    font: var(--extra-small-text);
 }

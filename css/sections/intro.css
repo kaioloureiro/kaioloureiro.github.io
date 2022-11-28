@@ -1,47 +1,13 @@
-#intro .section-box {
+#intro .wrapper {
     display: grid;
-    background-color: var(--c13);
-    box-shadow: var(--shadow);
-    max-width: 640px;
-    margin: 100px 0 60px;
-    padding: 40px 60px;
-    position: relative;
+    gap: 20px;
 }
 
-#intro .section-box::after {
-    content: "";
-    align-self: center;
-    background: var(--p6);
-    width: 100vw;
-    height: calc(100% - 80px);
-    position: absolute;
-    right: -400px;
-    z-index: -2;
-}
-
-#intro .watermark {
-    background: url(../../img/watermark.svg) no-repeat;
-    width: 184px;
-    height: 184px;
-    position: absolute;
-    top: 60px;
-    right: -92px;
-}
-
-.intro {
-    display: grid;
-    gap: 32px;
-}
-
-.intro .main .title,
-.intro .main .gradient {
-    display: inline;
-    font: var(--font-1-xxl);
-    color: var(--c1);
+.h1 {
     cursor: pointer;
 }
 
-.intro .main .title:hover .gradient {
+.h1:hover .h1_gradient {
     background: linear-gradient(90deg, var(--p4), var(--p5), var(--p6), var(--p7), var(--p7), var(--p6), var(--p5), var(--p4));
     background-size: 600% 600%;
     -webkit-animation: var(--g1-anim);
@@ -53,41 +19,32 @@
     text-fill-color: transparent;
 }
 
-.intro .main .subtitle,
-.intro .main .subtitle span {
-    font: var(--font-2-l-c);
+.h1_gradient {
+    background: var(--grad-p0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.large-text {
+    text-align: right;
     text-transform: uppercase;
 }
 
-.intro .main .subtitle {
-    color: var(--c2);
-}
-
-.intro .main .subtitle span {
-    color: var(--p4);
-}
-
-.intro .main .description {
-    font: var(--font-2-m);
-    color: var(--c2);
-    margin-top: 12px;
-}
-
-.intro .main .description span {
-    font: var(--font-2-m-c);
-    color: var(--c0);
-}
-
-.intro .extra {
+.wrapper__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
 }
 
-.intro .extra .left,
-.intro .extra .right {
+.wrapper__grid__item {
     display: grid;
     gap: 20px;
+}
+
+.alt_text-b {
+    text-align: center;
 }
 
 .location {

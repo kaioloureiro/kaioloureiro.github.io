@@ -1,4 +1,5 @@
 :root {
+    --w: #FFF;
     --c0: #F5F5FF;
     --c1: #EBEBFF;
     --c2: #D8D8EB;
@@ -13,6 +14,7 @@
     --c11: #2F2F33;
     --c12: #1C1C1F;
     --c13: #09090A;
+    --b: #000;
 
     --p0: #EAF1FF;
     --p1: #E1EAFF;
@@ -28,8 +30,21 @@
     --p11: #040424;
     --p12: #010113;
 
-    --g1: linear-gradient(90deg, var(--p5), var(--p6));
-    --g2: linear-gradient(var(--p5), var(--p6));
-    --g3: linear-gradient(var(--p6), var(--p7));
-    --g4: linear-gradient(360deg, var(--p5) 0%, var(--p6) 100%);
+    --grad-c0: linear-gradient(var(--c12), var(--c13));
+    --grad-p0: linear-gradient(var(--p5), var(--p6));
+    --grad-p0h: linear-gradient(var(--p6), var(--p7));
+    --grad-p1: linear-gradient(90deg, var(--p5), var(--p6));
+    --grad-p1h: linear-gradient(90deg, var(--p6), var(--p7));
+}
+
+.c1 {
+    color: var(--c1);
+}
+
+.c2 {
+    color: var(--c2);
+}
+
+.p0 {
+    color: var(--p0);
 }

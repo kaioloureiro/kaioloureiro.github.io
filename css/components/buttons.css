@@ -1,43 +1,14 @@
-.btn-ex,
 .btn {
+    background-color: transparent;
+    color: var(--c1);
+    border: 2px solid transparent;
+    border-image: var(--grad-p1) 1;
+    border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
-    padding: 10px 0;
-    border: 2px solid transparent;
-}
-
-.btn-ex .icon,
-.btn .icon {
-    width: 24px;
-    height: 24px;
-}
-
-.btn-ex {
-    background: var(--g2);
-    color: var(--p0);
-    border-image: var(--g2) 1;
-}
-
-.btn-ex:hover {
-    background: var(--g3);
-    color: var(--p0);
-    border-image: var(--g3) 1;
-}
-
-.btn-ex .icon {
-    filter: var(--icon-hover-p0);
-}
-
-.btn-ex .text {
-    font: var(--font-2-m-c);
-}
-
-.btn {
-    background-color: var(--c13);
-    color: var(--c1);
-    border-image: var(--g1) 1;
+    padding: 8px 0;
 }
 
 .btn:hover {
@@ -46,10 +17,22 @@
     border-image: var(--p6);
 }
 
-.btn:hover .icon {
+.btn__icon {
+    width: 24px;
+    height: 24px;
+}
+
+.btn:hover .btn__icon,
+.btn__icon_ex {
     filter: var(--icon-hover-p0);
 }
 
-.btn .text {
-    font: var(--font-2-m);
+.btn_ex {
+    background: var(--grad-p0);
+    border-image: var(--grad-p0) 1;
+}
+
+.btn_ex:hover {
+    background: var(--grad-p0h);
+    border-image: var(--grad-p0h) 1;
 }
