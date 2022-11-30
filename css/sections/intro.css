@@ -1,13 +1,9 @@
-#intro .wrapper {
-    display: grid;
+.wrapper_intro {
     gap: 20px;
+    margin-top: 100px;
 }
 
-.h1 {
-    cursor: pointer;
-}
-
-.h1:hover .h1_gradient {
+.h1_gradient {
     background: linear-gradient(90deg, var(--p4), var(--p5), var(--p6), var(--p7), var(--p7), var(--p6), var(--p5), var(--p4));
     background-size: 600% 600%;
     -webkit-animation: var(--g1-anim);
@@ -19,109 +15,37 @@
     text-fill-color: transparent;
 }
 
-.h1_gradient {
-    background: var(--grad-p0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-}
-
-.large-text {
+.large-text_modified {
     text-align: right;
     text-transform: uppercase;
 }
 
-.wrapper__grid {
-    display: grid;
+.grid_intro {
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-}
-
-.wrapper__grid__item {
-    display: grid;
-    gap: 20px;
+    gap: 20px 40px;
 }
 
 .alt_text-b {
     text-align: center;
 }
 
-.location {
-    display: flex;
+.flex_location {
     gap: 4px;
     justify-content: center;
 }
 
-.location .icon {
-    width: 24px;
-    height: 24px;
-    filter: var(--icon-hover-p0);
+.flex_location .icon {
+    filter: var(--p0f);
 }
 
-.location .location-ico {
-    background-size: contain;
-}
-
-.location:hover .location-ico {
-    filter: var(--icon-hover-p4);
-}
-
-.location .p {
-    font: var(--font-2-m);
-    color: var(--c2);
-}
-
-.location .p span {
-    font: var(--font-2-m-c);
-    color: var(--c0);
-}
-
-.location:hover .p span {
-    color: var(--p2);
-}
-
-.intro .right .social {
-    display: flex;
+.flex_social {
     justify-content: center;
 }
 
-.intro .right .social-item {
-    width: 24px;
-    height: 24px;
+.flex_social .icon {
     padding: 0 10px;
 }
 
-.intro .right .social-item:hover {
-    filter: var(--icon-hover-p4);
-}
-
-.details {
-    position: absolute;
-    z-index: -1;
-}
-
-.box-top,
-.box-bottom {
-    background: url(../img/details/detail-box.svg) no-repeat;
-    width: 136px;
-    height: 88px;
-    right: -148px;
-}
-
-.box-top {
-    top: 52px;
-    transform: rotate(180deg);
-}
-
-.box-bottom {
-    bottom: 52px;
-}
-
-.diagonal {
-    background: url(../img/details/detail-diagonal.svg) no-repeat;
-    width: 88px;
-    height: 68px;
-    left: -100px;
-    bottom: 52px;
+.flex_social .icon:hover {
+    filter: var(--p4f);
 }

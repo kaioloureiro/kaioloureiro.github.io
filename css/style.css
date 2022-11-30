@@ -6,6 +6,7 @@
 
 @import "./components/buttons.css";
 @import "./components/icons.css";
+@import "./components/logos.css";
 
 @import "./sections/header.css";
 @import "./sections/intro.css";

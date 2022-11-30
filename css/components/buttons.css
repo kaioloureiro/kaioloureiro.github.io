@@ -1,12 +1,12 @@
 .btn {
-    background-color: transparent;
-    border: 2px solid transparent;
-    border-image: var(--grad-p1) 1;
-    border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-image: var(--grad-p1) 1;
+    border-radius: 4px;
     padding: 8px 0;
 }
 
@@ -16,22 +16,17 @@
     border-image: var(--p6);
 }
 
-.btn__icon {
-    width: 24px;
-    height: 24px;
+.btn:hover .icon,
+.btn_highlight .icon {
+    filter: var(--p0f);
 }
 
-.btn:hover .btn__icon,
-.btn__icon_ex {
-    filter: var(--icon-hover-p0);
-}
-
-.btn_ex {
+.btn_highlight {
     background: var(--grad-p0);
     border-image: var(--grad-p0) 1;
 }
 
-.btn_ex:hover {
+.btn_highlight:hover {
     background: var(--grad-p0h);
     border-image: var(--grad-p0h) 1;
 }

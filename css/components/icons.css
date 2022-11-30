@@ -1,63 +1,57 @@
-.hire-ico {
-    background: url(../../img/icons/hire-icon.svg) center no-repeat;
+.icon {
+    background: center/contain no-repeat;
+    width: 24px;
+    height: 24px;
 }
 
-.download-ico {
-    background: url(../../img/icons/download-icon.svg) center no-repeat;
+.icon_hire-me {
+    background-image: url(../../img/icons/hire-icon.svg);
 }
 
-.edu-ico {
-    background: url(../../img/icons/edu-icon.svg) center no-repeat;
+.icon_download {
+    background-image: url(../../img/icons/download-icon.svg);
 }
 
-.courses-ico {
-    background: url(../../img/icons/courses-icon.svg) center no-repeat;
+.icon_educ {
+    background-image: url(../../img/icons/edu-icon.svg);
 }
 
-.lang-ico {
-    background: url(../../img/icons/lang-icon.svg) center no-repeat;
+.icon_courses {
+    background-image: url(../../img/icons/courses-icon.svg);
 }
 
-.wpp-ico {
-    background: url(../../img/icons/wpp-icon.svg) center no-repeat;
+.icon_lang {
+    background-image: url(../../img/icons/lang-icon.svg);
 }
 
-.email-ico {
-    background: url(../../img/icons/email-icon.svg) center no-repeat;
+.icon_wpp {
+    background-image: url(../../img/icons/wpp-icon.svg);
 }
 
-.location-ico {
-    background: url(../../img/icons/location-icon.svg) center no-repeat;
+.icon_email {
+    background-image: url(../../img/icons/email-icon.svg);
 }
 
-.github-ico {
-    background: url(../../img/social/github.svg) center no-repeat;
+.icon_location {
+    background-image: url(../../img/icons/location-icon.svg);
 }
 
-.linkedin-ico {
-    background: url(../../img/social/linkedin.svg) center no-repeat;
+.icon_github {
+    background-image: url(../../img/social/github.svg);
 }
 
-.behance-ico {
-    background: url(../../img/social/behance.svg) center no-repeat;
+.icon_linkedin {
+    background-image: url(../../img/social/linkedin.svg);
 }
 
-.dribbble-ico {
-    background: url(../../img/social/dribbble.svg) center no-repeat;
+.icon_behance {
+    background-image: url(../../img/social/behance.svg);
 }
 
-.uplabs-ico {
-    background: url(../../img/social/uplabs.svg) center no-repeat;
+.icon_dribbble {
+    background-image: url(../../img/social/dribbble.svg);
 }
 
-.placeholder-ico {
-    background: url(../../img/projects/slider/slider-placeholder.svg) center no-repeat;
-}
-
-.huddle-ico {
-    background: url(../../img/projects/slider/slider-huddle.svg) center no-repeat;
-}
-
-.bikcraft-ico {
-    background: url(../../img/projects/slider/slider-bikcraft.svg) center no-repeat;
+.icon_uplabs {
+    background-image: url(../../img/social/uplabs.svg);
 }
