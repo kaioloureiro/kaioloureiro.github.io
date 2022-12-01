@@ -17,16 +17,24 @@
 }
 
 .btn:hover .icon,
-.btn_highlight .icon {
+.btn--highlight .icon {
     filter: var(--p0f);
 }
 
-.btn_highlight {
+.btn--highlight {
     background: var(--grad-p0);
     border-image: var(--grad-p0) 1;
 }
 
-.btn_highlight:hover {
+.btn--highlight:hover {
     background: var(--grad-p0h);
     border-image: var(--grad-p0h) 1;
+}
+
+.btn__text {
+    font: var(--small-text);
+}
+
+.btn--highlight .btn__text {
+    font: var(--small-text-b);
 }

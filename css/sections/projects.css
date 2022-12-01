@@ -1,9 +1,26 @@
-.container_projects {
+.container__item {
     display: inherit;
     justify-self: end;
     gap: 40px;
 }
 
-.wrapper_projects {
+.wrapper--projects {
     gap: 32px;
+}
+
+.wrapper__main {
+    display: inherit;
+    gap: 12px;
+}
+
+.wrapper--projects .wrapper__title {
+    font: var(--h2);
+}
+
+.wrapper--projects .wrapper__subtitle {
+    font: var(--h3);
+}
+
+.wrapper--projects .wrapper__text {
+    font: var(--alt_text);
 }

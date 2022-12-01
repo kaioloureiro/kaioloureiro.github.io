@@ -1,67 +1,15 @@
 :root {
-    --h1: 400 80px/100px "Poppins", sans-serif;
-    --h2: 600 32px/48px "Poppins", sans-serif;
-    --h3: 600 24px/36px "Poppins", sans-serif;
-    --h4: 600 20px/32px "Poppins", sans-serif;
-    --large-text: 400 20px/32px "Poppins", sans-serif;
-    --text: 400 16px/24px "Poppins", sans-serif;
-    --text-b: 700 16px/24px "Poppins", sans-serif;
-    --alt_text: 400 16px/24px "Lato", sans-serif;
-    --alt_text-b: 700 16px/24px "Lato", sans-serif;
-    --small-text: 400 14px/24px "Poppins", sans-serif;
-    --small-text-b: 500 14px/24px "Poppins", sans-serif;
-    --alt_small-text-b: 700 14px/24px "Lato", sans-serif;
-    --extra-small-text: 400 12px/20px "Lato", sans-serif;
-}
-
-.h1 {
-    font: var(--h1);
-}
-
-.h2 {
-    font: var(--h2);
-}
-
-.h3 {
-    font: var(--h3);
-}
-
-.h4 {
-    font: var(--h4);
-}
-
-.large-text {
-    font: var(--large-text);
-}
-
-.text {
-    font: var(--text);
-}
-
-.text-b {
-    font: var(--text-b);
-}
-
-.alt_text {
-    font: var(--alt_text);
-}
-
-.alt_text-b {
-    font: var(--alt_text-b);
-}
-
-.small-text {
-    font: var(--small-text);
-}
-
-.small-text-b {
-    font: var(--small-text-b);
-}
-
-.alt_small-text-b {
-    font: var(--alt_small-text-b);
-}
-
-.extra-small-text {
-    font: var(--extra-small-text);
+    --h1: 400 5rem/1.25 "Poppins", sans-serif;
+    --h2: 600 2rem/1.5 "Poppins", sans-serif;
+    --h3: 600 1.5rem/1.5 "Poppins", sans-serif;
+    --h4: 600 1.25rem/1.6 "Poppins", sans-serif;
+    --large-text: 400 1.25rem/1.6 "Poppins", sans-serif;
+    --text: 400 1rem/1.5 "Poppins", sans-serif;
+    --text-b: 700 1rem/1.5 "Poppins", sans-serif;
+    --alt_text: 400 1rem/1.5 "Lato", sans-serif;
+    --alt_text-b: 700 1rem/1.5 "Lato", sans-serif;
+    --small-text: 400 0.875rem/1.71 "Poppins", sans-serif;
+    --small-text-b: 500 0.875rem/1.71 "Poppins", sans-serif;
+    --alt_small-text-b: 700 0.875rem/1.71 "Lato", sans-serif;
+    --extra-small-text: 400 0.75rem/1.67 "Lato", sans-serif;
 }

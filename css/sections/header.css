@@ -13,7 +13,7 @@
     margin: auto;
 }
 
-.logo {
+.header__logo {
     background: url(../../img/logo.svg) center no-repeat;
     width: 40px;
     height: 40px;
@@ -24,6 +24,7 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 12px;
+    font: var(--small-text-b);
 }
 
 .menu__item {

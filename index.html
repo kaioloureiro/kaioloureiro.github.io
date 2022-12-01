@@ -17,69 +17,68 @@
 <body>
   <header class="header">
     <div class="container">
-      <a href="/" class="logo" aria-label="Logo do Website" alt="Logo"></a>
-      <nav class="menu" aria-label="Menu Principal">
-        <ul class="menu__items small-text-b">
+      <a href="/" class="header__logo" aria-label="Logo do Website" alt="Logo"></a>
+      <nav class="header__menu" aria-label="Menu Principal">
+        <ul class="menu__items">
           <li><a href="#intro" class="menu__item c2">Introdução</a></li>
           <li><a href="#projects" class="menu__item c2">Projetos</a></li>
           <li><a href="#education" class="menu__item c2">Formação</a></li>
           <li><a href="#contact" class="menu__item menu_btn p0">Contato</a></li>
         </ul>
       </nav>
-    </div>
   </header>
 
   <main>
     <section id="intro" class="container" aria-label="Introdução">
-      <div class="wrapper wrapper_intro">
-        <div class="wrapper__title">
-          <h1 class="h1 c1">Kaio <span class="h1 h1_gradient">Loureiro</span>.</h1>
-          <p class="large-text large-text_modified c2">Desenvolvedor Front End & UX/UI Designer.</p>
+      <div class="wrapper wrapper--intro">
+        <div class="wrapper__info">
+          <h1 class="wrapper__title c1">Kaio <span class="wrapper__title wrapper__title--gradient">Loureiro</span>.</h1>
+          <p class="h2-like c2">Desenvolvedor Front End & UX/UI Designer.</p>
         </div>
-        <div class="grid grid_intro">
-          <a class="btn btn_highlight" href="#contact">
-            <span class="icon icon_hire-me"></span>
-            <p class="small-text-b p0">Contrate-me!</p>
+        <div class="grid grid--intro">
+          <a class="btn btn--highlight" href="#contact">
+            <span class="icon icon--hire-me"></span>
+            <p class="btn__text p0">Contrate-me!</p>
           </a>
           <a class="btn" href="#download">
-            <span class="icon icon_download"></span>
-            <p class="small-text c1">Baixar Currículo</p>
+            <span class="icon icon--download"></span>
+            <p class="btn__text c1">Baixar Currículo</p>
           </a>
-          <div class="flex flex_location">
-            <span class="icon icon_location"></span>
-            <p class="alt_small-text-b c1">Localizado no Rio de Janeiro, Brasil.</p>
+          <div class="flex flex--location">
+            <span class="icon icon--location"></span>
+            <p class="text c1">Localizado no Rio de Janeiro, Brasil.</p>
           </div>
-          <div class="flex flex_social">
-            <a class="icon icon_github" href="https://github.com/kaioloureiro/" target="_blank" rel="external"></a>
-            <a class="icon icon_linkedin" href="https://www.linkedin.com/in/kaioloureiro" target="_blank" rel="external"></a>
-            <a class="icon icon_behance" href="https://www.behance.net/kaioloureiro" target="_blank" rel="external"></a>
-            <a class="icon icon_dribbble" href="https://dribbble.com/kaioloureiro" target="_blank" rel="external"></a>
-            <a class="icon icon_uplabs" href="https://www.uplabs.com/kaioloureiro" target="_blank" rel="external"></a>
+          <div class="flex flex--social">
+            <a class="icon icon--github" href="https://github.com/kaioloureiro/" target="_blank" rel="external"></a>
+            <a class="icon icon--linkedin" href="https://www.linkedin.com/in/kaioloureiro" target="_blank" rel="external"></a>
+            <a class="icon icon--behance" href="https://www.behance.net/kaioloureiro" target="_blank" rel="external"></a>
+            <a class="icon icon--dribbble" href="https://dribbble.com/kaioloureiro" target="_blank" rel="external"></a>
+            <a class="icon icon--uplabs" href="https://www.uplabs.com/kaioloureiro" target="_blank" rel="external"></a>
           </div>
         </div>
-        <p class="alt_text-b c2">Cursando o 8º período de Sistemas de Informação na Universidade Estácio de Sá.</p>
+        <p class="wrapper__text c2">Cursando o 8º período de Sistemas de Informação na Universidade Estácio de Sá.</p>
       </div>
       <span class="section-detail"></span>
     </section>
 
     <section id="projects" class="container" class="container" aria-label="Projetos">
-      <div class="container_projects">
-        <div class="wrapper wrapper_projects">
-          <div class="wrapper__title">
+      <div class="container__item">
+        <div class="wrapper wrapper--projects">
+          <div class="wrapper__main">
             <span class="">ÍCONE</span>
-            <h2 class="h2 c1">Huddle Landing Page</h2>
-            <p class="alt_text c2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet, nisl dui maximus erat, vel posuere massa enim vitae metus. <span class="alt_text-b p4">Curabitur sit amet risus sapien</span>. Proin ullamcorper purus et eros ornare, dapibus tincidunt ante mollis.</p>
+            <h2 class="wrapper__title c1">Huddle Landing Page</h2>
+            <p class="wrapper__text c2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet, nisl dui maximus erat, vel posuere massa enim vitae metus. <span class="alt_text-b p4">Curabitur sit amet risus sapien</span>. Proin ullamcorper purus et eros ornare, dapibus tincidunt ante mollis.</p>
           </div>
-          <div class="grid">
+          <div class="flex">
             <div class="">
-              <h3 class="h3 c1">Ferramentas</h3>
+              <h3 class="wrapper__subtitle c1">Ferramentas</h3>
               <div class="">
                 <a href="#">ÍCONE</a>
                 <a href="#">ÍCONE</a>
               </div>
             </div>
             <div class="">
-              <h3 class="h3 c1">Links</h3>
+              <h3 class="wrapper__subtitle c1">Links</h3>
               <div class="">
                 <a href="#">ÍCONE</a>
                 <a href="#">ÍCONE</a>
@@ -87,8 +86,7 @@
             </div>
           </div>
         </div>
-
-        <div class="wrapper_slider">
+        <div class="wrapper__slider">
           <div class="">
             <div class="">
               <span class="">Projeto Selecionado</span>
