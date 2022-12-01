@@ -35,6 +35,6 @@
     font: var(--small-text);
 }
 
-.btn--highlight .btn__text {
+.btn__text--bold {
     font: var(--small-text-b);
 }

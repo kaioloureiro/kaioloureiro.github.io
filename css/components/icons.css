@@ -1,57 +1,93 @@
 .icon {
     background: center/contain no-repeat;
+}
+
+.icon--24x {
     width: 24px;
     height: 24px;
 }
 
+.icon--60x {
+    width: 60px;
+    height: 60px;
+}
+
+/* Button Icons */
+
 .icon--hire-me {
-    background-image: url(../../img/icons/hire-icon.svg);
+    background-image: url(../../img/icons/btns/hire-icon.svg);
 }
 
 .icon--download {
-    background-image: url(../../img/icons/download-icon.svg);
+    background-image: url(../../img/icons/btns/download-icon.svg);
 }
 
+/* Education Icons */
+
 .icon--educ {
-    background-image: url(../../img/icons/edu-icon.svg);
+    background-image: url(../../img/icons/educ/edu-icon.svg);
 }
 
 .icon--courses {
-    background-image: url(../../img/icons/courses-icon.svg);
+    background-image: url(../../img/icons/educ/courses-icon.svg);
 }
 
 .icon--lang {
-    background-image: url(../../img/icons/lang-icon.svg);
+    background-image: url(../../img/icons/educ/lang-icon.svg);
 }
 
+/* Contact Icons */
+
 .icon--wpp {
-    background-image: url(../../img/icons/wpp-icon.svg);
+    background-image: url(../../img/icons/cont/wpp-icon.svg);
 }
 
 .icon--email {
-    background-image: url(../../img/icons/email-icon.svg);
+    background-image: url(../../img/icons/cont/email-icon.svg);
 }
 
 .icon--location {
-    background-image: url(../../img/icons/location-icon.svg);
+    background-image: url(../../img/icons/cont/location-icon.svg);
+}
+
+/* Social Media Icons */
+
+.icon--website {
+    background-image: url(../../img/icons/social/website.svg);
 }
 
 .icon--github {
-    background-image: url(../../img/social/github.svg);
+    background-image: url(../../img/icons/social/github.svg);
 }
 
 .icon--linkedin {
-    background-image: url(../../img/social/linkedin.svg);
+    background-image: url(../../img/icons/social/linkedin.svg);
 }
 
 .icon--behance {
-    background-image: url(../../img/social/behance.svg);
+    background-image: url(../../img/icons/social/behance.svg);
 }
 
 .icon--dribbble {
-    background-image: url(../../img/social/dribbble.svg);
+    background-image: url(../../img/icons/social/dribbble.svg);
 }
 
 .icon--uplabs {
-    background-image: url(../../img/social/uplabs.svg);
+    background-image: url(../../img/icons/social/uplabs.svg);
+}
+
+/* Project Icons */
+
+.icon--huddle {
+    background-image: url(../../img/icons/proj/huddle-icon.svg);
+}
+
+/* Technologies Icons */
+
+.icon--html {
+    background-image: url(../../img/icons/tech/html-icon.svg);
+}
+
+.icon--css {
+    background-image: url(../../img/icons/tech/css-icon.svg);
 }

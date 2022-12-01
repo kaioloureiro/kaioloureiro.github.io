@@ -4,23 +4,49 @@
     gap: 40px;
 }
 
-.wrapper--projects {
+.project-wrapper {
     gap: 32px;
 }
 
-.wrapper__main {
+.project-main-info {
     display: inherit;
     gap: 12px;
 }
 
-.wrapper--projects .wrapper__title {
+.project__title {
     font: var(--h2);
 }
 
-.wrapper--projects .wrapper__subtitle {
+.project__description {
+    font: var(--alt_text);
+}
+
+.project__description--bold {
+    font: var(--alt_text-b);
+}
+
+.project-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.project-grid__item {
+    display: inherit;
+    gap: 8px;
+}
+
+.project-grid__title {
     font: var(--h3);
 }
 
-.wrapper--projects .wrapper__text {
-    font: var(--alt_text);
+.project-flex {
+    /* gap: 16px; */
+}
+
+.project-flex__icon {
+    padding: 0 8px;
+}
+
+.project-flex__icon:hover {
+    filter: var(--p4f);
 }
