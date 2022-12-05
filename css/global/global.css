@@ -8,11 +8,15 @@
 
 .wrapper {
     display: grid;
+    margin: 50px 0;
+}
+
+.card {
+    display: grid;
     background-color: var(--c13);
     box-shadow: var(--shadow);
     border-radius: 4px;
     max-width: 640px;
-    margin: 50px 0;
     padding: 40px 60px;
     position: relative;
 }
@@ -24,6 +28,16 @@
 .flex {
     display: flex;
     flex-wrap: wrap;
+}
+
+.ghost-text {
+    cursor: default;
+}
+
+.ghost-text::selection {
+    background-color: transparent;
+    color: inherit;
+    -webkit-text-fill-color: inherit;
 }
 
 /* SEÇÕES */
@@ -107,7 +121,7 @@
 
     --p4f: brightness(0) saturate(100%) invert(61%) sepia(17%) saturate(797%) hue-rotate(184deg) brightness(91%) contrast(93%);
 
-    --shadow: 0 12px 12px -6px rgba(0, 0, 0, 0.15);
+    --shadow: 0 12px 12px -6px rgba(0, 0, 0, 0.1);
 }
 
 /* CONFIGURAÇÕES GERAIS */

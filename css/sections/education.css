@@ -1,0 +1,31 @@
+.education-wrapper {
+    gap: 20px;
+}
+
+.education-card {
+    gap: 12px;
+}
+
+.education-header {
+    justify-content: space-between;
+}
+
+.education-header__title {
+    font: var(--h3);
+    text-transform: uppercase;
+}
+
+.education-body {
+    flex-direction: column;
+    gap: 4px;
+}
+
+.education-body__title {
+    font: var(--h4);
+    text-transform: uppercase;
+}
+
+.education-body__info {
+    justify-content: space-between;
+    font: var(--alt_text);
+}

@@ -7,6 +7,16 @@
     height: 24px;
 }
 
+.icon--32x {
+    width: 32px;
+    height: 32px;
+}
+
+.icon--36x {
+    width: 36px;
+    height: 36px;
+}
+
 .icon--60x {
     width: 60px;
     height: 60px;
@@ -25,7 +35,7 @@
 /* Education Icons */
 
 .icon--educ {
-    background-image: url(../../img/icons/educ/edu-icon.svg);
+    background-image: url(../../img/icons/educ/educ-icon.svg);
 }
 
 .icon--courses {

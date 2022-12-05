@@ -1,14 +1,12 @@
-.container__item {
-    display: inherit;
+.projects-wrapper {
     justify-self: end;
-    gap: 40px;
 }
 
-.project-wrapper {
+.projects-card {
     gap: 32px;
 }
 
-.project-main-info {
+.project-info {
     display: inherit;
     gap: 12px;
 }
@@ -49,4 +47,47 @@
 
 .project-flex__icon:hover {
     filter: var(--p4f);
+}
+
+.projects-carousel {
+    gap: 40px;
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-item:hover {
+    cursor: pointer;
+}
+
+.carousel-item::before,
+.carousel-item::after {
+    content: "";
+    background: var(--grad-p1);
+    height: 4px;
+    width: 0%;
+    border-radius: 4px;
+    transition: .2s;
+    position: absolute;
+    top: -4px;
+}
+
+.carousel-item:hover::before {
+    width: 100%;
+}
+
+.carousel-item__text {
+    font: var(--extra-small-text);
+    padding: 8px 0;
+}
+
+.carousel-item__card {
+    background-color: var(--c12);
+    border-radius: 4px;
+    width: 160px;
+    height: 80px;
 }

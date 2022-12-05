@@ -30,41 +30,42 @@
 
   <main>
     <section id='intro' class='container' aria-label='Introdução'>
-      <div class='wrapper intro-wrapper'>
-        <div class='intro-titles'>
-          <h1 class='intro__title c1'>Kaio <span class='intro__title intro__title--gradient'>Loureiro</span>.</h1>
-          <p class='intro__h2-like c2'>Desenvolvedor Front End & UX/UI Designer.</p>
-        </div>
-        <div class='grid intro-grid'>
-          <a class='btn btn--highlight' href='#contact'>
-            <span class='icon icon--24x icon--hire-me'></span>
-            <p class='btn__text--bold p0'>Contrate-me!</p>
-          </a>
-          <a class='btn' href='#download'>
-            <span class='icon icon--24x icon--download'></span>
-            <p class='btn__text c1'>Baixar Currículo</p>
-          </a>
-          <div class='flex intro-flex'>
-            <span class='icon icon--24x icon--location intro-flex__icon--location'></span>
-            <p class='intro-flex__text c1'>Localizado no Rio de Janeiro, Brasil.</p>
+      <div class="wrapper intro-wrapper">
+        <div class='card intro-card'>
+          <div class='intro-titles'>
+            <h1 class='intro__title c1'>Kaio <span class='intro__title intro__title--gradient'>Loureiro</span>.</h1>
+            <p class='intro__h2-like c2'>Desenvolvedor Front End & UX/UI Designer.</p>
           </div>
-          <div class='flex intro-flex'>
-            <a class='icon icon--24x icon--github intro-flex__icon--social' href='https://github.com/kaioloureiro/' target='_blank' rel='external'></a>
-            <a class='icon icon--24x icon--linkedin intro-flex__icon--social' href='https://www.linkedin.com/in/kaioloureiro' target='_blank' rel='external'></a>
-            <a class='icon icon--24x icon--behance intro-flex__icon--social' href='https://www.behance.net/kaioloureiro' target='_blank' rel='external'></a>
-            <a class='icon icon--24x icon--dribbble intro-flex__icon--social' href='https://dribbble.com/kaioloureiro' target='_blank' rel='external'></a>
-            <a class='icon icon--24x icon--uplabs intro-flex__icon--social' href='https://www.uplabs.com/kaioloureiro' target='_blank' rel='external'></a>
+          <div class='grid intro-grid'>
+            <a class='btn btn--highlight' href='#contact'>
+              <span class='icon icon--24x icon--hire-me'></span>
+              <p class='btn__text--bold p0'>Contrate-me!</p>
+            </a>
+            <a class='btn' href='#download'>
+              <span class='icon icon--24x icon--download'></span>
+              <p class='btn__text c1'>Baixar Currículo</p>
+            </a>
+            <div class='flex intro-flex'>
+              <span class='icon icon--24x icon--location intro-flex__icon--location'></span>
+              <p class='intro-flex__text c1'>Localizado no Rio de Janeiro, Brasil.</p>
+            </div>
+            <div class='flex intro-flex'>
+              <a class='icon icon--24x icon--github intro-flex__icon--social' href='https://github.com/kaioloureiro/' target='_blank' rel='external'></a>
+              <a class='icon icon--24x icon--linkedin intro-flex__icon--social' href='https://www.linkedin.com/in/kaioloureiro' target='_blank' rel='external'></a>
+              <a class='icon icon--24x icon--behance intro-flex__icon--social' href='https://www.behance.net/kaioloureiro' target='_blank' rel='external'></a>
+              <a class='icon icon--24x icon--dribbble intro-flex__icon--social' href='https://dribbble.com/kaioloureiro' target='_blank' rel='external'></a>
+              <a class='icon icon--24x icon--uplabs intro-flex__icon--social' href='https://www.uplabs.com/kaioloureiro' target='_blank' rel='external'></a>
+            </div>
           </div>
+          <p class='intro__description c2'>Cursando o 8º período de Sistemas de Informação na Universidade Estácio de Sá.</p>
         </div>
-        <p class='intro__description c2'>Cursando o 8º período de Sistemas de Informação na Universidade Estácio de Sá.</p>
       </div>
-      <span class='section-detail'></span>
     </section>
 
-    <section id='projects' class='container' class='container' aria-label='Projetos'>
-      <div class='container__item'>
-        <div class='wrapper project-wrapper'>
-          <div class='project-main-info'>
+    <section id='projects' class='container' aria-label='Projetos'>
+      <div class='wrapper projects-wrapper'>
+        <div class='card projects-card'>
+          <div class='project-info'>
             <span class='icon icon--60x icon--huddle'></span>
             <h2 class='project__title c1'>Huddle Landing Page</h2>
             <p class='project__description c2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet, mi et accumsan imperdiet, nisl dui maximus erat, vel posuere massa enim vitae metus. <span class='project__description--bold p4'>Curabitur sit amet risus sapien</span>. Proin ullamcorper purus et eros ornare, dapibus tincidunt ante mollis.</p>
@@ -86,108 +87,104 @@
             </div>
           </div>
         </div>
-        <div class='wrapper__slider'>
-          <div class=''>
-            <div class=''>
-              <span class=''>Projeto Selecionado</span>
-              <div class='' onclick='activeProject(this)'></div>
-            </div>
-            <div class=''>
-              <span class=''>Projeto Selecionado</span>
-              <div class='' onclick='activeProject(this)'></div>
-            </div>
-            <div class=''>
-              <span class=''>Projeto Selecionado</span>
-              <div class='' onclick='activeProject(this)'></div>
-            </div>
-            <div class=''>
-              <span class=''>Projeto Selecionado</span>
-              <div class='' onclick='activeProject(this)'></div>
-            </div>
+        <div class='flex projects-carousel'>
+          <div class='carousel-item'>
+            <span class='carousel-item__text c10 ghost-text'>Projeto Selecionado</span>
+            <div class='carousel-item__card logo logo--placeholder'></div>
+          </div>
+          <div class='carousel-item'>
+            <span class='carousel-item__text c10 ghost-text'>Projeto Selecionado</span>
+            <div class='carousel-item__card logo logo--placeholder'></div>
+          </div>
+          <div class='carousel-item'>
+            <span class='carousel-item__text c10 ghost-text'>Projeto Selecionado</span>
+            <div class='carousel-item__card logo logo--placeholder' onclick='activeProject(this)'></div>
+          </div>
+          <div class='carousel-item'>
+            <span class='carousel-item__text c10 ghost-text'>Projeto Selecionado</span>
+            <div class='carousel-item__card logo logo--placeholder' onclick='activeProject(this)'></div>
           </div>
         </div>
-      </div>
-      </div>
       </div>
     </section>
 
-    <section id='education' class='container' c aria-label='Formação'>
-      <div class=''>
-        <div class=''>
-          <div class=''>
-            <div class=''>
-              <p class=''>Bacharel</p>
-              <span class=''></span>
-            </div>
-            <div class=''>
-              <p class=''>Sistemas de Informação</p>
-              <div class=''>
-                <p class=''>UNESA</p>
-                <p class=''></p>
-              </div>
-            </div>
+    <section id='education' class='container' aria-label='Formação'>
+      <div class='wrapper education-wrapper'>
+        <div class='card education-card'>
+          <div class='flex education-header'>
+            <h3 class='education-header__title c6'>Bacharel</h3>
+            <span class='icon icon--36x icon--educ'></span>
           </div>
-          <div class=''>
-            <div class=''>
-              <p class=''>Cursos</p>
-              <span class=''></span>
-            </div>
-            <div class=''>
-              <p class=''>Html e Css para iniciantes</p>
-              <div class=''>
-                <p class=''>Origamid</p>
-                <p class=''>46h</p>
-              </div>
-            </div>
-            <div class=''>
-              <p class=''>UI Design para iniciantes</p>
-              <div class=''>
-                <p class=''>Origamid</p>
-                <p class=''>34h</p>
-              </div>
-            </div>
-          </div>
-          <div class=''>
-            <div class=''>
-              <p class=''>Idiomas</p>
-              <span class=''></span>
-            </div>
-            <div class=''>
-              <div class=''>
-                <div class=''>
-                  <p class=''>Português</p>
-                  <p class=''>Fluente</p>
-                </div>
-                <div class=''>
-                  <p class=''>Inglês</p>
-                  <p class=''>Avançado</p>
-                </div>
+          <div class='flex education-body'>
+            <div class='education-body__item'>
+              <h4 class='education-body__title c1'>Sistemas de Informação</h4>
+              <div class='flex education-body__info c6'>
+                <p class='education-body__entity'>UNESA</p>
+                <p class='education-body__duration'>2019~2023</p>
               </div>
             </div>
           </div>
         </div>
-
+        <div class='card education-card'>
+          <div class='flex education-header'>
+            <h3 class='education-header__title c6'>Idiomas</h3>
+            <span class='icon icon--36x icon--lang'></span>
+          </div>
+          <div class='education-body'>
+            <div class='flex education-body__info'>
+              <p class='education-body__title c1'>Português</p>
+              <p class='c6'>Fluente</p>
+            </div>
+            <div class='flex education-body__info'>
+              <p class='education-body__title c1'>Inglês</p>
+              <p class='c6'>Avançado</p>
+            </div>
+          </div>
+        </div>
+        <div class='card education-card'>
+          <div class='flex education-header'>
+            <h3 class='education-header__title c6'>Cursos</h3>
+            <span class='icon icon--36x icon--courses'></span>
+          </div>
+          <div class='flex education-body'>
+            <div class='education-body__item'>
+              <h4 class='education-body__title c1'>HTML e CSS para Iniciantes</h4>
+              <div class='flex education-body__info c6'>
+                <p class='education-body__entity'>Origamid</p>
+                <p class='education-body__duration'>46h</p>
+              </div>
+            </div>
+            <div class='education-body__item'>
+              <h4 class='education-body__title c1'>UI Design para Iniciantes</h4>
+              <div class='flex education-body__info c6'>
+                <p class='education-body__entity'>Origamid</p>
+                <p class='education-body__duration'>34h</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id='contact' class='container' aria-label='Contato'>
-      <div class=''>
-        <div class=''>
-          <p class=''>Gostou de algum projeto que viu por aqui? Atualmente me encontro disponível para trabalhos.
-            <br><br>Entre em contato e vamos discutir sobre o seu futuro website.
+      <div class='wrapper contact-wrapper'>
+        <div class='card contact-card'>
+          <p class='contact__description c2'>Gostou de algum projeto que viu por aqui?
+            <br><br>Atualmente me encontro <span class="contact__description--bold p4">disponível</span> para trabalhos.
+            <br><br>Entre em <span class="contact__description--bold p4">contato</span> e vamos discutir sobre os seus projetos.
           </p>
-          <div class=''>
-            <a class='' href='https://wa.me/+5521965128285' target='_blank' rel='external'>
-              <span class=''></span>
-              <p class=''>+55 (21) 9 96512-8285</p>
+          <div class='grid contact-items'>
+            <a class='grid contact-item__card' href='https://wa.me/+5521965128285' target='_blank' rel='external'>
+              <span class='icon icon--32x icon--wpp'></span>
+              <p class='contact-item__text c1'>+55 (21) 9 96512-8285</p>
             </a>
-            <a class='' href='mailto:kaio.loureiro94@outlook.com' target='_blank' rel='external'>
-              <span class=''></span>
-              <p class=''>kaio.loureiro94@outlook.com</p>
+            <a class='grid contact-item__card' href='mailto:kaio.loureiro94@outlook.com' target='_blank' rel='external'>
+              <span class='icon icon--32x icon--email'></span>
+              <p class='contact-item__text c1'>kaio.loureiro94@outlook.com</p>
             </a>
-            <a class='' href='https://www.google.com/maps/place/Rio+de+Janeiro/@-22.00333,-47.2785637,7z/data=!3m1!4b1!4m5!3m4!1s0x981894cae28ac3:0x349c31ac10583d0!8m2!3d-22.3534263!4d-42.7076107' target='_blank' rel='external'>
-              <span class=''></span>
-              <p class=''>Rio de Janeiro, Brasil</p>
+            <a class='grid contact-item__card' href='https://www.google.com/maps/place/Rio+de+Janeiro/@-22.00333,-47.2785637,7z/data=!3m1!4b1!4m5!3m4!1s0x981894cae28ac3:0x349c31ac10583d0!8m2!3d-22.3534263!4d-42.7076107' target='_blank' rel='external'>
+              <span class='icon icon--32x icon--location'></span>
+              <p class='contact-item__text c1'>Rio de Janeiro, Brasil</p>
             </a>
           </div>
         </div>

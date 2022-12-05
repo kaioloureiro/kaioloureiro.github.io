@@ -1,11 +1,15 @@
-.logo_placeholder {
-    background: url(../../img/projects/slider/slider-placeholder.svg) center no-repeat;
+.logo {
+    background: center no-repeat;
 }
 
-.logo_huddle {
-    background: url(../../img/projects/slider/slider-huddle.svg) center no-repeat;
+.logo--placeholder {
+    background-image: url(../../img/logos/placeholder.svg);
 }
 
-.logo_bikcraft {
-    background: url(../../img/projects/slider/slider-bikcraft.svg) center no-repeat;
+.logo--huddle {
+    background-image: url(../../img/logos/huddle.svg);
+}
+
+.logo--bikcraft {
+    background-image: url(../../img/logos/bikcraft.svg);
 }
