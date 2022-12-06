@@ -1,9 +1,24 @@
+#education .wrapper::after {
+    background: var(--education-detail) center no-repeat;
+}
+
 .education-wrapper {
     gap: 20px;
 }
 
 .education-card {
     gap: 12px;
+    position: relative;
+}
+
+.education-card::before {
+    content: "";
+    background: var(--linear-detail);
+    width: 8px;
+    height: 104px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
 }
 
 .education-header {

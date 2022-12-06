@@ -1,0 +1,9 @@
+:root {
+    --linear-detail: url(../../img/details/linear-detail.svg);
+    --diagonal-detail: url(../../img/details/diagonal-detail.svg);
+
+    --intro-detail: url(../../img/details/intro-detail.svg);
+    --projects-detail: url(../../img/details/projects-detail.svg);
+    --education-detail: url(../../img/details/education-detail.svg);
+    --contact-detail: url(../../img/details/contact-detail.svg);
+}

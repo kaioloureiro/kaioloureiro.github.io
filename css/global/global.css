@@ -9,6 +9,26 @@
 .wrapper {
     display: grid;
     margin: 50px 0;
+    max-width: 760px;
+    position: relative;
+}
+
+.wrapper::before {
+    content: "";
+    align-self: center;
+    width: 58px;
+    height: 100%;
+    position: absolute;
+    left: -58px;
+}
+
+.wrapper::after {
+    content: "";
+    align-self: center;
+    width: 58px;
+    height: 100%;
+    position: absolute;
+    right: -58px;
 }
 
 .card {
@@ -18,7 +38,6 @@
     border-radius: 4px;
     max-width: 640px;
     padding: 40px 60px;
-    position: relative;
 }
 
 .grid {
@@ -36,8 +55,8 @@
 
 .ghost-text::selection {
     background-color: transparent;
-    color: inherit;
-    -webkit-text-fill-color: inherit;
+    color: unset;
+    -webkit-text-fill-color: unset;
 }
 
 /* SEÇÕES */

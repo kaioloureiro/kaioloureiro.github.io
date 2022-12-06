@@ -1,0 +1,37 @@
+.footer {
+    background-color: var(--b);
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.footer-copyright__text {
+    font: var(--text);
+}
+
+.footer-social {
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-social__title {
+    font: var(--text);
+    text-transform: uppercase;
+}
+
+.footer__icon {
+    display: inline-block;
+}
+
+.footer-flex__icon {
+    padding: 0 8px;
+}
+
+.footer-flex__icon:hover {
+    filter: var(--p4f);
+}

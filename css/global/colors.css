@@ -30,11 +30,15 @@
     --p11: #040424;
     --p12: #010113;
 
-    --grad-c0: linear-gradient(var(--c12), var(--c13));
+    --grad-c0: linear-gradient(90deg, var(--c12), var(--c13));
     --grad-p0: linear-gradient(var(--p5), var(--p6));
     --grad-p0h: linear-gradient(var(--p6), var(--p7));
     --grad-p1: linear-gradient(90deg, var(--p5), var(--p6));
     --grad-p1h: linear-gradient(90deg, var(--p6), var(--p7));
+}
+
+.b {
+    color: var(--b);
 }
 
 .c1 {

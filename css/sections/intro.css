@@ -1,9 +1,37 @@
+#intro .wrapper::after {
+    background: var(--intro-detail) center no-repeat;
+}
+
 .intro-wrapper {
     margin-top: 100px;
+    position: relative;
 }
 
 .intro-card {
     gap: 20px;
+    position: relative;
+}
+
+.intro-card::before {
+    content: "";
+    background: var(--diagonal-detail);
+    transform: scaleY(-1);
+    width: 80px;
+    height: 68px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.intro-card::after {
+    content: "";
+    background: var(--diagonal-detail);
+    transform: scaleX(-1);
+    width: 80px;
+    height: 68px;
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
 }
 
 .intro__title {
@@ -26,6 +54,18 @@
     font: var(--large-text);
     text-align: right;
     text-transform: uppercase;
+    position: relative;
+}
+
+.intro__h2-like::after {
+    content: "";
+    background: var(--linear-detail);
+    transform: rotate(90deg);
+    width: 8px;
+    height: 104px;
+    position: absolute;
+    bottom: -58px;
+    right: 48px;
 }
 
 .intro__description {
@@ -35,6 +75,7 @@
 
 .intro-grid {
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     gap: 20px 40px;
 }
 

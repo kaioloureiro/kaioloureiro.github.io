@@ -6,7 +6,7 @@
     box-shadow: var(--shadow);
 }
 
-.header .container {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,21 +19,20 @@
     height: 40px;
 }
 
-.menu__items {
-    display: flex;
+.header-menu__items {
     flex-wrap: wrap;
     align-items: center;
     gap: 12px;
     font: var(--small-text-b);
 }
 
-.menu__item {
+.h-menu__item {
     display: inline-block;
     padding: 16px 8px;
     position: relative;
 }
 
-.menu__item::after {
+.h-menu__item::after {
     content: "";
     background: var(--grad-p1);
     width: 0%;
@@ -45,7 +44,7 @@
     left: 0;
 }
 
-.menu__item:hover::after {
+.h-menu__item:hover::after {
     width: 100%;
 }
 

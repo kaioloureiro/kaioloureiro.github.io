@@ -16,16 +16,17 @@
 
 <body>
   <header class='header'>
-    <div class='container'>
+    <div class='container header-container'>
       <a href='/' class='header__logo' aria-label='Logo do Website' alt='Logo'></a>
-      <nav class='header__menu' aria-label='Menu Principal'>
-        <ul class='menu__items'>
-          <li><a href='#intro' class='menu__item c2'>Introdução</a></li>
-          <li><a href='#projects' class='menu__item c2'>Projetos</a></li>
-          <li><a href='#education' class='menu__item c2'>Formação</a></li>
-          <li><a href='#contact' class='menu__item menu_btn p0'>Contato</a></li>
+      <nav class='header-menu' aria-label='Menu Principal'>
+        <ul class='flex header-menu__items'>
+          <li><a href='#intro' class='h-menu__item c2'>Introdução</a></li>
+          <li><a href='#projects' class='h-menu__item c2'>Projetos</a></li>
+          <li><a href='#education' class='h-menu__item c2'>Formação</a></li>
+          <li><a href='#contact' class='h-menu__item menu_btn p0'>Contato</a></li>
         </ul>
       </nav>
+    </div>
   </header>
 
   <main>
@@ -89,20 +90,20 @@
         </div>
         <div class='flex projects-carousel'>
           <div class='carousel-item'>
-            <span class='carousel-item__text c10 ghost-text'>Projeto Selecionado</span>
-            <div class='carousel-item__card logo logo--placeholder'></div>
+            <span class='carousel-item__text b ghost-text'>Projeto Selecionado</span>
+            <div class='carousel-item__card logo logo--placeholder' onclick='selectProject(this)'></div>
           </div>
           <div class='carousel-item'>
-            <span class='carousel-item__text c10 ghost-text'>Projeto Selecionado</span>
-            <div class='carousel-item__card logo logo--placeholder'></div>
+            <span class='carousel-item__text b ghost-text'>Projeto Selecionado</span>
+            <div class='carousel-item__card logo logo--placeholder' onclick='selectProject(this)'></div>
           </div>
           <div class='carousel-item'>
-            <span class='carousel-item__text c10 ghost-text'>Projeto Selecionado</span>
-            <div class='carousel-item__card logo logo--placeholder' onclick='activeProject(this)'></div>
+            <span class='carousel-item__text b ghost-text'>Projeto Selecionado</span>
+            <div class='carousel-item__card logo logo--placeholder' onclick='selectProject(this)'></div>
           </div>
           <div class='carousel-item'>
-            <span class='carousel-item__text c10 ghost-text'>Projeto Selecionado</span>
-            <div class='carousel-item__card logo logo--placeholder' onclick='activeProject(this)'></div>
+            <span class='carousel-item__text b ghost-text'>Projeto Selecionado</span>
+            <div class='carousel-item__card logo logo--placeholder' onclick='selectProject(this)'></div>
           </div>
         </div>
       </div>
@@ -193,21 +194,23 @@
     </section>
   </main>
 
-  <footer id='footer' class='container' class='footer'>
-    <div class='' aria-label='Direitos Autorais'>
-      <p class=''>© 2022 <a href='https://kaioloureiro.github.io/' target='_self'>Kaio Loureiro</a>. Alguns direitos reservados.</p>
-    </div>
-    <div class='' aria-label='Mídias Sociais'>
-      <p class=''>Mídias Sociais</p>
-      <div class=''>
-        <a class='' href='https://github.com/kaioloureiro/' target='_blank' rel='external'></a>
-        <a class='' href='https://www.linkedin.com/in/kaioloureiro' target='_blank' rel='external'></a>
-        <a class='' href='https://www.behance.net/kaioloureiro' target='_blank' rel='external'></a>
-        <a class='' href='https://dribbble.com/kaioloureiro' target='_blank' rel='external'></a>
-        <a class='' href='https://www.uplabs.com/kaioloureiro' target='_blank' rel='external'></a>
+  <footer class='footer'>
+    <div class='container footer-container'>
+      <div class='footer-copyright' aria-label='Direitos Autorais'>
+        <p class='footer-copyright__text c2'>© 2022 <a class='p4' href='https://kaioloureiro.github.io/' target='_self'>Kaio Loureiro</a>. Alguns Direitos Reservados.</p>
+      </div>
+      <div class='flex footer-social' aria-label='Mídias Sociais'>
+        <p class='footer-social__title ghost-text c6'>Mídias Sociais</p>
+        <div class='flex footer-flex'>
+          <a class='icon icon--24x icon--github footer-flex__icon' href='https://github.com/kaioloureiro/' target='_blank' rel='external'></a>
+          <a class='icon icon--24x icon--linkedin footer-flex__icon' href='https://www.linkedin.com/in/kaioloureiro' target='_blank' rel='external'></a>
+          <a class='icon icon--24x icon--behance footer-flex__icon' href='https://www.behance.net/kaioloureiro' target='_blank' rel='external'></a>
+          <a class='icon icon--24x icon--dribbble footer-flex__icon' href='https://dribbble.com/kaioloureiro' target='_blank' rel='external'></a>
+          <a class='icon icon--24x icon--uplabs footer-flex__icon' href='https://www.uplabs.com/kaioloureiro' target='_blank' rel='external'></a>
+        </div>
+        </nav>
       </div>
     </div>
-
   </footer>
 
 </body>
