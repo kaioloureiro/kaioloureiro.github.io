@@ -28,6 +28,11 @@
     display: inline-block;
 }
 
+.footer-flex {
+    justify-content: center;
+    align-items: center;
+}
+
 .footer-flex__icon {
     padding: 0 8px;
 }
